@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>목록/정의형/특수부호</title>
+</head>
+<body>
+    <h3>비순서형 목록ul</h3>
+    <p>수강과목은?</p>
+<ul>
+    <li>일러스트레이터</li>
+    <li>포토샵</li>
+    <li>웹표준</li>
+    <li>html5</li>
+</ul>
+<!--마크업오류
+<ul>
+    <h3>웹표준</h3>
+    <li>html5</li>
+    <li>css</li>
+</ul>       
+-->
+<!--마크업오류
+<ul>
+    <p>웹표준</p>
+    <li>html5</li>
+    <li>css</li>    
+</ul>
+-->
+<ul>
+    <li>
+        <h5>제목</h5>
+        <p>제목입니다.</p>
+    </li>
+<li>
+        <h5>제목</h5>
+        <p>내용입니다.</p>
+</li>
+</ul>
+<hr>
+<h3>순서형 목록ol</h3>
+   <p>수업진행순서</p>   
+<ol>
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<ol type="1">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<ol type="A">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<ol type="I">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<ol type="i">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<hr>
+<h3>순서형 목록ol 중간번호시작,역순</h3>
+<ol type="a" start="2">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<ol type="A" start="3">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<ol type="I" start="4">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<ol type="i" start="5">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<ol reversed>
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<!-- ui에 쓰면 마크업 오류
+<ol reversed>
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+-->
+
+<!--마크업오류
+<ol>
+    <li type='1'>html5</li>
+    <li type='a'>html5</li>
+    <li type='A'>html5</li>
+    <li type='I'>html5</li>
+    <li type='i'>html5</li>
+</ol>
+-->
+<hr>
+<h3>정의형 목록 dl</h3>
+
+<!--정의형,질문/대답 목록만들기
+<dl>
+<dt>용어제목</dt>질문
+<dd>용어설명</dd>답
+dl태그의 자식에는 dt와 dd 밖에 없다. p/h 절대 못들어감.
+dt에는 h는 안되는데 p는 된다.-->
+
+<dl>
+    <dt>html5</dt>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+</dl>
+<dl>
+    <dt>html5</dt>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+    <dt>css</dt>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+</dl>
+<dl>
+    <dt>html5</dt>
+    <dt>css</dt>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+   <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+</dl>
+<dl>
+    <dt>html5</dt>
+    <dt>css</dt>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+</dl>
+<dl>
+    <dt>html5</dt>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+</dl>
+<!--마크업오류
+<dl>
+    <h4>제목</h4>
+    <dt>html5</dt>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+    <p>내용입니다.</p>
+</dl>
+-->
+<dl>
+    <dt><p>웹표준</p></dt><!--h태그는 마크업 오류가 나옴-->
+    <dd>
+     <h5>html5</h5>
+     <p>html5내용입니다.</p>
+    </dd>
+</dl>
+<dl>
+    <dt>그래픽s/w</dt>
+    <dd>
+        <ul>
+            <li>일러스트레이터</li>
+            <li>포토샵</li>
+        </ul>
+    </dd>
+</dl>
+
+<hr>
+<h3>엔터티(특수문자)</h3>
+<p>
+    &lt;<br>
+    &#60;<br>
+    &gt;<br>
+    &quot;<br>
+    &copy;<br>
+    &amp;
+</p>
+<!--마크업 오류는 아니지만 권장하지 않는다. 지저분하니깐 띄어쓰기는 css(자간,여백 등)로 할거다.
+<p>웹&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;표&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;준</p>
+-->
+</body>
+</html>
+    
