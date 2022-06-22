@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지맵</title>
+</head>
+<body>
+    <h2>이미지맵</h2><!--이미지 특정 지점을 클릭하면 페이지로 연결되는 원리!여기에 들어가는 이미지는 무조건 정확한 크기. 다르면 좌표 다 깨진다...
+    
+     map태그
+    나중에 이미지 저장할때  abc 말고 의미를 알 수 있는 이름으로..
+    이름은 거의 다 소문자로
+    영문자 뒤에 숫자는 상관없고 영문 뒤에 _ 도 괜찮음. 그런데..특수기호(!)이런거 절대 안됨. #abc #map1 #u_map
+    숫자로만 된 이름인식 못함. 알파벳 한글자, 앞에 숫자오거나 특수기호만 있거나 괄호치는거 안됨. #123 #a #1map #? (#u-map)> 얘는 좀 애매함. 앱개발 충돌 가능성, 한글.
+    
+     사각형 모향을 인식하기 위해서 대각선으로 좌표를 찍을 것. 왼쪽 상단에서 오른쪽 하단으로. 포토샵 f8눌러야 좌표 가능 info qhrh + 모양으로 된 xy축 누르면 됨
+      -->
+    <p>
+        <img src="images/hand.gif" alt="hand" width="358" height="400" usemap="#u_map">
+        <map name="u_map">
+            <area shape="rect" coords="209,77,258,127" href="http://m.nate.com" alt="모바일 네이트" target="_blank">
+            <area shape="circle" coords="169,305,59" href="http://m.naver.com" alt="모바일 네이버" target="_blank">
+            <area shape="poly" coords="37,148,40,150,41,153,43,154,45,153,48,154,48,158,41,162,43,166,43,168,39,173,31,167,25,172,22,171,20,169,20,166,26,160,25,156,25,152,27,151,34,151" href="http://m.daum.net" alt="모바일 다음" target="_blank">
+        </map>
+    </p>
+    <hr>
+    <p>
+        <img src="images/banner.jpg" alt="삼양맛샵" width="1588" height="578" usemap="#p_map">
+        <map name="p_map">
+            <area shape="rect" coords="389,424,616,513" href="" alt="" target="_blank">
+            <area shape="rect" coords="833,75,1312,477" href="https://www.sydeliciousshop.com/events" alt="삼양맛샵" target="_blank">
+            <area shape="circle" coords="177,285,40" href="https://www.sydeliciousshop.com" alt="삼양맛샵" target="_blank">
+            <area shape="circle" coords="1404,285,42" href="https://www.sydeliciousshop.com" alt="삼양맛샵" target="_blank">
+            <area shape="poly" coords="424,73,611,70,699,98,711,183,621,245,473,221,356,245,312,183,345,120,402,126" href="https://www.sydeliciousshop.com" alt="삼양맛샵" target="_blank">
+            <area shape="poly" coords="1399,338,1350,398,1359,449,1415,453,1481,421,1483,342" href="https://www.sydeliciousshop.com" alt="삼양맛샵" target="_blank">
+        </map>
+    </p>
+</body>
+</html>

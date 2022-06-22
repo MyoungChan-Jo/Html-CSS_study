@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지/링크</title>
+</head>
+<body>
+
+<!--이미지 태그는 ing 닫는 태그 없음.
+웹이미지: jpg/jpeg/png/gif/svg
+svg 벡터화 이미지, ie8이하 버전에는 지원안됨.
+기본: <img src="경로" 속서="값"
+src는 필수
+같은폴더: src="이미지파일명" 비주류
+하위폴더: src="폴더명/이미지파일명"★
+
+
+속성
+1.alt속성-필수
+안해주면 마크업 오류나고 접근성오류남
+이미지를 설명해주는 대체 텍스트.
+코더가 alt 설명을 자세하게 해야 함...
+2.width: 너비 픽셀사이즈로 인식됨. 너비와 높이를 지정하지 않으면 사이트가 깜빡거릴 수 있기 떄문. width="100" (o)
+3.height: 높이 픽셀사이즈로 인식됨. heigh="100" (o)
+4.title: 툴팁, 풍선도움말.(선택)마우스 올리면 나오는거
+
+임시로 이미지 표시해줄때 <img src=http://placehold.it/너비x(소문자)높이"">
+
+p태그를 입히고 이미지를 입혀야 나중에 css에 편하다.
+
+-->
+
+<h2>이미지img</h2>
+<p>
+    <img src="images/daum.gif" alt="다음" width="115" height="43" title="다음로고">
+    <img src="images/daum" alt="다음" width="115" height="43" title="다음로고">
+    <img src="images/naver.gif" alt="네이버" width="160" height="33" title="네이버로고">
+    <img src="https://www.w3schools.com/images/picture.jpg" alt="picture" width="304" height="228">
+</p>
+<p>
+    <img src="images/circle1.svg" alt="원" width="100" height="100">
+    <img src="images/circle2.png" alt="원" width="100" height="100">
+</p>
+<p>
+    <img src="images/circle1.svg" alt="원" width="300" height="300">
+    <img src="images/circle2.png" alt="원" width="300" height="300">
+</p>
+<h2>임시이미지</h2>
+<p>
+    <img src="http://placehold.it/200x300" alt="임시공간" width="200" height="300">
+    <img src="http://placehold.it/500x200" alt="임시공간" width="500" height="200">
+</p>
+<p>
+    <img src="images/banner.jpg" alt="삼양" width="1588" height="578" title="삼양맛샵">
+    <img src="images/empas.gif" alt="엠파스" width="126" height="48" title="엠파스">
+    <img src="images/hand.gif" alt="손" width="358" height="400" title="손">
+</p>
+<hr>
+<h2>figure,figcaption 설명글(캡션)</h2>
+<!-- figure 태그 100이미지, 표 멀티미디어 )오디오.비디오)에 설명글(캡션) > html:5 추가된 신규 태그 이미지에 제목 나올떄 많이 씀 -->
+
+<figure>
+    <img src="images/daum.gif" alt="다음" width="115" height="43">
+    <figcaption>다음</figcaption>
+</figure>
+<figure>
+    <figcaption>포털사이트</figcaption>
+    <img src="images/daum.gif" alt="다음" width="115" height="43">
+    <img src="images/empas.gif" alt="엠파스" width="126" height="48">
+    <img src="images/naver.gif" alt="네이버" width="160" height="33">
+</figure>
+<hr>
+<h2>하이퍼링크a</h2>
+<!--<a>~</a> 링크만들기<a 속성="속성값">텍스트/이미지 등.... </a> 에이 태그는 퍼렁밑줄 긁힘
+href: 링크할 문서나 사이트의 주소 href="#" (임시링크)
+(선택형) target: 링크한 내용이 표시될 위치. _self 현재창/현재탭(default) 타겟 안넣으면 자동으로 셀프로 들어감. / _blank 새창/새탭
+특이사항 10버전 이하 버전: 링크 이미지에 테두리가 자동으로 생김. css에서 테두리를 제거해야 함.-->
+
+<p>
+    <a href="http://m.naver.com" title="모바일 네이버로 이동">네이버</a>
+    <a href="http://m.naver.com" title="모바일 네이버로 이동" target="_self">네이버</a><!--디폴트 값-->
+    <a href="http://m.naver.com" title="모바일 네이버로 이동" target="_blank">네이버</a><!--새 창이 열림-->
+    <a href="http://www.naver.com" target="_blank"><img src="images/naver.gif" alt="네이버" width="160" height="33"></a>
+    <a href="mailto:master@naver.com">관리자에게 메일 보내기</a><!--a href="mailto" 는 클릭하면 이메일 보내는 서비스 .아웃룩 서비스 연동되야 함-->
+</p>
+
+<a href="#">
+<figure>
+    <img src="images/daum.gif" alt="다음" width="115" height="43">
+    <figcaption>다음</figcaption>
+</figure>
+</a>
+
+<!--메뉴에 ul태그 많이 쓴다.-->
+<ul>
+    <li><a href="#">메뉴1</a></li>
+    <li><a href="#">메뉴2</a></li>
+    <li><a href="#">메뉴3</a></li>
+    <li><a href="#">메뉴4</a></li>
+</ul>
+</body>
+</html>
