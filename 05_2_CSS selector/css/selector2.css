@@ -1,0 +1,102 @@
+@charset "utf-8";
+/*초기화 작업. 공통으로 여백 빼고, 기호를 다 뺌. 그러고 나서 필요한 부분에 다시 넣음.
+dd는 margin left가 있고 ul은 padding태그를 기본적으로 가지고 있다. 때문에 ul태그 왼쪽을 뺴고 싶으면 padding을 제거해야 한다.
+*/
+ul,li{list-style:none;}
+
+/* ex1 */
+#ex1{background-color:#ffcccc;
+     padding-left:0;
+     margin-left:40px;
+     }
+
+
+/*ex2아이디가 들어간 div는 붙이고 하위인 p는 띄어쓰기 한다.*/
+/*div#ex2 p{background-color:orange;}ok*/
+#ex2 p{background-color:orange;
+       width:100px;
+       height:30px;
+       text-align:center;
+       line-height:30px;
+}
+/*위에 둘을 같은거임.*/
+/*div p{background-color:orange;}이건 쓰지 말자. 높이랑 같은 크기로 line-height를 주면 높이가 중앙으로 모임.*/
+
+/*첫번째 방법
+div#ex2 p.ex2_1{border-top:10px solid #cc0099;}
+*/
+
+/*두번째 방법
+#ex2 p.ex2_1{border-top:10px solid #cc0099;}
+*/
+
+/*세번째 방법
+#ex2 .ex2_1{border-top:10px solid #cc0099;}
+*/
+
+/*네번째 방법
+p.ex2_1{border-top:10px solid #cc0099;}
+*/
+
+/*다섯번째 방법
+.ex2_1{border-top:10px solid #cc0099;}
+*/
+
+#ex2 p.ex2_1{border-top:10px solid #cc0099;}
+#ex2 p.ex2_2{border-left:2px dotted #6600ff;}
+#ex2 p.ex2_3{border:3px dashed #33cc33;}
+#ex2 p.ex2_4{border-bottom:double #cc0066 4px;}
+#ex2 p.ex2_5{border-right:5px #9900cc groove;}
+#ex2 p.ex2_6{border:#0099ff ridge 5px;}
+#ex2 p.ex2_7{border:inset #ff6600 3px;}
+#ex2 p.ex2_8{border:outset 5px #0033ff;}
+#ex2 p.ex2_9{border:2px solid #ff3399;
+             border-left:none;
+             border-right:none;}
+#ex2 p.ex2_10{border-left:2px solid #f33399; 
+              border-bottom:2px solid #ff3399;}
+/*ex3*/
+.ex3_1{text-transform:capitalize;}
+.ex3_2{text-transform:uppercase;}
+.ex3_3{text-transform:lowercase;}
+
+/*ex4*/
+.ex4_1{font-variant:normal;}
+.ex4_2{font-variant:small-caps;}
+
+/*ex5*/
+#ex5 *{margin:0px; padding:0px;}/*초기화 한거임.*/
+#ex5 p{border:1px solid #ff9999;
+       width: 400px; height:150px;
+       font-size:100px;}
+#ex5 p span{font-size:12px;
+            border-top:1px solid green;
+            border-bottom:1px solid green;}
+#ex5 p span.ex5_1{vertical-align:super;}
+#ex5 p span.ex5_2{vertical-align:sub;}
+#ex5 p span.ex5_3{vertical-align:baseline;}
+#ex5 p span.ex5_4{vertical-align:top;}
+#ex5 p span.ex5_5{vertical-align:middle;}
+#ex5 p span.ex5_6{vertical-align:bottom;}
+
+/*ex6*/
+#ex6 *{margin:0; padding:0;}/*초기화 작업*/
+#ex6 p{border:1px solid blue; 
+       width:400px; 
+       height:150px; 
+       font-size:100px}
+#ex6 p .ex6_1{vertical-align:super;}
+#ex6 p .ex6_2{vertical-align:sub;}
+#ex6 p .ex6_3{vertical-align:baseline;}
+#ex6 p .ex6_4{vertical-align:top;}
+#ex6 p .ex6_5{vertical-align:middle;}
+#ex6 p .ex6_6{vertical-align:bottom;}
+
+
+
+
+
+
+
+
+

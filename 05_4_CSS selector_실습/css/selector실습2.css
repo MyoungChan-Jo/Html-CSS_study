@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+#ex1{}
+#ex2{}
+#ex3{}
+#ex4{background-color:red;
+     border-style:solid;
+     border-width:1px;
+     border-color:black;
+     font-weight:bold;
+     color:#FFFFFF;
+     padding-left:5px;}
+
+#ex4_1{}
+#ex4_2{}
+#ex4_3{}
+#ex4_4{}
+#ex4_5{}
+
+#ex5{background-color:#FFCD12;
+     border-style:solid;
+     border-width:1px;
+     border-color:red;
+     font-weight:bold;
+     padding-left:5px;}
+
+#ex6{}
+#ex7{}
+#ex8{}
+#ex9{}
+#ex10{}

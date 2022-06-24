@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*전체 선택자*/
+*{
+    font-size:12px; 
+    font-family:"돋움",Dotum,sans-serif; 
+    /*line-height:24px;*/
+    /*line-height:2em;*/
+    line-height:200%}
+    /*24px=2em=200%*/
+    /*태그(요소) 선택자*/
+dt{
+    background-color:#999999; 
+    color:#ffffff; 
+    font-size:15px; 
+    font-family:Arial,sans-serif; 
+    font-weight:bold; width:200px; 
+    height:30px;
+    text-align:center;
+    }
+/*아이디 선택자*/
+#tit2{
+    background-color:#99cc33;
+    width:500px;
+    height:270px;
+    text-align:justify;
+    margin-left:0;
+    margin-top:10px;
+    padding:15px;/*500+15,270+15가 된거.*/
+    }
+/*클래스 선택자*/
+.tit{
+    color:yellow;
+    margin-left:auto;
+    margin-right:auto;
+    /*사이즈 안줘도 들어간 이유는 애초에 이 태그가 dt이기 때문에 위에 200px이라고 사이즈가 들어가 있기 때문이다.*/
+    
+    
+    }
