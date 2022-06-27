@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body{font-family:'Nanum Myeongjo', serif;}
+
+#ex1_1{border-bottom:4px double black; margin-bottom:30px; margin-left:150px; width:370px; font-size:27px;}
+
+#ex1{border-collapse:collapse;}
+#ex1 th{border:1px solid black; font-size:18x; padding:10px;}
+#ex1 td{border:1px solid black; font-size:12px;padding-left:15px;}
+
+#ex1 .ex2_bdot{border-bottom:1px dotted black;}
+#ex1 .ex2_btdot{border-bottom:1px dotted black; border-top:1px dotted black;}
+#ex1 .ex2_tdot{border-top:1px dotted black;}
+
+#tit3{width:250px;}
+#tit4{width:40px;}
+#tit5{width:40px;}
+#tit6{width:45px;}
+#tit7{width:50px;}

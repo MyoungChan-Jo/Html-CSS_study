@@ -1,0 +1,110 @@
+@charset "utf-8";
+/*4행 3열의 표*/
+
+/*초기화 reset작업 을 먼저 해야 함. h태그는 적용 안되니 필요하면 따로 넣어주기. */
+body,h2{font-size:12px; font-family:"맑은 고딕","Malgun Gothic", sans-serif; line-height:1.5em; }
+
+/*ex1*/
+/* #ex1{border:1px solid #333333;} >> 전체 테두리 */
+/* #ex1 tr{border:1px solid #333333} >> 이렇게는 적용 안됨. */
+#ex1 th,#ex1 td{border:1px solid #333333; width:100px; height:40px;} /* >> 칸 */
+/* #ex1 th,td{} >> 모든 th, td를 지칭하기 때문에 바른 표현이 아니다. >> X */
+
+/*벌어진 칸 줄이기*/
+/*  border-spacing:수치; >> 수치만큼 셀 간격이 떨어짐. - 는 적용 안됨.
+    border-collapse:separate; rlqhsrkqt.
+    border-collapse:collapse;셀 간격이 붙음 */
+#ex1{border-spacing:10px; 
+     border-collapse:collapse; 
+     caption-side:bottom;
+     /*border-collapse:collapse; emty-cells:hide;*/}
+
+/*캡션 위치는 위아래만 가능
+캡션<caption>위치 = <table>태그에 적용해야 함.
+caption-side:top 표 위에 bottom 표 아래 */
+
+#ex1 td.ex1_1{text-align:left;}/*왼쪽=기본값*/
+#ex1 td.ex1_2{text-align:center;}/*가로 가운데*/
+#ex1 td.ex1_3{text-align:right;}/*오른쪽*/
+#ex1 td.ex1_4{vertical-align:top;}/*위쪽*/
+#ex1 td.ex1_5{vertical-align:middle;}/*세로 가운데=기본값*/
+#ex1 td.ex1_6{vertical-align:bottom;}/*아래쪽*/
+
+/*빈셀표시하는 법*/
+/*
+empty-cells:show = 기본값
+empty-cells:hide = 빈셀 숨기기
+조건이 있음. -border-collapse:collapse; 에서는 적용이 안된다.
+*/
+
+
+/* 3행 3열의 표 css */
+/*ex2*/
+#ex2{border-collapse:collapse;}/* << 표 붙이기 */
+#ex2 th,#ex2 td{border:1px solid blue; width:100px; height:20px;}
+#ex2 td{text-align:center;}
+
+/* 셀 병합 영화제목 css */
+/* ex3 */
+#ex3{border-collapse:collapse;}/* << 표 붙이기 */
+#ex3 th,#ex3 td{border:1px solid pink; width:100px; height:20px;}
+#ex3 td{text-align:center;}
+
+/*표실습 미라클코드 스킨 수딩 샴푸*/
+/* ex4 */
+#ex4{border-collapse:collapse;}/* << 표 붙이기 */
+#ex4 th,#ex4 td{border:1px solid #666666;}
+#ex4 th{background-color:#cccccc; font-weight:normal; width:150px; height:40px;}
+#ex4 td{text-align:center; width:220px; height:40px;}
+
+/*표실습 tv 영화 편성표*/
+/* ex5 */
+#ex5{border-collapse:collapse;}
+#ex5 th,#ex5 td{border:1px solid black;}
+#ex5 th{background-color:#cccccc;}
+
+#ex5 th#titt1{text-align:center; width:81px;  height:42px;}
+#ex5 th#titt2{text-align:center; width:218px; height:42px;}
+#ex5 th#titt3{text-align:center; width:314px; height:42px;}
+#ex5 th#titt4{text-align:center; width:235px; height:42px;}
+#ex5 th#titt5{text-align:center; width:199px; height:42px;}
+#ex5 td{border-spacing:10px; text-align:center;} /*[id = # class = .]*/
+
+/*표실습 한방쿨링샴푸*/
+/* ex6 */
+#ex6{border-collapse:collapse;}
+#ex6 th,#ex6 td{border: 1px solid black;}
+#ex6 th{background-color:#cccccc; text-align:center;}
+
+/* ex7 */
+#ex7{border-collapse:collapse;}/* << 표 붙이기 */
+#ex7 th,#ex7 td{border:1px solid purple; width:100px; height:20px;}
+#ex7 td{text-align:center;}
+
+
+/* ex8 */
+#ex8{border-collapse:collapse;}/* << 표 붙이기 */
+#ex8 th,#ex8 td{border:1px solid grey; width:100px; height:20px;}
+#ex8 td{text-align:center;}
+/*
+참고
+#ex8 th,#ex8 td{border:1px solid grey; width:100px; height:20px;}
+#ex8 th{border:1px solid grey; width:100px; height:20px;}
+#ex8 td{border:1px solid grey; width:100px; height:20px;}
+같음.
+*/
+
+/* ex9 */
+#ex9{border-collapse:collapse; color:#333333; width:400px; border:1px solid #333333;}
+#ex9 th,#ex9 td{width:100px; height:20px;}
+#ex9 th{background-color:#eaeaea; border-bottom:3px double #333333;}
+#ex9 td{text-align:center;}
+
+
+
+
+
+
+
+
+

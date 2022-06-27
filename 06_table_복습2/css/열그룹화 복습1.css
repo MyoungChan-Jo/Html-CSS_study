@@ -1,0 +1,8 @@
+@charset "utf-8";
+#color{background-color:#5a5a5a; width:520px; height:465px;}
+#ex1{border-collapse:collapse; margin-left:10px; width:500px; height:400px;}
+#ex1_1{background-color:#5a5a5a; color:#ffffff; text-align:left; border-bottom:2px solid #ffffff; font-size:30px; margin-bottom:8px; width:205px;}
+#ex1 th,#ex1 td{font-size:15px;}
+#ex1 th{background-color:#ff6332; color:#ffffff; height:50px;}
+#ex1 td{background-color:#5a5a5a; color:#ffffff; text-align:center;}
+.ex_2{vertical-align:top; padding:12px;}
