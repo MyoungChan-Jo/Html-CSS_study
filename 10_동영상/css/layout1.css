@@ -1,0 +1,2 @@
+@charset "utf-8";
+#ex2 iframe{border:none;}/*마크업에 있던 framebprder="0" 를 여기에 씀. 마크업에서는 오류가 나기 때문이다.*/

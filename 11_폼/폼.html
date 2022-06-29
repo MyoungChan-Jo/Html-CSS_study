@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼태그 input / button</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <!--
+    form태그 > 66-74 추가 form > 105-119
+    로그인과 회원가입 양식 만드는 태그.
+    브라우저별 지원을 확인 해보아야 한다.http://miketaylr.com/code/input-type-attr.html
+    .기존폼태그+html5추가 폼태그
+    <form action="" method="">
+    내용
+    </form>
+    1.action: 전송버튼 누를때 태그 안 내용을 처리해줄 서버상의 프로그램을 지정해준다.
+              확장자: php, asp, jsp
+              <전송버튼>
+              input type="submit"
+              input type="image"
+              button type="submit"
+    2.method: 사용자가 입력한 내용을 서버로 어케 넘겨줄지 지정
+              get 주소에 데이터를 입력해서 보내는 방식
+              post 주소가 변경되지 않고 비밀스럽게 데이터를 전달(보안)
+              method="get" / method="post"
+    
+    폼 내용을 그룹으로 묶기(필수는 아니다.)
+    <fieldset>
+        <legend>그룹제목</legend>
+        내용.
+    </fieldset>
+    
+    <input type="유형">
+    닫는 태그 없음
+    -text: 일반 텍스트(한줄만 입력됨),화면에 노출됨
+    -password: 비밀번호/주민번호 등 화면에 내용이 비노출 
+    
+    button
+    닫는 태그 있음.
+    - <button type="submit">이름<
+    - <button type="reset">
+    - <button type="button">
+    -->
+</head>
+<body>
+<form action="join.asp" method="post" target="blank">
+    <fieldset>
+    <legend>회원가입</legend>
+        <p><label for="u_id">아이디</label><input type="text" id="u_id"></p>
+        <p><label for="pwd">비밀번호</label><input type="password" id="pwd" ></p>
+        <p>수강과목은(radio)?<br>
+            <input type="radio" name="list1" value="html" id="html1">
+            <label for="html1">HTML</label>
+            <input type="radio" name="list1" value="html" id="css1">
+            <label for="css1">CSS</label>
+            <input type="radio" name="list1" value="html" id="jquery1" checked>
+            <label for="jquery1">JQUERY</label> <!--같은 과목에서 하나 선택 id랑 labefor가 들어간 이유는 접근성 때문이다.checked는 체크되있음.-->
+        </p>
+        <p>수강과목은(checkbox)?<br>
+            <input type="checkbox" name="list2" value="html" id="html2">
+            <label for="html2">HTML</label>
+            <input type="checkbox" name="list2" value="html" id="css2">
+            <label for="css2">CSS</label>
+            <input type="checkbox" name="list2" value="html" id="jquery2" checked>
+            <label for="jquery2">JQUERY</label> <!--같은 과목에서 하나 선택 id랑 labefor가 들어간 이유는 접근성 때문이다.-->
+        </p>
+        <p><label for="u_file">사진선택</label><input type="file" id="u_file"></p><!--파일선택-->
+    
+    </fieldset><!--회원가입-->
+    <fieldset>
+        <legend>여러버튼</legend>
+        <ol>
+            <li>전송버튼:<input type="submit" value="전송"></li><!--새 탭 join.asp로 전송-->
+            <li>전송버튼:<input type="submit" value="전송" formaction="join2.php" formtarget="_self"></li><!--다른 주소로 보내버리기 formaction="전송url" formtarget="_self/blank" 현재탭에서 바뀜.-->
+            <li>취소버튼:<input type="reset" value="재작성"></li>
+            <li>일반버튼:<input type="button" value="확인"></li>
+            <li>이미지버튼:<input type="image" src="images/btn.jpg" alt="중복확인" width="65" height="22" ></li><!--새 탭 join.asp로 전송-->
+        </ol>
+        <ol>
+            <li>전송버튼:<button type="submit">전송</button></li><!--새 탭 join.asp로 전송-->
+            <li>전송버튼:<button type="submit" formaction="join2.php" formtarget="_blank">전송</button></li><!--새 탭 join2.php로 전송-->
+            <li>전송버튼:<button type="submit"><img src="images/btn.jpg" alt="중복확인" width="65" height="22"></button></li><!--새 탭 join.asp로 전송-->
+            <li>취소버튼:<button type="reset">재작성</button></li>
+            <li>일반버튼:<button type="button">확인</button></li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <legend>여러줄 글상자/목록상자</legend>
+    <!--
+    정확하게 맞지는 않음. 또한 디자인의 한계가 있음. 내용 그대로 찍히기 때문임.
+    <textareacols="칸수(가로넓)" row="줄수(세로길)"></textarea>
+    -->
+        <p><!--여러줄 글상자-->
+            <label for="t_txt1">글쓰기</label><!---접근성--><br>
+            <textarea id="t_txt1" cols="50" rows="10"></textarea><!--크롬에서 크기변경 고정이 안된다. css 설정 넣어야 함. resize:none-->
+        </p>
+        <p>
+            <label for="t_txt2">이용약관</label><br><!--약관은 수정되면 안되기에 읽기전용으로 변경한다.=readonly-->
+            <textarea id="t_txt2" cols="50" rows="10" readonly>약관의 내용이 들어갑니다.여기에는 태그를 못넣는다. <br>이 여따 쓰면 그냥 나온다 ㅎㅎ...엔터치면 그대로 엔터친게 반영된다.</textarea>
+        </p>
+        <p>
+        <!--
+        목록상자 <option value="">항목</option value>
+        selected-항목 기본 선택
+        multiple-다중선택으로 펼쳐지는 항목으로 변경되어 연속선택이 가능.
+        multipel size-다중선택항목 길이 조절
+        -->
+            <label for="list1">수강목록</label><br>
+            <select id="list1">
+                <option value="HTML5">HTML5</option> 
+                <option value="웹표준">웹표준</option>
+                <option value="제이쿼리" selected>제이쿼리</option> 
+                <option value="웹접근성">웹접근성</option>
+            </select> 
+        </p>
+        <p>
+            <label for="list2">수강목록(다중선택)</label><br>
+            <select id="list2" multiple size="6">
+            <option value="HTML5">HTML5</option> 
+            <option value="웹표준">웹표준</option>
+            <option value="제이쿼리">제이쿼리</option> 
+            <option value="웹접근성">웹접근성</option>
+            <option value="포토샵">포토샵</option>
+            <option value="일러스트">일러스트</option>
+            </select>
+        </p>
+        <!--
+        항목으로 그룹 묶기
+        <optgroup labe="그룹이름"
+       -->
+       <p>
+           <label for="list3">수강과목(그룹)</label>
+           <select id="list3">
+               <option>선택하세요</option>
+               <optgroup label="웹디자인">
+                 <option value="일러스트">일러스트</option>
+                 <option value="포토샵">포토샵</option>
+               </optgroup>   
+                <optgroup label="웹 프로그래머">
+                   <option value="javascript">javascript</option>
+                   <option value="jquery">jquery</option>
+                   <option value="php">php</option>
+               </optgroup>
+           </select>
+       </p>
+    </fieldset>
+</form>
+
+<hr>
+<!--
+지원되는 폼태그
+placeholder-입력란에 내용 표시(radio,checbox 제외)
+maxlength-입력글자 최대 글자수 제한/한글은 조금 다름.
+minlength-입력글자 최소 글자수 제한 잘 안먹음.
+autofocus-자동으로 커서 이게 여러군데 들어가면 마크업 오류 뜬다. 하나만 넣어야 함.
+required-필수입력
+size-박스 길이>css에서 넣어주는게 좋음.
+autocomplete=off/on-자동완성기능설정.해제
+-->
+<h3>html5 추가된 폼태그(지원되는 브라우저 확인)</h3>
+<form action="member.asp" method=post>
+    <fieldset>
+        <legend>추가태그</legend>
+        <ol>
+            <!--처음에 글자 써있는거-->
+            <li><label for="u_name">이름</label><input type="text" id="u_name" placeholder="10자 미만" maxlength="9" autofocus required size="10"></li>
+            <!--안에 커서들어가게 하는거-->
+            <li><label for="email1">이메일</label><input type="email" id="email1" size="30" autocomplete="off"></li>
+            <!--이메일 넣기-->
+            <li><label for="tel1">전화번호</label><input type="tel" id="tel1"></li>
+            <!--수량 버튼-->
+            <li><label for="num1">주문수량</label><input type="number" id="num1" value="0" min="0" max="10" step="2"></li>
+            <!--수량 막대바-->
+            <li><label for="num2">주문수량</label><input type="range" id="num2" value="1" min="1" max="3"></li>
+            <!--익스는 지원 암함.-->
+            <li><label for="color1">주문색상</label><input type="color" id="color1"></li>
+            <!--달력생김-->
+            <li><label for="date1">주문일</label><input type="date" id="date1"></li>
+            <!--시간관련-->
+            <li><label for="time1">주문시간</label><input type="time" id="time1"></li>
+            <!--달력+시간 익스는 지원 안함.-->
+            <li><label for="datetime1">날짜시간</label><input type="datetime-local" id="datetime1"></li>
+            <!---->
+            <li><label for="month1">주문월</label><input type="month" id="month1"></li>
+            <!--익스에서 지원 안함.-->
+            <li><label for="week1">주</label><input type="week" id="week1"></li>
+            <!--x버튼 생성됨.-->
+            <li><label for="search1">주문검색</label><input type="search" id="search1"></li>
+            <!--형식에 맞는 주소가 들어가야 함.-->
+            <li><label for="url1">홈페이지</label><input type="url" id="url1" size="30"></li>
+            <!---->
+            <li><label for="web">상품명</label><input type="text" value="웹디자인" id="web" readonly></li>
+            
+             <li><!--데이터리스트/확인만해볼거.-->
+                <label for="u_type1">수강과목</label>
+                    <input type="text" id="u_type1" list="type1">
+                        <datalist id=type1>
+                            <option value="웹표준" label="web1"></option>
+                            <option value="웹접근성" label="web1"></option>
+                            <option value="자바스크립트" label="web2"></option>
+                            <option value="제이쿼리" label="web2"></option>
+                        </datalist>
+             </li>
+             
+               <li>수강과목<!--익스는 지원 안함-->
+                <details>
+                    <summary>웹디자인</summary>
+                    <p>
+                        웹표준<br>웹접근성<br>javascript<br>jquery<br>일러스트레이터<br>포토샵
+                    </p>
+                </details>
+             </li>
+            <!--익스도 지원하지만 디자인이 다름--><li>Download진행<progress value="65" max="100"></progress></li>
+        </ol>
+        <p>
+            <input type="submit" value="전송하기">
+            <input type="reset" value="재작성">
+        </p>
+    </fieldset>
+</form>
+</body>
+</html>

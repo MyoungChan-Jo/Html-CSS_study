@@ -1,0 +1,116 @@
+@charset "utf-8";
+    
+/*초기화 reset*/
+    
+    a{color:#000000; text-decoration:none;}
+
+/*ex1*/
+/*#ex1 li a[target]{background-color:#cc99ff;}*/
+/*#ex1 li a[title="naver"]{background-color:#ff0066;}*/
+/*#ex1 li a[title~="daum"]{background-color:#ff9999;}*/
+/*#ex1 li a[title|="nate"]{text-decoration:line-through;}*/
+/*#ex1 li a[title$="e"]{text-decoration:underline;}*/
+/*#ex1 li a[title$="nate"]{color:red;}*/
+/*#ex1 li a[title^="nate"]{color:blue;}*/
+/*#ex1 li a[title*="e"]{color:pink;}*/
+/*#ex1 li a[title*="o"]{color:orange;}*/
+#ex1 li a[title*="daum"]{color:green;}
+
+
+/*ex2*/
+/*속성값이 png로 끝나는 태그,border적용(두께3,색#cc0066,실선)*/
+/*속성값이 node를 포함하는 태그,border적용(두께2,색#ff6633,짧은점선)*/
+/*속성값이 images/ux1.gif로 끝나는 태그,border적용(두께4,색#3399ff,이중실선)*/
+#ex2 img[src$="png"]{border:3px solid #cc0066;}
+#ex2 img[src*="node"]{border:2px dotted #ff6633;}
+#ex2 img[src="images/ux1.gif"]{border:4px double #3399ff;}
+
+
+
+
+/*ex3*/
+/*속성값이 자유로 시작하는 태그,배경색(#cc0066)*/
+/*속성값이 회원 장터인 태그,배경색(#ff6633)*/
+/*속성값이 레시피로 끝나는 태그,배경색(#3399ff)*/
+.ex3 ul li a[title^="자유"]{background-color:#cc0066;}
+.ex3 ul li a[title="회원 장터"]{background-color:#ff6633;}
+.ex3 ul li a[title$="레시피"]{background-color:#3399ff;}
+
+/*ex4*/
+.ex4>span{color:#ff0099; border-bottom:3px double #996666;}
+.ex4 span{background-color:yellow;}
+
+#ex5>h5{background-color:#996699;}
+/*#ex5 h5{color:red;} > 전체 들어가는거*/
+#ex5>ex5_2 >h5{color:blue;}
+
+/*#ex6*/
+.ex6 li+li{background-color:#ff00ff; color:#cccccc}
+.ex7 h5+h6{text-decoration:line-through; color:red;}
+.ex8 h5~h6{color:#0033cc;}
+
+/*#ex9*/
+#ex9 li a:hover{text-decoration:underline; color:#ffccff;}
+#ex9 li a:active{background-color:#99ccff;}
+
+.ex9_a:hover{cursor:default;}
+.ex9_b:hover{cursor:pointer;}
+.ex9_c:hover{cursor:move;}
+.ex9_d:hover{cursor:url(../images/aa.cur),auto;}
+/*커서를 이미지로 만들기. cursor:url(경로/파일명),auto  확장자는.cur이다.크기는 128x128이 허용되지만 32x32가 적당하다.cur은 변환사이트도 있다. http://www.cursor.cc */
+
+/*ex10*/
+.ex10:focus{border:3px solid #9900ff; background-color:#ffffcc; outline:none;}
+.ex10:not([type="password"]){background-color:orange;}/*선택자:not(조건)*/
+/*커서모양 w3school사이트에서 검색으로 cursor해서 젤 위에.많이쓰는게 포인터속성이랑 디폴트 속성*/
+
+/*ex11*/
+#ex11 li:first-child{background-color:#33ff66;} /*첫번째-태그:first-child{속성명:속성값;}*/
+#ex11 > li:first-child{color:red;}
+#ex11 li:last-child{background-color:#cc6699;} /*마지막-태그:last-child{속성명:속성값;}*/
+#ex11 > li:last-child{color:blue;}
+#ex11 li:nth-child(4){border: 2px solid #990033;} /*n번째 1부터 시작. 태그:nth-child(n){속성명:속성값;}*/
+#ex11 li:nth-child(even){background-color:#ffcc33;} /*짝수번째 1부터 시작(홀수) 태그:nth-child(even){속성명:속성값;}*/
+#ex11 li:nth-child(odd){background-color:#66ffff;}  /*홀수번째 1부터 시작(홀수) 태그:nth-child(odd){속성명:속성값;}*/
+#ex11 li:nth-child(4n){text-decoration:line-through;}/*배수번째 1부터 시작(수치) 태그:nth-child(수치n){속성명:속성값;} ex:4/8번째 텍스트에 밑줄.*/
+#ex11 li:nth-child(4n+1){background-image:url(../images/bg1.png);} /*background-image:url(경로/파일명); 기본값은 x,y반복해서 적용된다.  jpg,gif,png  프린트 12p ex:1/5/9번째   */
+#ex11 li:nth-child(3n+1){background-image:url(../images/dd_arrow.gif);}
+#ex11 li:nth-child(3n+2){background-color:red;}
+
+
+
+/*ex12*/
+#ex12 > p:nth-of-type(3){background-color:#cc99ff;}/*형제관계중에서 수열번째 등장하는 특정태그를 선택하여 css적용 태그:nth-of-type(n)n번째(1부터 시작)*/
+
+
+.ex13::first-line{background-color:#ffcccc; color:#cc00ff; font-size:12px;}
+.ex13::first-letter{font-size:30px; color:#000000; background-color:#ffffff;}
+/*문자
+선택자:특정조건의문자를 선택하여 css적용  첫줄-::first0line{속성명:속성값;} 첫글자-::first-letter{속성명:속성값;}*/
+
+
+/*ex13_2*/
+.ex13_2::selection{color:white; background-color:#ff7473;}
+/*내용을 드래그 할때
+태그::selection{속성명:속성값;}글자색 o 배경색 o 크기 x 테두리 x*/
+
+/*ex14*/
+.ex14::before{content:"수강과목:"; color:#cc6600; }
+.ex14::after{content:"/"; color:#cc0066;}
+/*전후문자 선택자
+선택자 앞에 내용추가 ::before 내용추가 {content:"내용"} 뒤에 내용추가 ::*/
+
+/*ex15*/
+.ex15[type="checkbox"]:checked+label{color:#ff0066; font-weight:bold;}
+/*check된 input 바로 뒤에 label 글자색을 변경하라는 의미.*/
+
+
+/*ex16*/
+.ex16:disabled{background-color:#ffcc66;}
+.ex16:enabled{border:3px solid red;}
+
+/*ex17*/
+p.ex17{background-color:#ccffcc; border-bottom:3px double #cc6666; color:#666699;}
+.ex17{text-decoration:line-through; color:#000000 !important; background-color:#ff6600 !important;}/*변경할때는 앞이 같아야 한다.*/
+
+

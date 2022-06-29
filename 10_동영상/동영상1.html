@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>동영상1</title>
+    <link rel="stylesheet" href="css/layout1.css">
+</head>
+<body>
+    <!--
+    mp4 > 크롬,익스,파폭,오페라
+    webM > 익스, 파폭, 오페라
+    ogg > 크롬, 파폭, 오페라
+    - 동영상 삽입하기 넓이 높이 넣는걸 권장한다. 일부 상황 제외하고
+    1.width="너비"
+    2.height="높이"
+    3.preload="파일을 재생하기 전에 파일을 모두 다운로드 할것인지, 일부만 할것인지."
+      auto/metadata/none
+    4.controls="재생도구"
+    5.autoplay="자동재생" > 유튜브는 하지 말아야 함. 아이폰은 차피 안됨
+    6.loop="반복재생"
+    7.muted="음소거" 이게 되어야 자동 재생이 됨.
+    8.poster poster="경로/파일명" jpg,png,gif > 브라우저나 인터넷연결 문제등 비디오를 재생할 수
+      없을 경우 비디오 화면 자리에 대신 표시할 이미지.
+    -->
+    
+    <div id="ex1">
+        <video width="400" height="300" autoplay preload="auto" controls muted loop poster="images/m_bg,jpg">
+            <source src="media/spring.mp4" type="video/mp4">
+            <source src="media/spring.webm" type="video/webm">
+        </video>
+    </div><!--ex1-->
+    
+    <hr>
+    <!--유튜브 붙이기-->
+    <div id="ex2">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/DMs3cXkH3Mg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div><!--ex2-->
+    
+    <hr>
+    <!--동영상 다운받아서 해보기(naver > 4k비디오 다운로더 > 링크 복사)-->
+    <div id="ex3">
+        <video width="854" height="480" autoplay preload="auto" controls loop muted poster="images/abab.png">
+            <source src="media/video_a.mp4" type="video/mp4">
+        </video>
+    </div><!--ex3-->
+</body>
+</html>

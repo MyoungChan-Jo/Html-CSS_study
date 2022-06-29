@@ -1,0 +1,6 @@
+@charset "utf-8";
+#t_txt1{resize:none;}/*크롬 브라우저에서 크기 변경이 되지 않도록 하는 설정.*/
+#t_txt2{resize:none;}
+
+/*ex4*/
+.ex4>span{color:#ff0099; border-bottom:3px double #996666;}
