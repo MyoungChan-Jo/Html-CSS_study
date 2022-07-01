@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+div,h3,h4,p,h5{margin:0; padding:0px;}
+
+#ex0{width:500px; height:500px;}
+
+#ex1{color:black; padding-left:10px; background:url(../images/icon.gif) no-repeat left center;}
+#ex1_1{color:#999da0; font-size:10px;}
+
+#ex2{color:#393ece; padding-left:10px; background:url(../images/icon.gif) no-repeat left center;} 
+#ex2_1{color:#999da0; font-size:10px;}
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+#ex3{width:250px; height:64px; background:#e3e9f5 url(../images/bg_1.png) no-repeat 10px center;}
+#ex3_1{color:#2265fa;  padding-left:94px; padding-top:15px}
+#ex3_2{font-size:9px;  padding-left:94px; padding-top:1px;}
+
+#ex4{width:250px; height:64px; background:#e3e9f5 url(../images/bg_2.png) no-repeat 20px center;}
+#ex4_1{color:#2265fa; padding-left:94px; padding-top:15px}
+#ex4_2{font-size:9px; padding-left:94px; padding-top:1px;}
+
+#ex5{width:250px; height:64px; background:#e3e9f5 url(../images/bg_3.png) no-repeat 10px center;}
+#ex5_1{color:#2265fa; padding-left:94px; padding-top:15px}
+#ex5_2{font-size:9px; padding-left:94px; padding-top:1px;}
+
+#ex6{width:250px; height:64px; background:#e3e9f5 url(../images/bg_4.png) no-repeat 10px center;}
+#ex6_1{color:#2265fa; padding-left:94px; padding-top:15px}
+#ex6_2{font-size:9px; padding-left:94px; padding-top:1px;}

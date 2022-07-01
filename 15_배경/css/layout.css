@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+body{background:url(../images/bg2.png) no-repeat 530px 100px fixed;}
+
+/*
+배경에 이미지 넣기 144~146
+1. background-image:url(경로/파일면); x,y반복
+-jpg, gif, png, svg
+2. background-repeat=배경이미지를 반복시킬거냐 말거냐
+- repeat=x,y축 반복해서 나옴 . 기본값
+- repeat-x= 가로반복
+- repeat-y= 세로반복
+- no-repeat= 반복안함
+3.background-position:x축 y축
+-x: left, right, center, px, % (왼쪽을 기준으로)
+-y: top, bottom, center, px, % (위쪽을 기준으로)
+아무것도 안적으면
+ background-position:left top; 이렇게 잡힘. 그래서 항상 좌상단에 뜬거임.
+4.background-attachment: 배경이미지 position위치에 고정여부
+-scroll(기본값)
+-fixed(rhwjd) 
+
+background: 배경색 url(경로/파일명) repeat position attachment;
+전에 border와 같은 개념으로 사용 가능하다.
+background=속성값이 달라 순서는 상관없지만 회사에서 지정한 규칙은 지켜야 한다.
+*/
+
+/*wrap1*/
+#wrap1 > div{border:1px solid green; width:500px; height:300px; margin-bottom:20px;}
+#wrap1 > .box1{background-image:url(../images/icon1.gif);}
+#wrap1 > .box2{background-image:url(../images/icon1.gif); background-repeat:repeat;}
+#wrap1 > .box3{background-image:url(../images/icon1.gif); background-repeat:repeat-x;}
+#wrap1 > .box4{background-image:url(../images/icon1.gif); background-repeat:repeat-y;}
+#wrap1 > .box5{background-image:url(../images/icon1.gif); background-repeat:no-repeat;}
+#wrap1 > .box6{background-image:url(../images/icon1.gif); background-repeat:no-repeat; background-position:50px top;}
+#wrap1 > .box7{background-image:url(../images/icon1.gif); background-repeat:no-repeat; background-position:center top;}
+#wrap1 > .box8{background-image:url(../images/icon1.gif); background-repeat:no-repeat; background-position:center center;}
+#wrap1 > .box9{background:url(../images/icon1.gif) no-repeat center;}
+#wrap1 > .box10{background:#ccffff url(../images/ani.gif) no-repeat;}
+
+
+/*wrap2*/
+/* w 150px x h150px 점선*/
+#wrap2 > p{border:1px dotted black; width:150px; height:150px; }
+
+#wrap2 > p.ex1{background:#ffcc33 url(../images/bg1.png) repeat-y 100px top;}
+#wrap2 > p.ex2{background:#ccccfe url(../images/bg1.png) repeat-x left 100px;}
+#wrap2 > p.ex3{background:#ccff9a url(../images/bg1.png) no-repeat right top;}
+#wrap2 > p.ex4{background:#ffcccb url(../images/bg1.png) no-repeat left bottom;}
+#wrap2 > p.ex5{background:#cc9998 url(../images/bg1.png) no-repeat center top;}
+
+
+
+
+
+
+

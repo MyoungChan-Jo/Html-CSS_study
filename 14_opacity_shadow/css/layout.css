@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*
+1.색상명으로=red; green; > css2
+1.rgb(red/green/blue)=rgb 색상단위(0~255) > css2
+2.hex =#000000 > css2
+3.rgba(red/green/blue/alpha)=rgb 색상단위(0~255),불투명0~1,(0이 투명) > css3 
+5.hsl=색상0~255,채도0~100%,명도0~100% >css2
+6.hsla(hue,saturation,lightness,alpha)=상0~255,채도0~100%,명도0~100%,불투명0~1 >css3
+*/
+#wrap p{font-size:30px; font-weight:bold;}
+#wrap p.ex1{color:rgb(204,0,0); background-color:#6666ff;}/*RGB*/
+#wrap p.ex2{color:rgba(204,0,0,0.5);background-color:#6666ff;}/*RGBA*/
+#wrap p.ex3{color:#cc0033; background-color:hsl(72,100%,50%);}/*HSL*/
+#wrap p.ex4{color:#cc0033; background-color:hsla(72,100%,50%,0.5);}/*HSLA*/
+
+/*--opacity:0~1--*/
+#wrap p.ex5{color:#cc0033; background-color:#6666ff; opacity:0.5;}/*OPACITY*/
+#wrap p.ex6 img{opacity:0.7;}/*OPACITY*/
+#wrap p.ex6 img:hover{opacity:1.0; cursor:pointer;}/*OPACITY/CURSOR*/
+
+/*
+요소에 그림자 넣기 !!글자 아님!! 201~202
+box-shadow:x축(수평) y(수직) 흐림정도 번짐정도 > css3 > 아무것도 안쓰면 기본값으로. inset은 안쪽으로 그림자들어감.
+box-shadow:축(수평) y(수직) 흐림정도 번짐정도 > 바깥쪽
+box-shadow:inset 축(수평) y(수직) 흐림정도 번짐정도 > 안쪽
+*/
+
+#wrap p.ex7 img{box-shadow:5px 8px 7px 1px #999999;}/**/
+#wrap p.ex8 img{box-shadow:-5px -8px 7px 1px #999999;}/**/
+#wrap p.ex9 img{border-radius:100px; box-shadow:5px 8px 7px 1px #999999;}/**/
+#wrap p.ex10{background-color:#ff9933; width:130px; height:40px; text-align:center; box-shadow:3px 3px 3px 2px #477777;}/**/
+#wrap p.ex11{background-color:#ff9933; width:130px; height:40px; text-align:center; box-shadow:inset 0 0 10px #ff0066;}
+#wrap p.ex12{background-color:#ff9933; width:130px; height:40px; text-align:center; box-shadow:0 0 10px #ff0066;}
+
+/*
+텍스트에 그림자 넣기
+text-shadow: 가로거리(x축) 세로거리(y축) 번짐정도 색상
+*/
+
+#wrap p.ex13{text-shadow:3px 4px 1px #cc3333;}
+#wrap p.ex14{text-shadow:-3px -4px 1px #cc3333;}
+#wrap p.ex15{text-shadow:2px 2px #cc3333, 4px 4px #cc3333, 6px 6px #cc3333, 8px 8px #cc3333, 10px 10px #cc3333;}
+
+#wrap p.ex16{text-shadow:0 0 4px #3399ff, 0 -3px 4px #6600cc, 1px -6px 6px #ff9966, -1px -9px 11px #9933cc, 1px -12px 18px #990099;}
+#wrap p.ex17{text-shadow:/*inset*/ 3px 4px 1px #cc3333;}
+#wrap p.ex18{font-size:50px; /*text-shadow:0 0 5px red;*/text-shadow:-1px 0 red,0-1px red, 0-1px red;}
+
+/*
+아웃라인=border선 다음에 테두리 추가 > css2
+outline-width:선 두께
+outline-style:선 종류 > border와 같음(dotted, dashed, solid, double, groove, fidge, onset, outset, none, hidden)
+outline-color:선 색
+outline: 선두께 선종류 선색 > 쓰는 순서 상관 없음.
+*/
+
+#wrap p.ex19{background-color:yellow; /*height:90px;*/ height:94px;}
+#wrap p.ex19 img{border-width:2px; border-style:dotted; border-color:#6600ff;}
+#wrap p.ex20{background-color:pink; height:90px;}
+#wrap p.ex20 img{outline-width:2px; outline-style:dotted; outline-color:#6600ff;}
+#wrap p.ex21 img{border:3px solid #cc6666; outline-width:2px; outline-style:dotted; outline-color:#6600ff;}
+#wrap p.ex22 img{border:3px double #6600ff; outline: double #cc0066 3px; padding:10px;} /*사이즈>>보더>>패딩 순서로 잡힘.*/
+
+
+/*
+공백없는 긴 단어(영어만)
+word-wrap:normal (줄바꿈이 안되고 한줄로 찍힘. 기본값. > 한글은 자동으로 넘어감.)
+word-wrap:break-word; (자동 줄바꿈.)
+해당 css 폰트 크기가 30이므로 줄일 것이다.
+*/
+
+#wrap p.ex23, #wrap p.ex24, #wrap p.ex25{font-size:12px; font-weight:normal; width:150px; border:1px solid red;}
+#wrap p.ex23{word-wrap:normal;}/*줄바꿈 안됨. 기본값.*/
+#wrap p.ex24{word-wrap:break-word;}/*줄바꿈 됨.*/
+#wrap p.ex25{word-wrap:normal;}/*한글에는 적용이 되지 않는다.*/

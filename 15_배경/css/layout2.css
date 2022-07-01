@@ -1,0 +1,29 @@
+@charset "utf-8";
+/**/
+
+/*
+첫줄들여쓰기
+text-indent
+사이즈에 영향을 주지 않는다.
+한줄짜리 첫줄에만 가능하다.
+*/
+
+/*ex1*/
+#ex1{background:#b6eed3 url(../images/icon3.png) no-repeat 10px center; width:100px; height:30px; /*padding-left:50px*/ text-indent:50px; /*padding-top:4px;*/line-height:30px; font-size:15px; font-family:arial,sans-serif;}
+
+/*ex2*/
+#ex2,#ex2 p,#ex2 p span{margin:0; padding:0;}
+#ex2{width:300px; height:128px; border:1px solid #e7e7e7; 
+     background:url(../images/bg3.jpg) no-repeat right top;}/*뒷배경 끝*/
+#ex2 p:nth-child(1){font-family:"돋움",dotum,sans-serif; font-weight:bold; font-size:15px; color:#6e6a78; /*background-color:yellow;*/
+                    margin-top:16px; margin-left:13px; margin-bottom:40px;}
+#ex2 p:nth-child(2){/*border:1px solid red;*/ margin-left:13px;}
+#ex2 p:nth-child(2) span{font-size:12px; color:#b2afa6; padding-left:30px; padding-top:10px; padding-bottom:10px;}/*공통*/
+#ex2 p:nth-child(2) .txt1{background:url(../images/icon1.gif) no-repeat left center;}
+#ex2 p:nth-child(2) .txt2{background:url(../images/icon2.gif) no-repeat left center; margin-left:20px;}
+
+/*ex3* padding값 늘어나면 전체 테두리 크기를 그만큼 줄여야 한다.*/
+#ex3{width:100px; height:48px; border:1px solid #eaeaea; 
+     background:url(../images/faq.png) no-repeat 30px bottom; 
+     font-size:15px; font-family:"돋움",dotum,sans-serif; font-weight:bold; color:#6f6f71; /*text-indent:130px;*/ 
+     padding-left:130px; /*line-height:80px;*/ padding-top:32px;}

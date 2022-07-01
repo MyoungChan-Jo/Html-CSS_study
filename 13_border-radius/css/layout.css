@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*
+13p or 195~201p
+border-radius=둥근모서리
+border-radius:10px 상하좌우 10
+border-radius:10px 20px 앞은 왼상,오하 10px/ 뒤는 왼하,오상 20px
+border-radius:10px 20px 30px 왼상10 오상20 오하 30
+border-radius:10px 20px 30px 40px 왼상10,오상20,오하30,왼하40
+border-top-right-radius 오상
+border-top-left-radius  왼상
+border-bottom-radius    오하
+border-bottom-radius    왼하
+*/
+#wrap p{border:2px solid #cc66ff; width:100px; height:100px;}/*공통*/
+/*#wrap > p{}   이거도 가능한거임.*/
+#wrap p.ex1{border-radius:20px;}/*모서리 둥글게*/
+#wrap p.ex2{border-radius:100px;}/*100에 가까울수록 원 정사각형으로 들어가야 함*/
+#wrap p.ex3{border-radius:30px 0;}/*나뭇잎 모양 좌상우하 둥굴게*/
+#wrap p.ex4{border-radius:0 70px;}/*나뭇잎 모양 우상좌하 둥글게*/
+#wrap p.ex5{border-radius:100px 0 0 0;}/*부채모양 좌상둥글게*/
+#wrap p.ex6{border-radius:0 100px 0 0;}/*부채모양 우상둥글게*/
+#wrap p.ex7{border-radius:0 0 100px 0;}/*부채모양 우하둥글게*/
+#wrap p.ex8{border-radius:0 0 0 100px;}/*부채모양 좌하둥글게*/
+#wrap p.ex9{border-top-right-radius:50px; border-bottom-left-radius:20px;}
+#wrap p.ex10{border-radius:100px; background-image:url(../images/bg1.png);              border:none;}
+#wrap p.ex11{border-radius:30px 50px 10px;}/*왼상 우상좌하 우하*/
+
+
+
+
+

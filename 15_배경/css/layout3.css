@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+body{background-image:url(../images/baby1.png),url(../images/baby2.png);
+     background-repeat:no-repeat,no-repeat;
+     background-position:left top,right bottom;
+     background-attachment:fixed,fixed;
+     }/*따로따로 넣어본거임*/
+
+/*ex1 한번에 다 넣으 볼거임*/
+#ex1{border:1px solid #cccccc; width:500px; height:500px; margin:100px;
+     background:url(../images/bg2.png) repeat-y 10px top, 
+                url(../images/icon3.png) no-repeat center center, 
+                url(../images/bg1.png) repeat-y right top;               
+    }
+
+/*
+배경으로 들어가는 이미지는 크기조절이 안되었는데 css3로 추가되었다. 백그라운드 사이즈가 생김.
+background-size:1234
+1. 직접입력=width height(%,px)
+2. auto=원래 이미지 크기만큼 표시됨
+3. cover=배경이미지를 늘려 요소 전체에 표시
+4. contain=배경이미지의 가로세로비율로 맞춰 요소에 표시할수 있는 최대크기
+*/
+
+#ex2 > p{border:3px solid #cccccc; width:100px; height:100px;}
+#ex2 > p.bg1{background:url(../images/baby2.png) no-repeat;}
+#ex2 > p.bg2{background:url(../images/baby2.png) no-repeat; background-size:20% 80%;}/*%는 p태그 크기에 따라 변한다.*/
+#ex2 > p.bg3{background:url(../images/baby2.png) no-repeat; background-size:40px 60px;}
+#ex2 > p.bg4{background:url(../images/baby2.png) no-repeat; background-size:cover;}
+#ex2 > p.bg5{background:url(../images/baby2.png) no-repeat; width:80px; background-size:contain;}
+
+
+/*
+ex3
+background-clip
+배경을 요소에서 어디까지 적용을 시킬 것인지.
+1.background-clip:border-box;
+2.background-clip:padding-box;
+3.background-clip:content-box;
+*/
+#ex3 p{border:10px dashed #000000; width:100px; height:100px; padding:15px; background-color:pink;}
+#ex3 p:nth-child(1){background-clip:border-box;}/*border포함*/
+#ex3 p:nth-child(2){background-clip:padding-box;}/*border안으로*/
+#ex3 p:nth-child(3){background-clip:content-box;}/*padding border제외하고 들어감*/
+
+/*ex4*/
+#ex4 p{border:10px solid rgba(0,0,0,0.2); width:100px; height:100px; padding:15px; background:url(../images/bg2.png);}
+#ex4 p:nth-child(1){background-clip:border-box;}/*기본값*/
+#ex4 p:nth-child(2){background-clip:padding-box;}
+#ex4 p:nth-child(3){background-clip:content-box;}
+
+/*
+ex5
+background-origin
+배경이미지의 위치를 어디로 한정할 것인지 설정한다. background-clip이랑 비슷하다.
+1.background-origin:border-box;
+2.background-origin:padding-box;
+3.background-origin:content-box;
+*/
+#ex5 > p{border:10px solid rgba(0,0,0,0.2); width:100px; height:100px; padding:25px; 
+         background:url(../images/bg1.png) no-repeat;}
+#ex5 > p:nth-child(1){background-origin:padding-box;}/*기본값*/
+#ex5 > p:nth-child(2){background-origin:border-box;}/*border라인으로*/
+#ex5 > p:nth-child(3){background-origin:content-box;}/*txt라인으로*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
