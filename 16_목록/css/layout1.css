@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*초기화*/
+div,h3,hr,h4,ul,li,ol{margin:0; padding:0;}
+ul,ol,li{list-style:none;}
+body{font-size:12px;
+     font-family:"돋움",Dotum,sans-serif;
+     line-height:1.5em; 
+     color:#333333;}
+/*Wrap*/
+#wrap h4{color:#0066ff;}
+#wrap ul, #wrap ol{margin-bottom:10px;}
+/*ul*/
+.list1 li{list-style-type:disc; list-style-position:inside;}/*list-style-type:disc;만쓰면 처음에 공간 없어서 안보임.블릿기호와 글자 간격을 지금 단계에서 줄일 수 없음.*/
+.list2 li{list-style-type:square; list-style-position:inside;}
+.list3 li{list-style-type:circle;list-style-position:inside;}
+.list4 li{list-style-image:url(../images/icon7.gif);list-style-position:inside;}
+.list5 li{background:url(../images/icon7.gif) no-repeat left center; padding-left:20px;}
+/*ol*/
+.list6 li{list-style-type:decimal; margin-left:20px;}/*1 2 3*/
+.list7 li{list-style-type:upper-alpha; margin-left:20px;}/*A B C*/
+.list8 li{list-style-type:lower-alpha; margin-left:20px;}/*a b c*/
+.list9 li{list-style-type:upper-roman; margin-left:20px;}/*I II III*/
+.list10 li{list-style-type:lower-roman; margin-left:20px;}/*i ii iii*/
+.list11 li{list-style-type:decimal-leading-zero; margin-left:20px;}/*01 02 03*/
+.list12 li{list-style-image:url(../images/icon8.gif); margin-left:20px;}
+.list13 li{background:url(../images/icon8.gif) no-repeat left center; padding-left:20px;}
+ 

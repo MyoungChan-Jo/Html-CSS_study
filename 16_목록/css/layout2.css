@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/*!!!!!!!!!!!!!!초기화!!!!!!!!!!!!!!!!!!*/
+ol,ul,li{list-style:none;}
+div,ol,ul,li{margin:0; padding:0;}
+/*폰트 한꺼번에 표현하기 
+!!!!!!!!!!!!두개이상 들어갈때 먹히는 시스템!!!!!!!!!!!!
+font-family, font-size, line-height, font-weight, font-style, font-variant 가능
+(font-variant: normal:기본값. 설정값을 초기화할때 /small-caps:영문글꼴 소문>조금 작은 크기의 대문자로 변환)
+font:[font-weight,font-style,font-variant][font-size/line-height][font-family]
+        굵기          기울기        a-A        크기      줄간격         글꼴
+*/
+body{font:normal 13px/1.5em verdana,sans-serif;}/*굵기보통, 13px, 줄간1.5em, verdana*/
+/*폰트크기에 h태그와 th태그는 적용 안되므로 직접 넣어주어야 한다.*/
+
+
+
+/*시작*/
+
+/*wrap1*/
+/*>넣을때 안넣을때 차이가 커짐. 왜냐하면 하위요소가 엄청 많아지기 때문이다.*/
+#list1 li{background:url(../images/icon4.gif) no-repeat left 1px; 
+          padding-left:20px; 
+          color:red; font-weight:bold;}
+
+#list1 li ul{border-left:1px dotted black; 
+             padding-left:5px; padding-top:5px; padding-bottom:5px;}
+/*세로선은 과목 하위 태그에서 왼쪽으로 선들어간거임 웹디~웹프로그래머까지를 싸고 있는건데 보더 넣은거임*/
+
+#list1 li ul li{color:black; 
+                background-image:url(../images/icon3.gif);}
+/*background:url(../images/icon3.gif) no-repeat left 1px; 이거 다 써도 상관없긴 함.*/
+
+#list1 li ul li ul{border-left:none;}
+
+#list1 li ul li ul li{font-weight:normal;
+                      background-image:url(../images/icon2.gif);}
+
+/*/////////////////////////////////////////////////////////////////////////*/
+
+/*wrap2*/
+#wrap{margin:20px;}
+#list2 li{color:#0066ff; font-weight:bold; font-size:20px; 
+          line-height:1.5em; padding-left:20px;}
+
+
+#list2 li ul{color:black; font-size:15px; 
+             padding-left:20px; border-left:1px dotted black; margin:5px 0;}
+
+#list2 li ul li{background:url(../images/icon1.png) no-repeat 15px 3px;
+                padding-left:35px;
+                color:black; font-weight:normal; font-size:13px;}
+
