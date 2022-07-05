@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+
+/* 초기화 */
+
+div,p,img,a,select,option,input{margin:0; padding:0;}
+body,select,input{font:normal 12px/1.5em "돋움",Dotum,sans-serif; color:#333333;}
+a{text-decoration:none;}
+
+/* ex1 */
+
+#ex1{border:1px solid #333333; width:500px; height:200px;}
+.ex1_1{background-color:pink;width:130px; height:130px; float:left;}
+.ex1_2{background-color:orange; width:350px; float:right;  text-align:justify; margin-top:14px;}
+
+/* ex2 */
+
+#ex2{clear:both; border:1px solid #333333; width:500px; height:200px;}
+.ex2_1{background-color:pink; width:130px; height:130px; float:right;}
+.ex2_2{background-color:orange; width:350px; float:left; text-align:justify; margin-top:14px;}
+
+/* ex3 */
+
+#ex3{clear:both; border:1px solid #333333; width:500px; height:200px; margin-bottom:50px;}
+#ex3 > p{border:1px solid red; width:130px; height:130px;}
+#ex3 > p:nth-child(1){float:left;}
+#ex3 > p:nth-child(2){float:left; margin-left:50px;}
+#ex3 > p:nth-child(3){float:right;}
+
+/* ex4 */
+
+#ex4{clear:both; height:100px; border-bottom:1px solid #999999;}
+#ex4 p{float:left; margin-right:5px;}
+#ex4 p:last-child{margin-right:0;}
+#ex4 p a{padding:8px 16px;}
+#ex4 p a:hover{background-color:#cccccc; color:black;}
+.previous{background-color:#f1f1f1; color:black;}
+.next{background-color:#ff6633; color:white;}
+.round{border-radius:50%;}
+
+/* ex5 */
+
+#ex5{clear:both;height:100px; border-bottom:1px solid #999999;}
+#ex5 > a{color:#000000; float:left; padding:8px 16px;}
+#ex5 > a.active{background-color:#996666; color:#ffffff;}
+#ex5 > a:hover:not(.active){background-color:#cccccc;}
+
+/* ex6 */
+
+#ex6{clear:both; width:210px; height:50px;margin-bottom:200px;}
+.ex6_1{float:left; width:100px; height:40px; border:1px solid #666666;}/*p*/
+.ex6_1 select{width:100px; height:40px; border:none; text-indent:10px; outline:none;}/*select*/
+.ex6_2{float:right;width:100px; height:40px; border:1px solid #666666;}/*p*/
+.ex6_2 input{width:100px; height:40px; border:none; text-indent:1em; outline:none;}/*input*/
+
+
+
+
+
+
+
+
+
+
+

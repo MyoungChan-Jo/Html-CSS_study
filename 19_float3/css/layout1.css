@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*초 기 화*/
+body,div,h3,img{margin:0; padding:0;}
+body{font:normal 12px/1.5em verdana,sans-serif;}
+
+/*wrap 전체테두리*/
+#wrap{/*border:1px solid red;*/ width:1200px; height:630px; margin-top:50px; margin-left:auto; margin-right:auto;}
+
+/*제목*/
+h3{/*border:1px solid red;*/ height:20px; text-align:center; font-size:20px; color:#666666; margin-bottom:35px; background:url(../images/top_bg.jpg) repeat-x left top; padding-top:20px;}
+
+/*내용테두리*/
+#top_img{/*border:1px solid red;*/ width:1000px; height:550px; margin-left:auto; margin-right:auto;}
+
+/*좌측*/
+.l_img{width:498px; height:531px; float:left;}
+.l_img > img{border:1px solid #666666;}
+
+/*우측*/
+.r_img{width:489px; height:531px; float:right;}
+.r_img > img{border:1px solid #666666; float:left;}
+.r_img > img:nth-child(2){border-left:none;}
+.r_img > img:nth-child(3){border-top:none; clear:both;}
+.r_img > img:nth-child(4){border-left:none; border-top:none;}

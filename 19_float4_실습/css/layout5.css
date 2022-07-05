@@ -1,0 +1,66 @@
+@charset "utf-8";
+/*
+-----확 인 할 내 용-----
+전체 한번 묶고. 
+--좌측--
+p로 이미지 상단 묶고.
+h로 2016 span에 현장스케치 >> 둘이 색이 다르기 때문.
+하단에 이미지 넣고 이친구는 배경 이미지.css
+p로4박5일
+p/a로 자세히보기
+--우측--s
+사진 묶고.
+
+id/class 설명
+큰 테두리 | main_wrap
+내용 테두리 | lbox
+좌측 테두리 | rbox
+좌측 1줄 테두리 | r1box
+좌측 2줄 테두리 | r2box
+좌측 3줄 테두리 | r3box
+987 633
+----------------------
+*/
+
+/* 초 기 화 */
+body,div,p,img,a,h3{margin:0; padding:0;}
+body{font:normal 12px/1.5em "맑은고딕","Malgun Gothic",sans-serif;}
+a{text-decoration:none;}
+/*메인 색상*/
+body{/*border:1px solid red;*/ width:1372px; height:680px; background-color:#e7e0d0;margin-top:20px; margin-left:auto; margin-right:auto; }
+/* 큰 테 두 리 */
+#main_wrap{/*border:1px solid red;*/ width:1000px; height:680px; margin-left:auto; margin-right:auto; }
+
+/* 좌 측 테 두 리 */
+#lbox{/*border:1px solid red;*/ width:310px; height:680px; float:left;}
+#lbox p img{/*border:1px solid red;*/ margin-top:40px; margin-left:40px;}
+#lbox h3{/*border:1px solid red;*/ width:128px; height:67px; margin-top:40px; margin-left:40px; font-size:25px; line-height:28px; text-align:center;}
+span{color:#06a85c; background:url(../image/bg.png) no-repeat 12px 30px; padding-bottom:60px;}
+#lbox #cap1{width:220px; height:47px; font-size:13px; text-align:center;  margin-top:30px; color:#716d62; margin-bottom:10px;}
+#lbox p a{width:100px; height:30px; background-color:white;  color:#716d62; font-weight:bold; text-align:center; padding:7px; margin-left:60px; border:1px solid #e1d9cc;}
+
+
+
+/* 우 측 테 두 리 */
+#rbox{/*border:1px solid red;*/ width:680px; height:640px; float:right; }
+/* 1 줄 */
+#r1box{margin-bottom:5px}
+#r1box img:nth-of-type(1){float:left; margin-top:54px; margin-left:60px;}
+#r1box img:nth-of-type(2){float:none; margin-left:10px;}
+#r1box img:nth-of-type(3){float:right;}
+/* 2 줄 */
+#r2box{margin-bottom:5px}
+#r2box img:nth-of-type(1){float:left;}
+#r2box img:nth-of-type(2){float:none; margin-left:10px;}
+#r2box img:nth-of-type(3){float:right;}
+
+/* 3 줄 */
+#r3box img:nth-of-type(1){float:left;}
+#r3box img:nth-of-type(2){float:left; margin-left:10px;}
+#r3box img:nth-of-type(3){float:right;}
+
+
+
+
+
+

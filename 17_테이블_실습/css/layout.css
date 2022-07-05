@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* 초기화 */
+body,div,table,caption,tr,th,br,ul,li{margin:0; padding:0;}
+
+/*body*/	body{font:normal 11px/1.5em "맑은고딕","Malgun Gothic",sans-serif; color:#686868;}
+
+/*div*/		#wrap{width:300px; height:640px;
+	  			  margin-top:20px; margin-left:auto; margin-right:auto; }
+/*table*/	#txt0{border-collapse:collapse;}
+		 	#txt0 tr{width:370px; height:30px; color:#6c6869;}
+/*caption*/ #txt0 caption{height:20px; text-align:left;
+        				  font-size:20px; font-weight:bold; color:#373737; 
+        				  margin-bottom:15px; margin-top:25px;}
+			#txt0 caption span{margin-left:140px; font-size:15px; font-weight:normal;}
+/*ul,li*/	ul,li{list-style:none;}
+
+/*
+wrap						| div
+txt0						| table
+txt_2						| FY2016
+txt_3						| FY2017
+u_name2/u_name21			| 위에 두줄
+u_name/u_2016/u_2017 		| 가운데 얇은 줄
+u_name_1/u_2016_1/u_2017_1	| (주)구역과 맞닫는 줄
+u_name3/u_name31			| 한화 보유지분
+u_name4/u_name41			| 한화 지배지분
+last1						| 마지막 부록
+*/
+
+/*FY 2016, FY2015*/
+#txt_2{width:230px; text-align:right; padding-right:8px;}
+#txt_3{width:70px; text-align:center;}
+#txt_2, #txt_3{border-top:1px solid black; color:black; font-size:1x; font-weight:normal;}
+
+/*위에 두줄*/
+/*자산총계*/
+.u_name2{border:1px solid #e8e8e8; color:#757479; font-weight:normal;
+         background-color:#f7f3f0; text-align:left; padding-left:8px;}
+.u_name21{border:1px solid #e8e8e8; color:#757479; font-weight:normal;
+         background-color:#f7f3f0; text-align:right; padding-right:8px;}
+
+
+/*흰칸들*/
+.u_name{border:1px solid #e8e8e8;text-align:left; padding-left:8px; font-weight:normal;}
+.u_2016{border:1px solid #e8e8e8;text-align:right; padding-right:8px;}
+.u_2017{border:1px solid #e8e8e8;text-align:right; padding-right:8px;}
+
+/*흰칸들 중맞닫는 줄*/
+/*자본총계*/
+.u_name_2{background-color:#f7f3f0; border:1px solid #e8e8e8; text-align:left; padding-left:8px; font-weight:normal;}
+.u_2016_2{background-color:#f7f3f0; border:1px solid #e8e8e8; text-align:right; padding-right:8px;}
+.u_2017_2{background-color:#f7f3f0; border:1px solid #e8e8e8; text-align:right; padding-right:8px;}
+
+/*당기순이익*/
+.u_name_1{border-top:1px solid #e8e8e8; border-left:1px solid #e8e8e8; border-right:1px solid #e8e8e8; text-align:left;  padding-left:8px; font-weight:normal;}
+.u_2016_1{border-top:1px solid #e8e8e8; border-left:1px solid #e8e8e8; border-right:1px solid #e8e8e8; text-align:right; padding-right:8px;}
+.u_2017_1{border-top:1px solid #e8e8e8; border-left:1px solid #e8e8e8; border-right:1px solid #e8e8e8; text-align:right; padding-right:8px;}
+
+
+/*한화*/
+/*보유지분*/
+.u_name3{border-top:1px solid #858585; border-bottom:1px solid #ebebeb;
+         background-color:#f7f3f0; text-align:left; color:#6a615a; padding-left:8px;}
+.u_name31{border-top:1px solid #858585; border-bottom:1px solid #ebebeb;
+          background-color:#f7f3f0; text-align:center; padding-right:8px; color:#6a615a;}
+/*지배지분*/
+.u_name4{border-bottom:1px solid #858585; 
+         background-color:#f7f3f0; text-align:left; color:#6a615a; padding-left:8px;}
+.u_name41{border-bottom:1px solid #858585;
+          background-color:#f7f3f0; text-align:center; padding-right:8px; color:#6a615a;}
+
+/*마지막부록*/
+.last1{padding-left:20px; padding-top:10px; 
+       background:url(../images/dot.jpg) no-repeat 12px 16px;

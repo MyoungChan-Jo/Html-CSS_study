@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*
+-----확 인 할 내 용-----
+float
+이미지 전부다 백그라운드
+글씨는 전부다 쓴느거
+
+627
+401
+y1.jpg 노랑 290 290
+y5.jpg 초록 290 73
+y2.jpg 좌1 138 136
+y3.png 우2 136 134
+y3,jpg 좌1 136 134
+y4.jpg 우1 138 136
+y6.jpg 보라 290 73
+좌우간격 14 359
+background-color:gray;
+----------------------
+*/
+
+/*-----초기화-----*/
+body,div,h1,p,a{margin:0; padding:0;}
+body{font:normal 12PX/1.7em "맑은 고딕","Malgun Gothic",sans-serif;}
+a{text-decoration:none;}
+h1{font-size:12px; font-weight:normal;}
+
+/*틀잡기*/
+#main_box{width:627px; height:401px; margin-top:20px; margin-left:auto; margin-right:auto;; /*background-color:black;*/}
+
+/*좌측 틀 잡기*/ 
+#left_box{margin-left:15px; margin-top:20px; float:left;}
+
+/*박스*/
+#yellow{width:290px; height:289px; background:url(../image/y1.jpg) no-repeat 100px 170px; background-color:#fda424;}
+#yellow h1{font-size:18px; color:white; padding-top:25px; padding-left:25px;}
+span{font-size:20px; font-weight:bold; color:white;}
+#yellow p{padding-top:20px; padding-left:25px;}
+#yellow p a{border:1px solid white; padding:6px; color:white; border-radius:70px;}/*이따 둥글게*/
+
+#green{width:290px; height:74px;background:url(../image/y5.jpg) no-repeat 220px center; background-color:#8ecc11; margin-top:13px;}
+#green h1{font-size:10px; color:white; padding-top:10px; padding-left:25px;}
+#green p {font-size:10px; line-height:13px; color:white; padding-top:3px; padding-left:25px;}
+
+
+
+
+
+
+/*우측 틀 잡기*/
+#right_box{margin-right:18px;}
+#right_1{width:290px; height:136px; float:right; margin-top:20px;}
+#right_2{width:290px; height:136px; float:right; margin-top:18px;}
+#right_3{float:right; margin-top:13px;}
+
+/*1*/
+#red{width:139px; height:136px;background:url(../image/y2.jpg) no-repeat center bottom; background-color:#e74445; float:left;}
+#red h1{font-size:10px; color:white; padding-top:10px; padding-left:20px;}
+#red p {font-size:10px; line-height:13px; color:white; padding-top:3px; padding-left:20px;}
+
+
+#solid_red{width:136px; height:134px; background:url(../image/y3.png) no-repeat right 80px; border:3px solid #e74445; float:right;}
+#solid_red h1{font-size:10px; color:#e74445; padding-top:10px; padding-left:20px;}
+#solid_red p {font-size:10px; line-height:13px; color:#e74445; padding-top:3px; padding-left:20px;}
+
+/*2*/
+#solid_gray{width:136px; height:134px; background:url(../image/y3.jpg) no-repeat center bottom; border:3px solid #babdb2; float:left;}
+#solid_gray h1{font-size:10px; color:#babdb2; padding-top:10px; padding-left:20px;}
+#solid_gray p {font-size:10px; line-height:13px; color:#babdb2; padding-top:3px; padding-left:20px;}
+
+#orange{width:139px; height:136px; background:url(../image/y4.jpg) no-repeat right 85px;  background-color:#fe9400; float:right;}
+#orange h1{font-size:10px; color:white; padding-top:10px; padding-left:20px;}
+#orange p {font-size:10px; line-height:13px; color:white; padding-top:3px; padding-left:20px;}
+
+/*3*/
+#purple{width:290px; height:74px; background-color:#b086d8;}
+#purple h1{font-size:10px; color:white; padding-top:10px; padding-left:20px;}
+#purple p {font-size:10px; line-height:13px; color:white; padding-top:3px; padding-left:20px;}

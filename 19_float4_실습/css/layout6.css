@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*
+-----확 인 할 내 용-----
+
+
+제목박스 b/b넣기
+제목박스 
+
+전체 한번 묶고
+h제목 태그 묶고
+셀렉트 인풋 부분은 참고하고 플로트 넣고
+보더 넣고
+디브 넣고 p에 이미지 하고 디브 넣고 텍스트 부분 묶고 쿨.2016 h 밑에 내용 p 자세히보기 p/a
+----------------------
+*/
+
+/* 초 기 화 */
+body,div,h1,label,select,option,optgroup,input,h3,h4,p,a{margin:0; padding:0;}
+a{text-decoration:none;}
+body{font:normal 12px/1.5em "맑은고딕","Malgun Gothic",sans-serif;}
+
+/* 큰 테 두 리 */
+#main_box{/*border:1px solid red;*/ width:990px; height:770px; margin-top:20px; margin-left:auto; margin-right:auto;}
+
+/* 제 목 테 두 리 */
+#name_box{/*border:1px solid red;*/ width:900px; height:160px; margin-left:auto; margin-right:auto; border-bottom:4px solid #bfb383;}
+#name_box h1{font-size:40px; font-weight:bold; text-align:center; padding-top:40px;}
+#serch{float:right; width:269px; height:25px; margin-top:40px;}
+#serch p select{width:80px; height:23px; float:left; border:1px solid #dedede; color:gray;}
+#serch p input{width:140px; height:21px; margin-left:5px; border:1px solid #dedede;}
+
+
+
+/* 내 용 테 두 리 */
+
+/*1줄 list1*/
+#story_box{/*border:1px solid red;*/ width:970px; height:570px; margin-left:auto; margin-right:auto;}
+#story_box #list1{border-bottom:1px solid #dedede; width:970px; height:280px; background:url(../image/book1.png) no-repeat 100px center;}
+#list1_1{width:560px; height:200px; margin-left:300px; padding-top:40px;}
+#list1_1 h3{font-size:18px; color:#424443;}
+#list1_1 h4{margin-top:20px; color:#039847;}
+#list1_1 p:nth-of-type(1){width:560px; margin-top:20px; margin-bottom:30px; font-size:11px;}
+#list1_1 p a{border:1px solid #039847; width:128px; height:41px; padding:6px; text-align:center; color:#039847; font-size:11px; font-weight:bold;}
+
+/*2줄list2*/
+#story_box #list2{border-bottom:1px solid #dedede; width:970px; height:280px; background:url(../image/book2.jpg) no-repeat 100px center;}
+#list2_1{width:560px; height:200px; margin-left:300px; padding-top:40px;}
+#list2_1 h3{font-size:18px; color:#424443;}
+#list2_1 h4{margin-top:20px; color:#039847;}
+#list2_1 p:nth-of-type(1){width:560px; margin-top:20px; margin-bottom:30px; font-size:11px;}
+#list2_1 p a{border:1px solid #039847; width:128px; height:41px; padding:6px; text-align:center; color:#039847; font-size:11px; font-weight:bold;}
+
+
+
+
+
+
+

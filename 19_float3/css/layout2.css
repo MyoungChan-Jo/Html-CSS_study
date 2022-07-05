@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*
+-----확 인 할 내 용-----
+
+----------------------
+*/
+
+
+/* 초 기 화 */
+ul,li{list-style:none;}
+body,div,h3,p,ul,li,img{margin:0; padding:0;}
+body{font:normal 12px/1.5em "맑은고딕","Malgun Gothic",sans-serif; color:#333333; background-color:#ffebd2;}
+
+/* 전 체 테 두 리 wrap */
+#wrap{/*border:1px solid red;*/ width:1140px; margin-top:90px; margin-left:auto; margin-right:auto;}/*빈공간 20px 313+474+313+40*/
+
+/* 제 목 테 두 리*/
+#wrap > h3{/*border:1px solid red;*/ width:1140px; height:25px; font-size:30px; text-align:center; margin-bottom:20px;}
+#wrap > p{/*border:1px solid red;*/ width:1140px; height:20px; font-size:15px; text-align:center; margin-bottom:40px;}
+
+/* S N S 테 두 리*/
+#sns{/*border:1px solid red;*/ width:341px; height:73px; margin-left:auto; margin-right:auto; margin-bottom:30px;}/*빈공간 15px 74+74+74+74+15+15+15*/
+#sns li{float:left; width:74px; height:73px; margin-right:15px;}
+#sns li:last-child{margin-right:0;}
+
+/* 내 용 테 두 리 */
+#banner_wrap{/*border:1px solid red;*/ clear:both; width:1140px;  height:662px; }/*빈공간 20px*/
+.banner1{/*border:1px solid red;*/ float:left; width:313px; height:662px; }/*왼쪽*/
+.banner1 div:first-child{width:313px;  height:215px; margin-bottom:20px;}
+.banner1 div:last-child{width:313px;  height:427px; margin-bottom:20px;}
+
+.banner2{/*border:1px solid red;*/ float:left; width:474px; height:662px; margin-left:20px; }/*중앙*/
+.banner2 div:first-child{width:474px;  height:430px; margin-bottom:20px;}
+.banner2 div:last-child{width:474px;  height:212px; margin-bottom:20px;}
+
+.banner3{/*border:1px solid red;*/ float:right; width:313px; height:662px;}/*우측*/
+.banner3 div:nth-of-type(1){width:313px;  height:215px; margin-bottom:20px;}
+.banner3 div:nth-of-type(2){width:313px;  height:195px; margin-bottom:20px;}
+.banner3 div:nth-of-type(3){width:313px;  height:212px; margin-bottom:20px;}
+
+

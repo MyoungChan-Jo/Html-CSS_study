@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* 초기화*/
+
+body{font:normal 12px/150% "돋움","Dotum",sans-serif;}
+
+/* wrap */
+
+#wrap > div{border:1px solid #333333; width:200px; height:150px;margin-bottom:150px;}
+#wrap > .ex1{overflow:visible;}
+#wrap > .ex2{overflow:hidden;}
+#wrap > .ex3{overflow:scroll;}
+#wrap > .ex4{overflow:auto;}
+
+.ex5{white-space:normal;}/*기본값*/
+.ex6{white-space:pre;}/*입력그대로나옴*/
+.ex7{white-space:nowrap;}/*한줄표시 줄바꿈x*/
+
+.ex8{background-color:yellow;width:150px;white-space:nowrap; overflow-x:scroll;}/*x축스크롤*/
+.ex9{background-color:yellow;width:150px;height:100px;overflow-y:scroll;}/*y축스크롤*/
+
+/* text-overflow */
+
+.ex10{background-color:pink;width:150px;white-space:nowrap;overflow:hidden;text-overflow:clip;}/*기본값*/
+.ex11{background-color:pink;width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}/*가려진 내용이 ...으로 표시됨*/
+
+/* resize */
+
+.ex12,.ex13,.ex14,.ex15{width:200px;height:200px;border:1px solid blue; overflow:auto;}
+.ex12{resize:both;}/*width,height 변경o*/
+.ex13{resize:horizontal;}/*width만 변경o*/
+.ex14{resize:vertical;}/*height만 변경o*/
+.ex15{resize:none;}/*기본값 변경x*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

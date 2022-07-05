@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*!!!!!초기화!!!!!*/
+body,div,h3,table,caption,thead,tr,th,tbody,td,tfoot,a{margin:0; padding:0;}
+a{text-decoration:none; color:#333333;}
+body{font:normal 12px/1.5em "맑은고딕","Malgun Gothic",sans-serif;  color:#333333;}
+
+/*wrap*/
+#wrap{/*border:1px solid pink;*/ width:600px; height:460px; margin-top:20px; margin-left:auto; margin-right:auto;}
+/*너비가 있는 상태에서 좌우 마진을 auto설정하면 중앙으로 이동*/
+
+/*#wrap h3{border:1px solid green; height:20px; text-align:center;}*/
+#wrap h3{/*border:1px solid green;*/ width:200px; height:20px; text-align:center; margin-left:auto; margin-right:auto; margin-bottom:30px; font-size:15px;}
+
+#bbs{border-collapse:collapse;}
+#bbs caption{text-align:left;}
+#bbs caption::before{content:"* ";}
+#bbs caption::after{content:" *";}
+
+#bbs thead tr th{border-top:3px solid #f998a3; border-bottom:3px double #ffcc66; background:#ffffcc;}
+
+#bbs #u_no{width:100px;}/*번호*/
+#bbs #u_tit{width:300px; background:#ffffcc url(../images/dot.jpg) no-repeat 130px center;}/*제목*/
+#bbs #u_date{width:130px;}/*등록일*/
+#bbs #u_hit{width:70px;}/*조회수*/
+#bbs th,#bbs td{height:30px; border:1px solid #cccccc;}
+
+/*마우스근접시 배경색 변경*/
+#bbs tbody tr:hover{background-color:#eaeaea; cursor:pointer;}
+
+#bbs tbody td{text-align:center; }
+#bbs tbody td.txt{text-align:left; text-indent:25px;}
+
+#bbs tfoot td{border-left:none; border-bottom:none; border-right:none;
+              text-align:center;}
+#bbs tfoot td a{/*border:1px solid black;*/ font-weight:bold; margin:0 5px;}/*앞이 상하 뒤가 좌우 a태그 사이사이에 10px 씩 들어가있는거임.*/
+#bbs tfoot td a:hover{text-decoration:underline; color:#990066;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
