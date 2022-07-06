@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*
+> 각 step별 들어갈 위치
+폴더명 images
+step_b1.png  > css
+step_b2.png  > css
+step_b3.png  > css
+step_b4.png  > css
+step1.png < 전화 < 마크업 
+step2.png < 볼펜 < 마크업 
+step3.png < 문자 < 마크업 
+step4.png < 체크 < 마크업 
+
+-----------------------------
+id
+#wrap 전체 테두리
+#step  절차부분
+#sub 최하단 설명
+*/
+
+/*reset*/
+body,div,img,h3,h4,ol,ul,li,span{margin:0; padding:0;}
+
+body{font:normal 12px/1.5em "Arial",sans-serif;}
+ol,li{list-style:none;}
+
+/*전체 테두리*/
+#wrap{  width:1144px; margin-top:20px; margin-left:auto; margin-right:auto}
+	
+/*상담절차 마지막에 선 넣기 border-bottom:3px solid #bfb383;  */
+#wrap h3{border-bottom:3px solid #bfb383; font-size:20px; padding-bottom:10px;  text-align:center;}
+
+/*심리검사 절차*/
+#wrap h4{font-size:16px; padding-top:20px;}
+
+/*이미지*/
+/*#wrap ol{background-color:black;}*/
+
+
+#wrap ol{display:table;}
+#wrap ol li{display:table-cell; width:300px; height:250px; line-height:30px;  text-align:center; vertical-align:middle;}
+#wrap ol li span{color:white; display:block;}
+
+#wrap ol .step1 span{background:url(../images/step_b1.png) no-repeat bottom center; padding:20px;}
+#wrap ol .step2 span{background:url(../images/step_b2.png) no-repeat bottom center; padding:20px;}
+#wrap ol .step3 span{background:url(../images/step_b3.png) no-repeat bottom center; padding:20px;}
+#wrap ol .step4 span{background:url(../images/step_b4.png) no-repeat bottom center; padding:20px;}
+
+
+/*설명 border-top:1px solid gray;  border-bottom:1px solid gray;  */
+#wrap p{ border-top:1px solid gray;  border-bottom:1px solid gray; font-size:12px; padding-bottom:10px;  text-align:center; padding:30px;}
+#wrap p span{color:green; font-weight:bold;}
+
+/*공지*/
+#wrap ul{line-height:30px;}
+#wrap ul li{list-style:disc; margin-left:20px;}
+#wrap ul li span{ color:green; font-weight:bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

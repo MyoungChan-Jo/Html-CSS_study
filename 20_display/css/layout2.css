@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* a */
+
+/*!!!!!초기화!!!!!*/
+ul,li,a,p,hr,span,div,input,button{margin:0; padding:0;}
+ul,li{list-style:none;}
+a{text-decoration:none; color:#000000;}
+hr{border:1px solid red;}
+/* ex1 */
+/*.ex1 li{display:inline;} > 사용가능. 디스플레이는 영향을 안줘서 clear:both 안써도 됨*/
+/*.ex1 li a{display:inline;} > 사용불가. 상위인 li에 주어야 함.*/
+/*.ex1 li{float:left;} > 1-11-21-32-1 이런 식으로 나옴. 공간 주어야 함.*/
+/*.ex1 li a{float:left;} > 적용은 되지만 상위요소에 하는게 다른것과 혼동되지 않아서 편할거임*/
+
+
+/* ex2 */
+.ex2{border:1px solid blue; height:80px; display:none;} /*내용이 숨겨짐*/
+/*.ex2{display:inline;} > 다시 나오는데 인라인 성격으로 나옴*/
+.ex2{display:block;} /*원래속성으로 나옴. 대부분 block 성격으로 사용한다.*/
+
+/*ex3*/
+.ex3{background:url(../images/dimchage1.jpg) no-repeat; width:488px; height:396px;}
+.ex3 span{display:none;} /*딤채냉장고 글씨 숨기기*/
+
+/*ex4*/
+.ex4{border:1px solid green; height:80px; visibility:hidden;}/*원래있던 공간 남기기*/
+/*.ex4{display:block;} 짝궁이 아니라 안나옴.*/
+.ex4{visibility:visible;}/*숨긴거 보이게 하기.*/
+
+/*ex6*/
+.ex6 li{color:red;}
+.ex6 li::before{content:"\2022"; color:red; border:1px solid blue; width:10px; display:inline-block;}/* \ => w에 선그인거..사이즈가 안들어갈거다. 속성을 display를 통해서 깨줘야 함.*/
+
+/*ex7*/
+.ex7{background-color:pink; width:500px; height:50px; margin:30px 0; overflow:auto; white-space:nowrap;}/*가로 스크롤 박스 만들기*/
+.ex7 a:hover{background-color:green;}/*네모칸 크니깐 a 태그 사이즈 줄거임 밑에*/
+.ex7 a{width:100px; height:50px; display:inline-block; text-align:center; line-height:50px;} /*=>사이즈가 적용되면서 한줄로 표시(세로)*/
+/*.ex7 a{width:100px; height:50px; float:left;} => float는 안먹음.*/
+.ex7::-webkit-scrollbar{height:6px;}/*스크롤바 높이*/
+.ex7::-webkit-scrollbar-track{background-color:blue;}/*스크롤바 색상*/
+.ex7::-webkit-scrollbar-thumb{background-color:yellow;}/*드래그 가능 색상*/
+.ex7::-webkit-scrollbar-thumb:active{background-color:orange;}/*클릭했을 때 색*/
+
+/*ex8*/
+.ex8{background-color:#eaeaea; width:300px; height:40px; line-height:40px; margin:30px 0; text-align:center;}
+.ex8 li{display:inline; font-size:17px; padding:5px;}/*세로메뉴 가로로 바꾸기.*/
+.ex8 li+li::before{content:"/\00a0"; }/*첫번째 li 제외한 li앞에 >  00a0 은 통합  */ 
+.ex8 li:first-child a{color:#01447e;}
+.ex8 li a:hover{color:red; text-decoration:underline;}/*밑줄은 다 들어가게 줌*/
+/*간격떨어뜨리기. a에 속성을 주거나(길이가 다르면 길이 각각 지정해줘야 함.) 단순한 레이아웃엔 padding.*/
+
+/*ex9*/
+.ex9{width:200px; margin:30px 0;}
+.ex9 a{background-color:#eaeaea; width:100px; height:40px; display:block; line-height:40px; text-indent:1em}
+.ex9 a:hover{background-color:#cccccc;}
+.ex9 a.active{background-color:#ff9900; color:white;}/*순서가 반대로면 마지막게 들어가서 맘에드는게 안나옴*/
+
+/*ex10*/
+.ex10{border-top:1px solid #333333; border-bottom:1px solid #333333; width:800px; overflow:hidden; margin:30px 0;}
+.ex10 ul:nth-child(1){float:left;}
+.ex10 ul:nth-child(2){float:right;}
+.ex10 ul li{float:left;}/*공통*/
+.ex10 ul li a{color:#333333; padding:16px; font-size:17px;}
+.ex10 ul li a:hover{background-color:#cccccc; color:red;}
+.ex10 ul li a.active{background-color:black; color:white;}
+
+/*ex11*/
+.ex11{clear:both; /*위에플로트 있으니깐.*/ width:800px; height:40px; background-color:#e9e9e9; margin:30px 0;}
+.ex11 ul{/*border:1px solid red;*/ float:left; width:300px;}
+.ex11 ul li{float:left; width:100px;  height:40px;}
+.ex11 ul li a{width:100px; height:40px; /*a에만들어가니깐 속성을 꺠야함 위에 float 때문에 안내려감. >>*/ display:block; line-height:40px; text-align:center;}
+.ex11 ul li a:hover{background-color:#cccccc;}
+.ex11 ul li a.active{background-color:pink;}
+
+.ex11 div{/*border:1px solid blue;*/ float:right; width:185px; height:40px; height:35px; margin-top:2px;}
+.ex11 div input[type="search"]{float:left; width:150px; height:35px; border:none; outline:none; text-indent:1em;}
+.ex11 div button[type="button"]{float:left; width:35px; height:35px; background-color:#999999; border:none; outline:none; cursor:pointer;}/*검색칸은 링크 걸면 안된다. 여기서 바로 cursor 넣어주어야 함.*/
+
+/*ex12*/
+.ex12{clear:both; border:1px solid red; height:35px; margin:30px 0;}
+.ex12 li{float:left; width:34px; height:34px; margin:0 1px;}
+.ex12 li img:nth-child(2){display:none;}
+.ex12 li:hover img:nth-child(2){display:block;}
+.ex12 li:hover img:nth-child(1){display:none;} /*마우스 갖다대면 처음 사진 사라지고 숨겼던 두번째 사진으로 표현*/
+
+/*ex13*/
+.ex13{/*border:1px solid blue;*/ height:150px; margin:30px 0;}
+.ex13 input[type="checkbox"]+div{background-color:#eaeaea; width:300px; height:100px; display:none;}
+.ex13 input[type="checkbox"]:checked+div{display:block;}

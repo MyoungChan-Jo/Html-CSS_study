@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*초기화*/
+body,div,p,a,ul,li{margin:0; padding:0;}
+ul,li{list-style:none;}
+a{text-decoration:none;}
+
+body{font:normal 10px/1.5em "나눔고딕","Nanum Gothic",sans-serif;}
+h1{font-size:20px; font-weight:normal;}
+a{text-decoration:none;}
+
+/*달력 전체*/
+#main_box{width:840px;  height:410px;/* border:1px solid red;*/ margin-top:20px; margin-left:auto; margin-right:auto;}
+
+/*달력 상단*/
+#top{width:800px; height:190px; background-color:#ff6600;}
+#top .lbotton{color:white; float:left; font-size:20px;margin-top:75px; margin-left:25px;}
+#top h1{color:white; float:left; margin-top:75px; margin-left:368px; line-height:23px;}
+#top h1 span{margin-left:15px; margin-top:20px; }
+#top .rbotton{color:white; float:right; font-size:20px;margin-top:75px; margin-right:25px;}
+
+/*달력 하단*/
+#bottom{width:800px; height:210px;}
+
+/*요일*/
+#day{width:800px; height:40px;}
+#day ul{background-color:gray;}
+
+
+/*날짜*/
+#date{width:800px; height:130px;}

@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*reset*/
+ul,li,div,p,dl,dt,dd{margin:0; padding:0;}
+ul,li{list-style:none;}
+
+/*ex1*/
+#ex1{border:1px solid gray; width:250px; height:250px; float:left;
+		 display:flex;
+		 display:-webkit-flex; /*크롬, 사파리, 오페라*/
+		 display:-ms-flex; /*ie*/
+		 flex-direction:row-reverse;
+		 -webkit-flex-direction:row-reverse ;
+		 -ms-flex-direction:row-reverse ;}
+
+#ex1 li{width:50px; height:50px; text-align:center; line-height:50px;}
+#ex1 li:nth-child(1){background-color:red;}
+#ex1 li:nth-child(2){background-color:orange;}
+#ex1 li:nth-child(3){background-color:green;}
+#ex1 li:nth-child(4){background-color:blue;}
+#ex1 li:nth-child(5){background-color:purple;}
+
+
+/*ex2*/
+#ex2{border:1px solid gray; width:250px; height:250px; float:left; margin-left:10px;
+		 display:flex;
+		 display:-webkit-flex; /*크롬, 사파리, 오페라*/
+		 display:-ms-flex; /*ie*/
+		 flex-direction:column-reverse;
+		 -webkit-flex-direction:column-reverse ;
+		 -ms-flex-direction:column-reverse ;}
+
+#ex2 li{width:50px; height:50px; text-align:center; line-height:50px;}
+#ex2 li:nth-child(1){background-color:red;}
+#ex2 li:nth-child(2){background-color:orange;}
+#ex2 li:nth-child(3){background-color:green;}
+#ex2 li:nth-child(4){background-color:blue;}
+#ex2 li:nth-child(5){background-color:purple;}
+
+.clear{clear:both;}
+
+/*ex3*/
+#ex3 p{margin-left:20px; display:list-item; /*list-style:circle; list-style-type:decimal;*/list-style-type:upper-alpha;}
+
+/*ex4*/
+#ex4{display:table; font-size:12px; border-collapse:collapse;}
+#ex4 dt, #ex4 dd{display:table-cell; border:1px solid #999999; padding:15px;}
+#ex4 dt{width:100px; background-color:#eaeaea; text-align:center; vertical-align:middle;}/*표 형식이라 버티컬 어라인 먹음. > 세로 중앙*/
+#ex4 dd{width:200px; text-align:justify;}
+#ex4 dt:hover{background-color:#999999; color:#ffffff; cursor:pointer;}
+
+/*ex5-display:tabel-cell*/
+#ex5{display:table; border-spacing:10px;}
+#ex5 li{display:table-cell; border:1px solid #999999; width:100px; height:30px; text-align:center; vertical-align:middle;}
+
+/*ex6-display:tabel-cell*/
+/* 방법1
+#ex6 p{float:left; width:250px; height:180px; border:1px solid #999999; text-align:center; padding-top:70px;}
+#ex6 p:hover{border-width:5px; cursor:pointer; width:240px; height:170px;}
+*/
+#ex6{display:table; border-collapse:collapse;}
+#ex6 p{display:table-cell; border:1px solid #999999; width:250px; height:250px; text-align:center; vertical-align:middle;}
+#ex6 p:hover{box-shadow:inset 0 0 0 10px #000000; cursor:pointer;}
+
+/*ex7-display:inline-table*/
+#ex7{border:1px solid gray; width:435px; height:230px;}
+#ex7 li{display:inline-table; width:120px; height:90px; margin:10px;}
+
+
+
+
+
+
+

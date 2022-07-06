@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+/*
+icon1.gif 15x14 집
+icon2.gif 42x45 검색
+icon3.gif 42x45 차트
+
+-----id-----
+border_all 전체
+main_title 제목 & 우측상단 메뉴
+main_information 메인내용
+left_menu 왼쪽 하단
+right_menu 오른쪽 하단
+*/
+
+/*reset*/
+ul,ol,li{list-style:none;}
+body,div,h1,h2,ul,ol,li,p,img,input,a{margin:0; padding:0;}
+body,h1,h2{font:normal 12px/1.5em "Nanum Gothic Coding", monospace;}
+a{text-decoration:none; color:black;} 
+/*all*/
+#border_all{/*background-color:pink;*/ width:950px; margin-top:20px; margin-left:auto; margin-right:auto;}
+
+/*title*/
+#main_title{/*background-color:yellow;*/   width:950px; height:81px; }
+#main_title h1{/*border:1px solid red;*/ font-size:30px; font-weight:bold; float:left;margin-top:10px;}
+#main_title ul{/*border:1px solid red;*/ width:210px; height:17px; font-size:15px; color:#606060; float:right; background:url(../images/icon1.gif) no-repeat left center; padding-left:20px; }
+#main_title ul li{clear:both;margin-right:3px; display:inline; text-align:center; }
+#main_title ul li span{margin-right:5px; height:20px; font-size:12px; }
+
+.img{margin-bottom:20px;}
+
+/*information all*/
+/*information left*/
+#left_menu h2{clear:both; float:left; font-size:20px; font-weight:bold; padding-top:15px; border-top:1px solid black; margin-right:60px;}
+#left_menu h2:nth-child(1){/*background-color: orange;*/ width:200px; height:145px;}
+s
+#left_menu h2:nth-child(2){/*background-color: yellow;*/ width:200px; height:145px;}
+
+/*information right*/
+#right_menu{height:322px; letter-spacing:0.1px; }
+#right_menu ol{font-size:15px; padding:20px; line-height:35px;
+width:600px;}
+#right_menu ol li span{ color:#cc9932; font:normal 17px/1.5em "나눔고딕","Nanum Gothic",sans-serif; margin-right:15px; font-weight:bold;}
+/*우측 메뉴*/
+#right_menu .info{float:right;font-size:12px; width:740px;}
+
+/*우측 하단 클릭 부분*/
+.button1, .button2{float:left; margin-top:20px; padding:2px; }
+.button1 input{width:270px; height:60px;  border-radius:10px; border:1px solid rgba(153,153,153,0.5); outline:none; cursor:pointer; text-indent:60px; background:url(../images/icon2.gif) no-repeat 50px center; background-color:white; }
+
+ .button2 input{width:270px; height:60px;  border-radius:10px; border:1px solid rgba(153,153,153,0.5);text-indent:50px;  outline:none; cursor:pointer; background:url(../images/icon3.gif) no-repeat 50px center; background-color:white; }
+
+
+
+
