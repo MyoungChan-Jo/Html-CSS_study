@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*reset*/
+body,div,figure,figcaption,p,br,span,input{margin:0; padding:0;}
+body{font:normal 12px/1.5em "맑은고딕","Malgun Gothic",sans-serif; color:#333333;}
+
+/*infor_wrap*/
+#infor_wrap{ width:960px; height:380px; margin:10px auto;
+/*border:1px solid black;*/}/*190좌+580중+190우*/
+
+/*자리잡기*/
+
+/*좌측 영역*/
+#infor1{width:190px; height:380px; float:left;}/*좌*/
+#infor1 figure:first-child, #infor1 figure:last-child{width:190px; height:160px;/*원래 190인데 패딩값 주면 늘어나니깐 줄여주어서 160이 된다.*/ text-align:center; cursor:pointer; padding-top:30px;}/*좌 공통*/
+#infor1 figure:first-child{background-color:#e84e56; color:#ffffff;}/*좌 상*/
+#infor1 figure:first-child:hover img{width:89px; height:92px;}/*img확대*/
+#infor1 figure:last-child{background-color:#e0d3cb;}/*좌 하*/
+#infor1 figure:last-child:hover img{width:94px; height:84px;}/*img확대*/
+
+/*우측영역-포지션*/
+#infor2{width:580px; height:380px; float:left; position:relative;}/*중*/
+.infor2_2, .infor2_3, .infor2_4, .infor2_5{position:absolute; left:30px; z-index:2;}/*내용공통*/
+.infor2_1{width:580px; height:380px;}
+.infor2_2{top:20px; letter-spacing:-1px;}/*많은 사람들이*/
+.infor2_3{top:50px; font-size:25px; font-weight:bold; letter-spacing:-1px;}/*궁금증해결사*/
+.infor2_3 span{color:#2c88aa;}/*FAQ*/
+.infor2_4{top:100px;}/*카드상품혜택*/
+.infor2_5{top:180px;}/*답변보기*/
+.infor2_5 input{border:none; background-color:#555356; color:#ffffff; width:150px; height:30px; font-weight:bold; cursor:pointer; outline:none;}/*버튼*/
+.infor2_5 input:hover{background-color:#999999;}/*버튼 오버*/
+
+
+#infor3{width:190px; height:380px; float:left;}/*우*/
+#infor3 figure:first-child, #infor3 figure:last-child{width:190px; height:160px;/*원래 190인데 패딩값 주면 늘어나니깐 줄여주어서 160이 된다.*/ text-align:center; cursor:pointer; padding-top:30px;}/*우 공통*/
+#infor3 figure:first-child{background-color:#e0eaeb;}/*우 상*/
+#infor3 figure:first-child:hover img{width:91px; height:83px;}/*img확대*/
+#infor3 figure:last-child{background-color:#1f8cb3; color:#ffffff;}/*우 상*/
+#infor3 figure:last-child:hover img{width:83px; height:82px;}/*img확대*/

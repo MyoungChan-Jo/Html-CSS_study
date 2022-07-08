@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*reset*/
+ul,li{list-style:none;}
+body,div,h3,ul,li,a,p,ing,br,span{margin:0; padding:0;}
+a{text-decoration:none;}
+body{font:normal 12px/1.5em "맑은고딕","Malgun Gothic",sans-serif; color:#333333;}
+img{border:none;}
+
+
+/*wrap 전체*/
+#wrap{/*border:1px solid black;*/  width:940px; height:330px; margin:20px auto;}/*전체*/
+
+/*좌측*/
+#news{/*border:1px solid green;*/ float:left; width:539px; height:330px; position:relative;}/*좌측*/
+#news h3{/*background-color:yellow;*/ font-size:20px; height:23px; border-bottom:3px solid #08732f; padding-bottom:20px; margin-bottom:12px;}/*연구소소식*/
+.news_list li{border-bottom:1px solid #cccccc; line-height:5em; text-indent:1em; clear:both;}
+.news_list li:last-child{border:none; text-indent:0; line-height:1.5em;/*초기화한 줄간격이 1.5라 들어가는 것이다.*/}/*더보기+*/
+.news_list li:last-child a{position:absolute; top:5px; right:10px; color:#333333;}/*더보기+*/
+.news_list li:last-child a:hover{font-weight:bold;}/*더보기+ 마우스 효과*/
+.news_list li span{float:right; margin-right:10px;}/*내용 날짜*/
+
+/*우측*/
+#quick{/*border:1px solid green;*/ float:right; width:350px; height:330px;}/*우측*/
+#quick li{border-bottom:1px solid #cccccc; height:100px; padding-left:90px; position:relative;}/*목록 밑줄*/
+#quick li:nth-child(1){background:url(../images/quick_01.jpg) no-repeat 10px center;}/*상담안내*/
+#quick li:nth-child(2){background:url(../images/quick_02.jpg) no-repeat 10px center;}/*심리검사*/
+#quick li:nth-child(3){background:url(../images/quick_03.jpg) no-repeat 10px center;}/*오시는길*/
+#quick h3{/*background-color:yellow;*/ padding-top:20px; height:20px; margin-bottom:9px;}/*공통*/
+.quick_txt{font-size:30px;}/*031.713.1150*/
+.quick_view{position:absolute; top:45px; right:25px;}/*(+)img 위치조정*/
+
+
+
+
+
+
+
+

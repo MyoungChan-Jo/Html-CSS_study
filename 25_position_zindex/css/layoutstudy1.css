@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*reset*/
+body,p,img{margin:0; padding:0;}
+img{border:2px solid red;}
+
+#ex1{position:absolute; left:400px; top:20px;}/*absolute*/
+#ex2{position:relative; left:200px; top:30px;}/*relative*/
+#ex3{position:fixed; top:40px; right:50px;}/*fixed*/
+#ex4{border:1px solid black; width:500px; height:500px; margin:50px; position:relative;}/*relative + absolute p태그가 부모가 되고 img태그가 자식이 된다.*/
+#ex4 img{position:absolute; right:100px; bottom:200xp;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
