@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+
+
+/*reset*/
+body,div,h1,h2,img,form,p,label,input,a{margin:0; padding:0;}
+body,h1,h2{font:normal 12px/1.3em "나눔고딕","Nanum Gothic",sans-serif;}
+input{outline:none;}
+a{text-decoration:none; color:black;}
+
+/*login_container*/
+#login_container{width:420px; height:596px;  margin:20px auto;}
+#login_container h1{text-align:center; margin-bottom:40px;}
+
+/*login ID/PW/Login*/
+.login1{width:320px; height:50px; margin:0 auto; margin-bottom:10px;}
+.login3{width:320px; height:60px; margin:0 auto; margin-top:15px;}
+.login1 input{width:320px;  height:50px; text-indent:10px; border:1px solid #e6e6e6;  border-radius:3px; background-color:#f8f8f8; }
+.login3 input{border:1px solid #984eb1;  border-radius:3px; width:320px;  height:60px; text-align:center; background-color:#984eb1; color:#ffffff;}
+.login3 input:hover{cursor:pointer;}
+
+/*Find ID/PW*/
+#etc1{ text-align:center; display:inline-block;margin:10px 90px;}
+#etc1 .login4{margin-left:15px; display:inline; }
+#save{margin-right:5px; vertical-align:-1px;}
+
+/*SNS Login*/
+h2{text-align:center; font-size:30px; margin-top:30px;}
+
+/*facebook-google-naver-kakao*/
+#icon{text-align:center; margin-top:10px;}
+#icon p{height:60px; display:inline-block; margin:3px}
+
+/*※*/
+#login_mob .sub{text-align:center; padding-top:10px; padding-bottom:20px;}
+
+/*create account*/
+.login5{width:320px; height:60px; margin:0 auto; margin-top:15px;}
+.login5 input{width:320px;  height:60px; text-align:center; background-color:#4e4e4e; color:#ffffff; border:1px solid #4e4e4e;  border-radius:3px; }
+.login5 input:hover{cursor:pointer;}

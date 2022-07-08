@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/*reset*/
+body,div,h3,p,strong,form,fieldset,legend,label,input,select,option,span,textarea{margin:0; padding:0;}
+body,input,select,option,textarea{font:normal 12px/1.5em nanum, sans-serif; background-color:#ffffff; color:#333333;}
+input,select,option,textarea{outline:none;}
+
+/*fonts*/
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+			url('../font/NanumGothic.ttf')format('truetype'),
+			url('../font/NanumGothic.woff')format('woff');
+}
+
+/*join_container*/
+#join_container{  /*  border:1px solid red;  */   width:500px; height:1200px; margin:20px auto;}
+#join_container h3{   /*  border:1px solid blue;  */  font-size:19px; height:20px; text-align:center; margin-bottom:10px;}
+.information{   /* border:1px solid blue;   */   height:20px; margin-bottom:5px;}
+.point{color:#cc0066;}
+.infor{color:#009966;}
+
+#join fieldset{border:1px solid #cccccc; padding:10px; margin-bottom:30px;}
+#join fieldset legend{  /*  background-color:yellow;  */   font-size:15px; font-weight:bold; padding:5px;}
+
+.box_i{clear:both;   /*  background-color:pink;      */  margin:5px 0px;}
+.box_t{clear:both;  /*   background-color:orange;  */ margin:10px 0px;}
+
+/*필수입력항목*/
+.join1 label{  /*   background-color:yellow;  */    width:110px; height:30px; display:inline-block; text-align:right; margin-right:10px; line-height:30px;}
+.join1 input{border:1px solid #cccccc; height:30px; text-align:center;}
+#u_name,#u_id,#pwd1,#pwd2{width:200px;}/*이름아이디비밀번호 확인*/
+#zip1,#zip2,.zip_btn{width:90px;}/*우편번호*/
+.zip_btn{background-color:#cccccc; border-radius:5px; cursor:pointer; margin-left:5px;}/*우편번호 찾기*/
+.zip_btn:hover{background-color:#333333; color:#ffffff;}
+
+#add{width:350px;}/*주소*/
+
+#tel1,#tel2,#tel3{width:70px;}/*전화번호*/
+
+/*비번 찾는 선택*/
+.box_s{    /*  background-color:yellow;  */   width:110px; height:30px; display:block; float:left; text-align:right; margin-right:10px; line-height:30px;}
+
+.box_ii{   clear:both;  margin:5px 0px;  /*  border:1px solid red;  */   }
+
+.join2 input{   /*  border:1px solid #cccccc;   */   height:30px;  text-align:center;}
+#sms,#mail{vertical-align:-11px; margin-right:3px;}/*수신방법*/
+#phone1_wrap{   border:1px solid #cccccc;    width:70px; height:30px; float:left; margin-right:2px;}
+#phone1{width:70px; height:30px; border:none; text-indent:15px }/*select*/
+#phone2,#phone3{border:1px solid #cccccc; width:70px;}/*s휴대전화번호*/
+
+#u_email{width:350px; border:1px solid #cccccc;}/*이메일*/
+
+
+/*이용 약관 동의*/
+.join3 textarea{width:480px; height:250px; border:none; resize:none;}
+
+#chk1,#chk2{vertical-align:-2px;}/*동의/비동의*/
+#chk2{margin-left:8px;}
+
+
+/*회원가입/재작성*/
+.btn{   /*border:1px solid blue;*/     width:308px; height:30px; margin-left:auto; margin-right:auto; }
+.btn input{width:150px; height:30px; border:2px solid #cccccc; float:left; margin:0 2px; cursor:pointer; border-radius:5px;}
+
+.btn input:hover{background-color:#333333; color:#ffffff;}
+
+
+
+
+
+
+
+
+
+
+

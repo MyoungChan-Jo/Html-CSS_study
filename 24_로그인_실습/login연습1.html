@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/layout1.css">
+	<title>연습</title>
+</head>
+<body>
+	<div id="login_container">
+		<h1><a href="https://www.nebooks.co.kr/pages/" target="_self"><img src="images/logo_login.png" alt="로그인 제목" width="176" height="31"></a></h1>
+		<form action="ne_books.asp">
+			<div id="login_web">
+				<p class="login1"><input type="text"  id="u_name" placeholder="아이디" autocomplete="off" ></p>
+				<p class="login1"><input type="password" id="u_pwd" placeholder="비밀번호"required></p>
+				<p class="login3"><input type="submit"  value="로그인"></p>
+				<div id="etc1">
+				<p class="login4"><input type="checkbox"  id="save">아이디저장</p>
+				<p class="login4"><a href="https://members.neungyule.com/pages/t_member/searchinfo.asp" target="_blank">아이디/비밀번호 찾기</a></p>
+				</div>
+			</div><!--login_web-->
+			<h2>SNS 로그인</h2>
+			<div id="login_mob">
+				<div id="icon">
+					<p><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=393918854799117&kid_directed_site=0&app_id=393918854799117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.1%2Fdialog%2Foauth%3Fclient_id%3D393918854799117%26scope%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fapi.neungyule.com%252FAuth%252Ffacebook%26state%3DCfDJ8P5PG3wkNm1CkxiCCQ2N4VONctxfCEMHRY9-Mp4VkFKmmsyna-9vy6PUrcN2KQyC-YFmymfj-8xamVSo7rcadSV07Ll-79jjAs5xpWjFQs7g8qoyuDNnWEKebP_bLi7Rc4V-sjPxUKA8fIufQO68AEj44cHQHxvZHLrFggxX1_3N0Ei8N7JNleqUzcgfLg-opZktgNVbCHjngQllFSQoxf6XvOj18T33EEFQEckL8DS-ju7Arp1-2hTKsejG5hrhuK2xYw-zDcuiubTWgwlKwHU%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dd1e18d25-d83d-40a6-a2b0-20d1ca0ae4e0&cancel_url=https%3A%2F%2Fapi.neungyule.com%2FAuth%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DCfDJ8P5PG3wkNm1CkxiCCQ2N4VONctxfCEMHRY9-Mp4VkFKmmsyna-9vy6PUrcN2KQyC-YFmymfj-8xamVSo7rcadSV07Ll-79jjAs5xpWjFQs7g8qoyuDNnWEKebP_bLi7Rc4V-sjPxUKA8fIufQO68AEj44cHQHxvZHLrFggxX1_3N0Ei8N7JNleqUzcgfLg-opZktgNVbCHjngQllFSQoxf6XvOj18T33EEFQEckL8DS-ju7Arp1-2hTKsejG5hrhuK2xYw-zDcuiubTWgwlKwHU%23_%3D_&display=page&locale=ko_KR&pl_dbl=0" target="_self"><img src="images/sns_facebook.png" alt="facebook" width="56" height="56"></a></p>
+					<p><a href="https://accounts.google.com/signin/oauth/identifier?client_id=956687244502-88674aridctqijks14fh567prrf512os.apps.googleusercontent.com&scope=email%20profile%20openid&response_type=code&redirect_uri=https%3A%2F%2Fapi.neungyule.com%2FAuth%2FGoogle&state=CfDJ8P5PG3wkNm1CkxiCCQ2N4VOF9B0NhDeMZMYUgVCRbbbOg2MmrXak0kK_nyZW6eG75WX2hnHyfvHOFXAVHTDk9_4pxm8WLJAu80v_WYB9bkEhY6VtTY7J1mgb0a4l7R0hUu6ObRpzTOg68zyvxlCOt87NH1IhuPdmcmlGmlZViN8ph9iSVcQUfTuWcSawMXibwChvyjzsz-5s_LxI5be65FyNBkDgX3pNSAKY7zmlLn0pg7_CSKCEGPC979-ljBT7KffsmihgC3Fw6GBYVK6n5ic&o2v=2&as=TVilAJ7-7yhHX_cPVEnU4g&flowName=GeneralOAuthFlow" target="_self"><img src="images/sns_googleplus.png" alt="google" width="56" height="56"></a></p>
+					<p><a href="https://nid.naver.com/oauth2.0/authorize?client_id=lWIuFZ_PcV8Bmn0rY298&scope=&response_type=code&redirect_uri=https%3A%2F%2Fapi.neungyule.com%2FAuth%2FNaver&state=CfDJ8P5PG3wkNm1CkxiCCQ2N4VPR6JIjPxdaw7szmn8jgJ2pPyiShpgpVn1M2h47QufLhHgvYVurNAfJsWwgU0ubKwDhu8jrW-A1ZXxQXfm791YA0J0sCrQ62cyRvWUR_qBbtoOBPrWyZD8YwBqUwwj02KcavpxQqeUf8vvT1pMig9EDEXrNP4tvOdA-_MFquRFFAUB0ieMMUImlTDluzOlDwKbn0zmcjf7i7E-Iwwv2lWIrESNg1T9ime12VsRrdEbbU5U3kVxzhqUlsdw_Em7pIRw&svctype=0/" target="_self"><img src="images/sns_naver.png" alt="naver" width="56" height="56"></a></p>
+					<p><a href="https://accounts.kakao.com/login?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fclient_id%3D984d89aa4e6806f1471ada44b4b31fcc%26scope%3D%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fapi.neungyule.com%252FAuth%252FKakao%26state%3DCfDJ8P5PG3wkNm1CkxiCCQ2N4VMWAoLXuBGBqUhpzt_m5XewdKvVdbklQxoZiDHgXieEd95wDFs-qGp5O3ey_NsMXTvyN7s3Hlv81rrrRy4hpo0XAj3ca67WYMki3Y06_jdxbei0l4CTQ3WcmEX27Z5wrf48og2fXQgdRoMF4VIwXPuBjMJKw3Yf5yCp50RyE0BkugdbrTeqQxZgQ3w1UM4p_9eL4OlEKPRdjnK9wTz-00DdON3BzT7_4HtnumwyUnlh3OpR8pKob8nIxNhks0T3_hI" target="_self"><img src="images/sns_kakao.png" alt="kakao" width="56" height="56"></a></p>
+				</div>
+				<p class="sub">※개인정보 보호를 위해 공용 PC에서 사용 후 SNS<br>계정 로그아웃 상태를 확인해 주세요.</p>
+				<p class="login5"><input type="submit"  value="회원가입"></p>
+			</div><!--login_mob-->
+		</form>
+	</div><!--login_container-->
+</body>
+</html>
