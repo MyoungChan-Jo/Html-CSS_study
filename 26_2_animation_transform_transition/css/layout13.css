@@ -1,0 +1,417 @@
+@charset "utf-8";
+
+/*-----------------------reset------------------------*/
+ul,li{list-style:none;}
+div,p,img,ul,li,a,span,h4{margin:0px; padding: 0px;}
+body{font:normal 12px/1.5em "맑은고딕",sans-serif; color:#333333;}
+a{text-decoration:none;}
+img{border:none;}
+
+
+/*-----------------------wrap------------------------*/
+#wrap{margin:30px;}
+
+/*---------#ex1 애니메이션------------------------*/
+@keyframes ex1_ani{
+	from{transform:rotate(0deg); opacity: 0;}
+	to{transform:rotate(360deg); opacity: 1;}
+	}
+
+/*----------------#ex2 애니메이션---------------------*/
+@keyframes ex2_ani{
+	0%{background-color:#cc00ff; width:100px; height:100px;}
+	20%{background-color:#cc9999; width:150px; height:100px;}
+	40%{background-color:#0066ff; width:100px; height:150px;}
+	60%{background-color:#66cc33; width:180px; height:200px;}
+	80%{background-color:#ffcc00; width:150px; height:100px;}
+	100%{background-color:#cc0000; width:180px; height:150px;}
+	}
+
+/*-----------------#ex3 애니메이션--------------------*/
+@keyframes ex3_ani{
+	from{left:0px;}
+	to{left:200px;}
+}
+
+/*-------#ex4, #ex5, #ex6, #ex7 애니메이션---------*/
+@keyframes ex4_ani{
+	0%{left:0px; right:0px;}
+	20%{left:200px; right:0px;}
+	40%{left:200px; right:200px;}
+	60%{left:0px; right:200px;}
+	80%{left:0px; top:200px;}
+	100%{left:0px; top:0px;}
+}
+
+/*-----------#ex8, #ex9, #ex10 애니메이션------------*/
+@keyframes ex8_ani{
+	from{top:0px;}
+	to{top:200px;}
+}
+
+/*-------------#ex11, #ex12 애니메이션----------------*/
+@keyframes ex11_ani{
+	from{left:0px;}
+	to{left:200px;}
+}
+
+/*-----------------#ex13 애니메이션--------------------*/
+@keyframes ex13_ani{
+	0%{transform:scale(1);}
+	50%{transform:scale(1.5);}
+	100%{transform:scale(1);}
+}
+
+/*-----------#ex14, #ex15 애니메이션---------------*/
+@keyframes ex14_ani{
+	from{width:0px;}
+	to{width:496px;}
+}
+
+/*-----------------#ex16 애니메이션--------------------*/
+@keyframes ex16_ani{
+	0%{border-radius:0%;}
+	50%{border-radius:40%}
+	100%{border-radius:0%;}
+}
+
+/*-----------------#ex17 애니메이션--------------------*/
+@keyframes ex17_ani{
+	0%{border-radius:0% 100%;}
+	50%{border-radius:100% 0%;}
+	100%{border-radius:0% 100%;}
+}
+
+/*-----------------#ex18, #ex19 애니메이션--------------------*/
+@keyframes ex18_ani{
+	0%{border-width:0px;}
+	50%{border-width:30px; width:90px; height:90px;}
+	100%{border-width:0px;}
+}
+
+/*-----------------#ex20 애니메이션--------------------*/
+@keyframes ex20_ani{
+	0%{box-shadow:0 0 black;}
+	50%{box-shadow:0 80px 10px -50px rgba(0,0,0,0.5);}
+	100%{box-shadow:0 0 black;}
+}
+
+/*-----------------#ex21 애니메이션--------------------*/
+@keyframes ex21_ani{
+	0%{box-shadow:none;}
+	50%{box-shadow:inset -55px -55px 100px #000000;}
+	100%{box-shadow:none;}
+}
+
+/*-----------------#ex22 애니메이션--------------------*/
+@keyframes ex22_ani{
+	20%{color:#23bfde;}
+	40%{color:#4223de;}
+	60%{color:#23de42;}
+	80%{color:#de4223;}
+}
+
+/*-----------------#ex23 애니메이션--------------------*/
+@keyframes ex23_ani{
+	0%{line-height:70px;}
+	50%{line-height:200px;}
+	100%{line-height:70px;}
+}
+
+/*-----------------#ex24 애니메이션--------------------*/
+@keyframes ex24_ani{
+	0%{text-shadow:0px 0px black;}
+	50%{text-shadow:15px 15px 7px rgba(0,0,0,0.5);}/*우측 아래 그림자.*/
+	100%{text-shadow:0px 0px black;}
+}
+
+/*-----------------#ex25 애니메이션--------------------*/
+@keyframes ex25_ani{
+	0%{text-shadow:0 0 #ffffff;}
+	50%{text-shadow:0 0 rgba(255,255,255,0),-45px -45px 0 red, -30px -30px 0 orange, -15px -15px 0 yellow, 0px 0px 0 green, 15px 15px 0 blue, 30px 30px 0 indigo, 45px 45px 0 violet;}
+	100%{text-shadow:0 0 #ffffff;}
+}
+
+/*-----------------#ex26 애니메이션--------------------*/
+@keyframes ex26_ani{
+	0%{transform:rotate(0deg);}
+	50%{transform:rotate(360deg);}
+	100%{transform:rotate(0deg);}
+}
+
+/*-----------------#ex27 애니메이션--------------------*/
+@keyframes ex27_ani{
+	0%{transform:rotate(0deg) scale(1);}
+	50%{transform:rotate(360deg) scale(0);}
+	100%{transform:rotate(0deg) scale(1);}
+}
+
+/*-----------------#ex28 애니메이션--------------------*/
+@keyframes ex28_ani{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+
+/*-----------------#ex29 애니메이션--------------------*/
+@keyframes ex29_ani{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(-360deg);}
+}
+
+/*-----------------#ex30 애니메이션--------------------*/
+@keyframes ex30_ani{
+	0%{transform:rotate(0deg);}
+	40%{transform:rotate(180deg);}
+	80%{transform:rotate(-90deg);}
+}
+
+/*-----------------#ex31 애니메이션--------------------*/
+@keyframes ex31_ani{
+	0%{transform:translate(1px, 1px) rotate(0deg);}
+	10%{transform:translate(-1px, -2px) rotate(-1deg);}
+	20%{transform:translate(-3px, 0px) rotate(1deg);}
+	30%{transform:translate(3px, 2px) rotate(0deg);}
+	40%{transform:translate(1px, 1px) rotate(1deg);}
+	50%{transform:translate(-1px, 2px) rotate(-1deg);}
+	60%{transform:translate(-3px, 1px) rotate(0deg);}
+	70%{transform:translate(3px, 1px) rotate(-1deg);}
+	80%{transform:translate(-1px, -1px) rotate(1deg);}
+	90%{transform:translate(1px, 2px) rotate(0deg);}
+	100%{transform:translate(1px, -2px) rotate(-1deg);}
+}
+
+/*-----------------#ex33 (1,2,3,4)애니메이션--------------------*/
+@keyframes ex33_1_ani{
+	from{width:0%;}
+	to{width:90%;}
+}
+@keyframes ex33_2_ani{
+	from{width:0%;}
+	to{width:80%;}
+}
+@keyframes ex33_3_ani{
+	from{width:0%;}
+	to{width:70%;}
+}
+@keyframes ex33_4_ani{
+	from{width:0%;}
+	to{width:60%;}
+}
+
+/*-----------------#ex34애니메이션--------------------*/
+@keyframes ex34_ani{
+	from{text-shadow:0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;}
+	to{text-shadow:0 0 20px #ffffff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff3da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;}
+}
+
+/*-----------------#ex36애니메이션--------------------*/
+@keyframes ex36_ani{
+	from{top:-100px; opacity:0;}
+	to{top:0px; opacity:1;}
+}
+
+
+/*-----------------------#ex1------------------------*/
+#ex1{border: 1px solid #cccccc; height: 350px;}
+#ex1 p{float: left; margin: 100px; height: 100px;}
+#ex1 p:first-child img{animation-name:ex1_ani; animation-duration:3s; animation-iteration-count:3; animation-timing-function:ease-in-out;}
+#ex1 p:last-child img{animation:ex1_ani 6s infinite linear;}/*무한반복*/
+
+/*-----------------------#ex2------------------------*/
+#ex2{border:1px solid #cccccc; height:250px;}
+#ex2 p{background-color:#cc00ff; width:100px; height:100px; animation:ex2_ani 6s infinite ease-out;}
+
+/*-----------------------#ex3------------------------*/
+#ex3{border:1px solid #cccccc; height:150px;}
+#ex3 p{width:34px; height:34px; position:relative; animation:ex3_ani 5s; animation-delay:2s;}
+
+/*---------#ex4, #ex5, #ex6, #ex7-----------*/
+#ex4, #ex5, #ex6, #ex7{border:1px solid #cccccc; height:300px;}
+#ex4 p, #ex5 p, #ex6 p, #ex7 p{width:34px; height:34px; position:relative; animation:ex4_ani 5s 2;}/*공통*/
+#ex4 p{animation-direction:normal;}/*default*/
+#ex5 p{animation-direction:reverse;}/*반대로*/
+#ex6 p{animation-direction:alternate;}/*앞 뒤 앞 왔다갔다*/
+#ex7 p{animation-direction:alternate-reverse;}/*뒤 앞 뒤 왔다갔다*/
+
+/*-----------------#ex8, #ex9, #ex10-------------------*/
+#ex8, #ex9, #ex10{border:1px solid #cccccc; height:300px;}/*공통*/
+#ex8 p, #ex9 p, #ex10 p{width:34px; height:34px; position:relative; animation:ex8_ani 3s; animation-delay:2s;}
+#ex8 p{animation-fill-mode:forwards;}/*자리 유지*/
+#ex9 p{animation-fill-mode:backwards;}/*전으로 이동*/
+#ex10 p{animation-fill-mode:both;}/*위치 조합*/
+
+/*-----------------#ex11, #ex12-------------------*/
+#ex11, #ex12{border:1px solid #cccccc; height:150px;}/*공통*/
+#ex11 p, #ex12 p{width:34px; height:34px; position:relative; animation:ex11_ani 5s infinite;}
+#ex11 p:hover{animation-play-state:paused;}/*호버시 멈춤.*/
+#ex12 p:hover{animation-play-state:running;}/*호버시 변화없음.*/
+
+
+/*-----------------------#ex13------------------------*/
+#ex13{border:1px solid #cccccc; height:100px;}
+#ex13 p{margin:20px;}
+#ex13 p img{width:34px; height:34px; animation:ex13_ani 3s infinite ease-out; animation-fill-mode:both;}/*3초에 걸친 확대~감소. 자연스러운 감소속도*/
+#ex13 p img:hover{cursor:pointer; animation-play-state:paused;}/*오버시 일시정지*/
+
+/*-----------------------#ex14------------------------*/
+#ex14{border:1px solid #cccccc; height:100px;}
+.ex14{background-color:#000000; width:496px; height:50px; animation:ex14_ani 2s ease-in ; overflow:hidden;}
+
+.ex14 ul{width:496px; height:50px;}
+.ex14 ul li{float:left; height:50px;}
+.ex14 ul li:nth-child(1){width:56px;}
+.ex14 ul li:nth-child(2){width:95px;}
+.ex14 ul li:nth-child(3){width:71px;}
+.ex14 ul li:nth-child(4){width:55px;}
+.ex14 ul li:nth-child(5){width:61px;}
+.ex14 ul li:nth-child(6){width:85px;}
+.ex14 ul li:nth-child(7){width:73px;}
+.ex14 ul li a{display:block; text-align:center; padding-top:50px; transition:all 0.3s;}
+.ex14 ul li:nth-child(1) a{background:url(../images/m1.gif) no-repeat 0 0;}
+.ex14 ul li:nth-child(2) a{background:url(../images/m2.gif) no-repeat 0 0;}
+.ex14 ul li:nth-child(3) a{background:url(../images/m3.gif) no-repeat 0 0;}
+.ex14 ul li:nth-child(4) a{background:url(../images/m4.gif) no-repeat 0 0;}
+.ex14 ul li:nth-child(5) a{background:url(../images/m5.gif) no-repeat 0 0;}
+.ex14 ul li:nth-child(6) a{background:url(../images/m6.gif) no-repeat 0 0;}
+.ex14 ul li:nth-child(7) a{background:url(../images/m7.gif) no-repeat 0 0;}
+.ex14 ul li a:hover{background-position:0 -50px;}
+
+/*-----------------------#ex15------------------------*/
+#ex15{border:1px solid #cccccc; height:100px;}
+.ex15{background-color:#000000; width:496px; height:50px; animation:ex14_ani 2s ease-in; overflow:hidden;}
+
+.ex15 ul{width:496px; height:50px;}
+.ex15 ul li{float:left; height:50px;}
+.ex15 ul li:nth-child(1){width:56px;}
+.ex15 ul li:nth-child(2){width:95px;}
+.ex15 ul li:nth-child(3){width:71px;}
+.ex15 ul li:nth-child(4){width:55px;}
+.ex15 ul li:nth-child(5){width:61px;}
+.ex15 ul li:nth-child(6){width:85px;}
+.ex15 ul li:nth-child(7){width:73px;}
+.ex15 ul li a{display:block; text-align:center; padding-top:50px; transition:all 0.3s;}
+.ex15 ul li:nth-child(1) a{background:url(../images/m1.gif) no-repeat 0 0;}
+.ex15 ul li:nth-child(2) a{background:url(../images/m2.gif) no-repeat 0 0;}
+.ex15 ul li:nth-child(3) a{background:url(../images/m3.gif) no-repeat 0 0;}
+.ex15 ul li:nth-child(4) a{background:url(../images/m4.gif) no-repeat 0 0;}
+.ex15 ul li:nth-child(5) a{background:url(../images/m5.gif) no-repeat 0 0;}
+.ex15 ul li:nth-child(6) a{background:url(../images/m6.gif) no-repeat 0 0;}
+.ex15 ul li:nth-child(7) a{background:url(../images/m7.gif) no-repeat 0 0;}
+.ex15 ul li a:hover{background-position:0 -100px;}
+
+/*-----------------------#ex16------------------------*/
+#ex16{border:1px solid #cccccc; height:200px;}
+#ex16 p{width:150px; height:150px; background-color:#0099ff; text-align:center; line-height:150px; font-size:2em; font-weight:bold; color:#ffffff; animation:ex16_ani 5s infinite;}
+
+/*-----------------------#ex17------------------------*/
+#ex17{border:1px solid #cccccc; height:200px;}
+#ex17 p{width:150px; height:150px; background-color:#0099ff; text-align:center; line-height:150px; font-size:2em; font-weight:bold; color:#ffffff; animation:ex17_ani 5s infinite;}
+
+/*-----------------------#ex18------------------------*/
+#ex18{border:1px solid #cccccc; height:200px;}
+#ex18 p{width:150px; height:150px; background-color:#ff9900; text-align:center; line-height:90px; font-size:1.5em; font-weight:bold; color:#ffffff; border-style:dashed; border-color:#cc3300; animation:ex18_ani 5s infinite;}
+
+/*-----------------------#ex19------------------------*/
+#ex19{border:1px solid #cccccc; height:200px;}
+#ex19 p{width:150px; height:150px; background-color:#ff9900; text-align:center; line-height:90px; font-size:1.5em; font-weight:bold; color:#ffffff; border-style:double; border-color:#cc3300; animation:ex18_ani 5s infinite;}
+
+/*-----------------------#ex20------------------------*/
+#ex20{border:1px solid #cccccc; height:200px;}
+#ex20 p{width:150px; height:150px;  background-color:#0099ff; text-align:center; line-height:150px; font-size:2em; font-weight:bold; color:#ffffff; box-shadow:0 0 black; animation:ex20_ani 5s infinite;}
+
+/*-----------------------#ex21------------------------*/
+#ex21{border:1px solid #cccccc; height:200px;}
+#ex21 p{width:150px; height:150px;  background-color:#0099ff; text-align:center; line-height:150px; font-size:2em; font-weight:bold; color:#ffffff; box-shadow:none; animation:ex21_ani 5s infinite;}
+
+/*-----------------------#ex22------------------------*/
+#ex22{border:1px solid #cccccc; height:200px;}
+#ex22 p span{font:bold 7em Arial,sans-serif; color:#de2362; animation:ex22_ani 3s infinite linear;}/*반복 일정하게 전체글씨 나옴. 때문에 딜레이를 줄거임*/
+#ex22 p span:nth-child(2){animation-delay:0.3s;}
+#ex22 p span:nth-child(3){animation-delay:0.6s;}
+#ex22 p span:nth-child(4){animation-delay:0.9s;}
+#ex22 p span:nth-child(5){animation-delay:1.2s;}
+
+/*-----------------------#ex23------------------------*/
+#ex23{border:1px solid #cccccc; height:200px;}
+#ex23 p{width:150px; height:150px;  background-color:#0099ff; text-align:center; line-height:150px; font-size:2em; font-weight:bold; color:#ffffff; animation:ex23_ani 3s infinite;}
+
+/*-----------------------#ex24------------------------*/
+#ex24{border:1px solid #cccccc; height:200px;}
+#ex24 p{width:150px; height:150px; background-color:#0099ff; text-align:center; line-height:150px; font-size:2em; font-weight:bold; color:#ffffff; text-transform:uppercase; animation:ex24_ani 5s infinite;}
+
+/*-----------------------#ex25------------------------*/
+#ex25{border:1px solid #cccccc; height:200px;}
+#ex25 p{width:300px; height:160px; background-color:#0099ff; text-align:center; line-height:160px; font-size:2em; font-weight:bold; color:#ffffff; text-transform:uppercase; animation:ex25_ani 5s infinite;} 
+
+/*-----------------------#ex26------------------------*/
+#ex26{border:1px solid #cccccc; height:200px;}
+#ex26 p{width:150px; height:150px;  background-color:#0099ff; text-align:center; line-height:160px; font-size:2em; font-weight:bold; color:#ffffff; animation:ex26_ani 5s infinite;}
+
+/*-----------------------#ex27------------------------*/
+#ex27{border:1px solid #cccccc; height:200px;}
+#ex27 p{width:150px; height:150px;  background-color:#0099ff; text-align:center; line-height:160px; font-size:2em; font-weight:bold; color:#ffffff; animation:ex27_ani 5s infinite;}
+
+/*-----------------------#ex28------------------------*/
+#ex28{border:1px solid #cccccc; height:200px;}
+#ex28 p{width:120px; height:120px;  border:16px solid red; border-radius:50%; border-top:16px solid pink; border-right:16px solid violet; border-bottom:16px solid orange; animation:ex28_ani 0.4s infinite linear;}
+#ex28 p span{display:none;}
+
+/*-----------------------#ex29------------------------*/
+#ex29{border:1px solid #cccccc; height:200px;}
+#ex29 p{width:120px; height:120px;  border:16px solid #f3f3f3; border-radius:50%; border-top:16px solid blue;  border-bottom:16px solid blue;}
+#ex29 p:hover{animation:ex29_ani 2s infinite linear; cursor:pointer;}
+#ex29 p span{display:none}
+
+/*-----------------------#ex30------------------------*/
+#ex30{border:1px solid #cccccc; height:200px;}
+#ex30 p{width:120px; height:120px;  border:16px solid #f3f3f3; border-radius:50%; border-top:16px solid pink; border-right:16px solid violet; border-bottom:16px solid red; border-left:16px solid orange; animation:ex30_ani 0.5s infinite linear;}
+#ex30 p span{display:none;}
+
+/*-----------------------#ex31------------------------*/
+#ex31{border:1px solid #cccccc; height:300px;}
+#ex31 p{width:300px; height:300px; cursor:pointer;}
+#ex31 p:hover{animation:ex31_ani 0.5s infinite;}
+
+/*-----------------------#ex32------------------------*/
+#ex32{border:1px solid #cccccc; height:70px;}
+#ex32 p{margin:20px;}
+#ex32 p input{width:130px; height:40px; border:2px solid #cccccc; border-radius:5px; background:url(../images/search.png) no-repeat 10px center; text-indent: 50px;transition:width 0.4s ease-in-out;}
+#ex32 p input:focus{outline:none; width:200px;}
+
+/*-----------------------#ex33------------------------*/
+#ex33{border:1px solid #cccccc; height:200px;}
+#ex33 > div{width:600px; height:30px; background-color:#dddddd; margin:5px 0px; line-height:30px;}
+#ex33 > div > p{text-align:right; color:white;}
+#ex33 > div:nth-child(1) > p{background-color:#4caf50; width:90%; animation:ex33_1_ani 2s linear;}
+#ex33 > div:nth-child(2) > p{background-color:#2196f3; width:80%; animation:ex33_2_ani 2s linear;}
+#ex33 > div:nth-child(3) > p{background-color:#f44336; width:70%; animation:ex33_3_ani 2s linear;}
+#ex33 > div:nth-child(4) > p{background-color:#808080; width:60%; animation:ex33_4_ani 2s linear;}
+
+/*-----------------------#ex34------------------------*/
+#ex34{background-color:#000000; height:150px;}
+#ex34 h4{color:#ffffff; height:150px; line-height:150px; text-align:center; font-size:80px; animation:ex34_ani 1s ease-in-out infinite alternate;}
+
+/*-----------------------#ex35------------------------*/
+#ex35{border:1px solid #cccccc; height:100px;}
+#ex35_t{display:none;}
+#ex35_t:target{display:block;}/*target이 클래스 속 a 태그를 의미함.*/
+
+/*-----------------------#ex36------------------------*/
+#ex36{border:1px solid #cccccc; height:100px;}
+#notice{position:fixed; left:0px; top:0px; width:100%; height:100%; background-color:rgba(0,0,0,0.8); display:none;}
+.notice_wrap{width:300px; height:300px; background-color:#666699; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); color:#ffffff;}
+.notice_con{position:relative; width:300px; height:300px; text-align:center;}
+.close_btn{position:absolute; top:10px; right:10px;}
+.close_btn a{color:#ffffff;  font-size:20px;}
+#notice:target{display:block; animation-name:ex36_ani; animation-duration:0.5s;}/*창 맨위로 올라가는건 제이쿼리로 조절*/
+
+
+
+
+
+
+
+
+
+
+

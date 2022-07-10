@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+#wrap p:nth-child(2) span{font-size:24px;}
+#wrap p:nth-child(3) span{font-size:36px;}
+#wrap p:nth-child(4) span{font-size:48px; color:red;}
+#wrap p:nth-child(5) span{font-size:56px; color:blue;}

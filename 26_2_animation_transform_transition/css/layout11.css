@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*reset*/
+div,p,i,hr{margin:0px; padding:0px;}
+a{text-decoration:none;}
+hr{margin:20px;}
+/*---------------------------wrap1---------------------------*/
+#wrap1 p{color:red; font-size:36px;}
+
+/*---------------------------wrap2---------------------------*/
+#wrap2 button{background-color:#0099ff; border:none; color:#ffffff; width:170px; height:50px; cursor:pointer; font-size:20px; outline:none;}
+#wrap2 button:hover{background-color:#6666cc;}
+#wrap2 button i{margin-right:10px;}
+
+/*---------------------------wrap3---------------------------*/
+#wrap3 button{background-color:#9933cc; border:none; color:#ffffff; width:150px; height:50px; font-size:20px; outline:none;}
+#wrap3 button i{margin-right:15px;}
+
+/*---------------------------wrap4---------------------------*/
+#wrap4 p{float:left; margin:0px 2px;}
+#wrap4 p span{color:orange; font-size:46px;}
+
+/*---------------------------wrap5---------------------------*/
+#wrap5{clear:both;}
+#wrap5 p .fa{color:#ffffff; width:50px; height:50px; float:left; margin:10px; border-radius:50%; text-align:center; line-height:50px; font-size: 25px;}
+#wrap5 p:nth-child(1) a{background-color:#3b5998;}
+#wrap5 p:nth-child(2) a{background-color:#55acee;}
+#wrap5 p:nth-child(3) a{background-color:#dd4b39;}
+#wrap5 p:nth-child(4) a{background-color:#007bb5;}
+#wrap5 p:nth-child(5) a{background-color:#bb0000;}
+#wrap5 p:nth-child(6) a{background-color:#125688;}
+#wrap5 p:nth-child(7) a{background-color:#cb2027;}
+
+
+
+
+
+
+
+
+
+
+
+

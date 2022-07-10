@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*-----------------------------------reset------------------------------*/
+ul,li{list-style:none;}
+ul,li,div,p,h4{margin:0px; padding:0px;}
+body{font:normal 15px/1.5em Arial,sans-serif; color:#333333;}
+a{text-decoration:none;}
+
+/*-----------------------------------wrap------------------------------*/
+
+/*-----------------------------------ex1------------------------------*/
+
+#ex1{height:200px;}
+#ex1 ul li a{color:#333333;}
+#ex1 p:target{color:red;}/*클릭시 색 강조*/
+
+/*-----------------------------------ex2------------------------------*/
+
+#ex2{height:300px;}
+#menu{  /*border:1px solid red;*/  width:500px; height:50px; line-height:50px; text-align:center;}
+#menu li{display:inline; margin:0px 40px;}/*한줄만들기*/
+#menu li a{color:#333333;}/*색 변경*/
+#menu li a:hover{color:#990000; font-weight:bold;/*호버시 글색,굵기*/}
+#menu_con{  /*border:1px solid red;*/  width:500px; height:180px;}
+#menu_con li{float:left; width:150px; text-align:center;}
+#menu_con li span{display:block;}
+#menu_con li:target img{border:3px solid #990000; width:144px; height:144px;}
+#menu_con li:target span{color:#990000; font-weight:bold;}
+
+/*-----------------------------------ex3------------------------------*/
+
+#ex3{height:300px;}
+#ex3 div{width:500px;}
+#ex3 div h4{width:500px; height:30px; font-size:15px;}
+#ex3 div h4 a{background-color:#eaeaea; width:500px; height:30px; display:block; line-height:30px; color:#333333; text-indent:1em;}
+#ex3 div h4 a:hover{background-color:#cc99cc; color:#ffffff;} /*호버시 변경*/
+#ex3 div:target h4 a{background-color:#999999; color:#ffffff;} /*클릭시 변경*/
+#ex3 div p{text-align:justify; width:500px; line-height:2em; height:0px; overflow: hidden; transition:height 0.5s ease-in;}
+#ex3 div:target p{height:100px; overflow:auto;}
+

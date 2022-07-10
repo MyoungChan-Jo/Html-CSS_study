@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*--------------------------------reset-------------------------------------*/
+div,p{margin:0px; padding:0px;}
+bodt{font:normal 15px/1.5em Arial,sans-serif; color:#333333;}
+
+/*--------------------------------wrap-------------------------------------*/
+#wrap{margin:50px;}
+
+/*-------------------------ex4 애니메이션-----------------------------*/
+@keyframes ex4_ani{
+	0%{transform:perspective(500px) rotateY(0deg);}
+	50%{transform:perspective(500px) rotateY(360deg);}
+	100%{transform:perspective(500px) rotateY(0deg);}
+}
+
+/*-------------------------ex5 애니메이션-----------------------------*/
+@keyframes ex5_ani{
+	0%{transform:perspective(500px) translate3d(0,0,0) rotateX(0) rotateY(0) rotateZ(0);}
+	50%{transform:perspective(500px)  translate3d(0,0,-5000px) rotateX(720deg) rotateY(360deg) rotateZ(-360deg);}
+	100%{transform:perspective(500px)  translate3d(0,0,0) rotateX(0) rotateY(0) rotateZ(0);}
+}
+
+/*-------------------------ex6 애니메이션-----------------------------*/
+@keyframes ex6_ani{
+	0%{transform:perspective(500px) rotate3d(1,1,0,0deg);}
+	50%{transform:perspective(500px) rotate3d(1,1,0,180deg);}
+	100%{transform:perspective(500px) rotate3d(1,1,0,0deg);}
+}
+
+/*-------------------------ex7 애니메이션-----------------------------*/
+@keyframes ex7_ani{
+	0%{transform:perspective(500px) rotate3d(0,1,0,0deg);}
+	50%{transform:perspective(500px) rotate3d(0,1,0,180deg);}
+	100%{transform:perspective(500px) rotate3d(0,1,0,0deg);}	
+}
+
+
+/*--------------------------------ex1-------------------------------------*/
+#ex1{border:1px solid green; width:150px; height:150px; perspective:80px;}
+#ex1 p{border:1px solid red; width:100px; height:100px;  background-color:orange; transform-style:preserve-3d; transform:rotateX(45deg);}
+
+/*--------------------------------ex2-------------------------------------*/
+#ex2{border:1px solid green; width:150px; height:150px; perspective:80px; perspective-origin:left;/*origin:기준점 잡기*/}
+#ex2 p{border:1px solid red; width:100px; height:100px;  background-color:orange; transform-style:preserve-3d; transform:rotateX(45deg);}
+
+/*--------------------------------ex3-------------------------------------*/
+#ex3{border:1px solid green; width:150px; height:150px; perspective:80px; perspective-origin:180%;/*origin:기준점 잡기*/}
+#ex3 p{border:1px solid red; width:100px; height:100px;  background-color:orange; transform-style:preserve-3d; transform:rotateX(45deg);}
+
+/*--------------------------------ex4-------------------------------------*/
+#ex4{border:1px solid #cccccc; height:200px;}
+#ex4 p{width:150px; height:150px; background-color:#cc3366; border-radius:50%; text-align:center; line-height:150px; text-transform:uppercase; color:#ffffff; animation:ex4_ani 5s infinite;}
+
+/*--------------------------------ex5-------------------------------------*/
+#ex5{border:1px solid #cccccc; height:200px;}
+#ex5 p{width:150px; height:150px; background-color:#cc3366; text-align:center; line-height:150px; text-transform:uppercase; color:#ffffff; animation:ex5_ani 5s infinite;}
+
+/*--------------------------------ex6-------------------------------------*/
+#ex6{border:1px solid #cccccc; height:200px;}
+#ex6 p{width:150px; height:150px; background-color:#cc3366; text-align:center; line-height:150px; text-transform:uppercase; color:#ffffff; animation:ex6_ani 5s infinite;}
+
+/*--------------------------------ex7-------------------------------------*/
+#ex7{border:1px solid #cccccc; height:200px;}
+#ex7 p{width:150px; height:150px; background-color:#cc3366; text-align:center; line-height:150px; text-transform:uppercase; color:#ffffff; animation:ex7_ani 5s infinite; transform-origin:100% 50%;}
+
+/*--------------------------------ex8-------------------------------------*/
+#ex8{border:1px solid #cccccc; height:200px;}
+#ex8 p{width:100px; height:100px; background-color:orange; float:left; margin:0px 10px; transform:rotateY(180deg);}
+#ex8 p:first-child{-webkit-backface-visibility:hidden; backface-visibility:hidden;}
+#ex8 p:last-child{-webkit-backface-visibility:visible; backface-visibility:visible;}
+
+/*--------------------------------ex9-------------------------------------*/
+#ex9{border:1px solid #cccccc; height:300px;}
+.ex9{width:320px; height:240px; cursor:pointer; perspective:1000px;}
+.ex9_inner{position:relative; width:100%; height:100%; transition:all 0.8s; transform-style:preserve-3d;}
+.ex9:hover .ex9_inner{transform:rotateY(180deg);}
+.front, .back{position:absolute; width:100%; height:100%; -webkit-backface-visibility:hidden; backface-visibility:hidden;}
+.back{transform:rotateY(180deg); background-color:#cc3366; color:white; text-align:center;}

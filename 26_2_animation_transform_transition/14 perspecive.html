@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>perspective</title>
+	<link rel="stylesheet" href="css/layout14.css">
+</head>
+<body>
+<!--
+perspective
+3D 배치요소, IE10이상 지원
+perspective:none 기본값
+perspective:수치;
+transform-style:preserve-3d; 자식요소 3D로 변환, ie11이상 지원
+backface-visibility:visible; 후면 보이게. ie10이상 지원
+backface-visibility:hidden; 후면 안보이게. ie10이상 지원
+
+3차원 변형 함수
+trnasform:translate3d(translateX, translateY, translateZ) 특정크기만큼 이동
+trnasform:translateX(translateX) X축으로 특정 크기만큼 이동
+trnasform:translateY(translateY) Y축으로 특정 크기만큼 이동
+trnasform:translateZ(translateZ) Z축으로 특정 크기만큼 이동
+
+trnasform:scale3D(scaleX, scaleY, scaleZ)  특정 크기만큼 확대 및 축소
+trnasform:scaleX(scaleX) X축으로 특정 크기만큼 확대 및 축소
+trnasform:scaleY(scaleY) Y축으로 특정 크기만큼 확대 및 축소
+trnasform:scaleZ(scaleZ) Z축으로 특정 크기만큼 확대 및 축소
+
+trnasform:rotate3d(rotateX, rotateY, rotateZ) 
+trnasform:rotateX(rotateX)
+trnasform:rotateY(rotateY)
+trnasform:rotateZ(rotateZ)
+
+-->
+<div id="wrap">
+
+	<h3>*1 perspective(rotate 회전)*</h3>
+	<div id="ex1">확인1
+		<p>확인2</p>
+	</div><!--ex1-->
+	
+	<h3>*2 perspective(좌측으로 기준점 잡아서 회전)*</h3>
+	<div id="ex2">확인1
+		<p>확인2</p>
+	</div><!--ex2-->
+	
+	<h3>*3 perspective(%로 기준점 잡아서 회전)*</h3>
+	<div id="ex3">확인1
+		<p>확인2</p>
+	</div><!--ex3-->
+	
+	<h3>*4 animation(X축 회전)*</h3>
+	<div id="ex4">
+		<p>animation</p>
+	</div><!--ex3-->
+	
+	<h3>*5 animation(안으로 빨려들어가는 모션)*</h3>
+	<div id="ex5">
+		<p>animation</p>
+	</div><!--ex5-->
+	
+	<h3>*6 animation(좌상/우하를 기준으로 회전)*</h3>
+	<div id="ex6">
+		<p>animation</p>
+	</div><!--ex6-->
+	
+	<h3>*7 animation(우측기준으로 회전)*</h3>
+	<div id="ex7">
+		<p>animation</p>
+	</div><!--ex7-->
+	
+	<h3>*8 backface-visibility(숨기기 보이기)*</h3>
+	<div id="ex8">
+		<p>hidden</p>
+		<p>visible</p>
+	</div><!--ex8-->
+	
+	<h3>*9 perspecive(익스는 안됨. 크롬만. 하려면 플로그인 붙여야 함.)*</h3>
+	<div id="ex9">
+		<div class="ex9">
+			<div class="ex9_inner">
+				<div class="front">
+					<img src="images/ph1.jpg" alt="#" width="320" heigh="240">
+				</div>										<!--class front-->
+				<div class="back">
+					<h2>제목</h2>
+					<p>뒷면 설명입니다.</p>
+					<p>뒷면 설명입니다.</p>
+					<p>뒷면 설명입니다.</p>
+				</div>										<!--class back-->
+			</div>											<!--class ex9_inner-->
+		</div>												<!--class ex9-->
+	</div>													<!--ex9-->
+	
+	
+</div><!--wrap-->
+
+</body>
+</html>

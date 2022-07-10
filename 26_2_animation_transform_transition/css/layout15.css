@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+/*---------------------------reset-----------------------------------*/
+ul,li,ol{list-style:none;}
+ul,li,ol,div,p,h3,a,span,input,label,button,h2{margin:0px; padding:0px;}
+body{font:normal 15px/1.5em Arial,sans-serif; color:#333333;}
+a{text-decoration:none; color:#cccccc;}
+
+/*-------------------------------wrap--------------------------------*/
+#wrap{margin:30px;}
+
+/*-------------------------------ex1--------------------------------*/
+#ex1{height:100px;}
+#list1{counter-reset:list1;}
+#list1 li::before{counter-increment:list1; /*옵션=>*/ content:counter(list1); margin-right:10px;}
+
+/*-------------------------------ex2--------------------------------*/
+#ex2{height:100px;}
+#list2{counter-reset:list2;}
+#list2 li::before{counter-increment:list2; /*옵션=>*/ content:"★" counter(list2) "."; margin-right:5px;}
+
+/*-------------------------------ex3--------------------------------*/
+#ex3{height:100px;}
+#list3{counter-reset:list3;}
+#list3 li::before{counter-increment:list3 -1; /*옵션=>*/ content:counter(list3) "."; margin-right:5px;}
+
+/*-------------------------------ex4--------------------------------*/
+#ex4{height:100px;}
+#list4{counter-reset:list4;}
+#list4 li::before{counter-increment:list4; /*옵션=>*/ content:counter(list4, upper-roman) "."; margin-right:5px; color:blue; width:20px; /*before,after은 속성 무조건 깨주어야 들어감*/ display:inline-block;}
+
+/*-------------------------------ex5--------------------------------*/
+#ex5{height:100px;}
+#list5{counter-reset:list5;}
+#list5 li::before{counter-increment:list4; /*옵션=>*/ content:counter(list4, lower-alpha) "."; margin-right:5px;background-color:orange;}
+
+/*-------------------------------ex6--------------------------------*/
+#ex6{height:400px; counter-reset:list6;}
+#ex6 h3{counter-reset:list6_1;}
+#ex6 h3::before{counter-increment:list6; content:counter(list6) ".";} /*h*/
+#ex6 p::before{counter-increment:list6_1; content:counter(list6) "-" counter(list6_1) "."; margin-right:5px; } /*p*/
+#ex6 p{margin-left:10px;}
+
+/*-------------------------------ex7--------------------------------*/
+#ex7{height:300px;}
+.list7{counter-reset:list7;}
+.list7 li::before{counter-increment:list7; content:counters(list7, ".") ""; margin-right:5px;}
+.list7 li > ol > li{margin-left:10px;}
+.list7 li > ol > li > ol > li{color:red;}
+
+/*-------------------------------ex8--------------------------------*/
+#ex8{height:200px;}
+.list8{counter-reset:list8;}
+.list8 li::before{counter-increment:list8; content:counters(list8, "-") "."; margin-right:10px;}
+.list8 li > ul > li{margin-left:10px;}
+
+
+     /*▽▽▽▽▽▽▽▽▽▽13번 css로 옮기기▽▽▽▽▽▽▽▽▽▽
+        ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽*/
+
+
+/*-------------------------------ex9 애니메이션--------------------------------*/
+@keyframes ex9_ani{
+    0%{transform:rotateY(0deg);}
+    100%{transform:rotateY(180deg); background-color:pink;}
+}
+
+/*-------------------------------ex10 애니메이션--------------------------------*/
+@keyframes ex10_ani{
+    0%{left:0;}
+    50%{left:500px;}
+    100%{left:0;}
+}
+
+/*----------------------------ex11,12,13 애니메이션-----------------------------*/
+@keyframes ex11_ani{
+    0%{transform:rotateY(0deg);}
+    100%{transform:rotateY(180deg); background-color:#006699;}
+}
+
+/*-------------------------------ex14 애니메이션--------------------------------*/
+@keyframes ex14_1{
+    0%{width:0;}
+    100%{width:90px;}
+}
+@keyframes ex14_2{
+    0%{opacity:0;}
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
+
+/*-------------------------------ex15 애니메이션--------------------------------*/
+@keyframes ex15_ani{
+    0%{top:0px;}
+    100%{top:300px; width:105px; height:90px;}
+}
+
+/*-------------------------------ex19 애니메이션--------------------------------*/
+@keyframes ex19_ani{
+    from{width:0%;}
+    to{width:100%;}
+    
+}
+
+
+/*-------------------------------ex9--------------------------------*/
+#ex9{height:150px;}
+#ex9 p{margin:30px; width:100px; height:100px; background-color:orange; border-radius:50%; line-height:100px; animation:ex9_ani 2s step-start infinite;} 
+
+
+
+/*-------------------------------ex10--------------------------------*/
+#ex10{height:100px;}
+#ex10 p{margin:30px; width:100px; height:50px; background-color:orange; position:relative; animation:ex10_ani 5s step-end infinite;} 
+
+
+
+/*-------------------------------ex11--------------------------------*/
+#ex11{height:150px;}
+#ex11 p{margin:30px; width:100px; height:100px; background-color:#cc0033; border-radius:50%; text-align:center; line-height:100px; color:#ffffff; animation:ex11_ani 10s steps(5) infinite;}/*step주면 끊어지는 효과가 나타남.*/
+
+
+
+/*-------------------------------ex12--------------------------------*/
+#ex12{height:150px;}
+#ex12 p{margin:30px; width:100px; height:100px; background-color:#cc0033; border-radius:50%; text-align:center; line-height:100px; color:#ffffff; animation:ex11_ani 10s steps(5,end) infinite;}/*step주면 끊어지는 효과가 나타남.*/
+
+
+
+/*-------------------------------ex13--------------------------------*/
+#ex13{height:150px;}
+#ex13 p{margin:30px; width:100px; height:100px; background-color:#cc0033; border-radius:50%; text-align:center; line-height:100px; color:#ffffff; animation:ex11_ani 10s steps(5,start) infinite;}/*start가 좀더 빨리 돌아감.*/
+
+
+/*▽▽▽▽▽▽▽▽▽▽text ani▽▽▽▽▽▽▽▽▽▽*/
+
+/*-------------------------------ex14--------------------------------*/
+#ex14{height:100px;}
+#ex14 p{position:relative; overflow:hidden; width:90px; height:20px;  animation:ex14_1 steps(10,end) 2s 1;}/*1=한번만 실행하여라.*/
+#ex14 p::after{content:""; position:absolute; border-right: 1px solid #333333; top:3px; right:0px; width:20px; height:15px; animation:ex14_2 1.5s ease-in infinite;}
+
+/*-------------------------------ex15--------------------------------*/
+#ex15{height:500px;}
+#ex15 p{margin:30px; width:100px; height:100px; background-color:#cc0033; border-radius:50%; text-align:center; line-height:100px; color:#ffffff; position:relative; left:100px; top:0px; animation:ex15_ani 1s ease-in infinite alternate;}
+
+/*-------------------------------ex16--------------------------------*/
+#ex16{height:150px;}
+.ex16{width:200px; height:130px; background-color:#cc6666;}
+.ex16 a:first-child{width:150px; height:45px; border:3px solid #000000; display:block; font-size:16px; color:#ffffff; text-align:center; line-height:45px;}
+.ex16 a:first-child span{background:url(../images/bg.jpg) no-repeat center center; display:block; background-size:100%;}
+.ex16 a:first-child:hover span{background-size:144px 39px;}
+
+.ex16 a:last-child{width:150px; height:51px; display:block; box-shadow:inset 0 0 0 3px #000000; font-size:16px; color:#000000; text-align:center; line-height:51px; transition:all 0.3s;}
+.ex16 a:last-child:hover{box-shadow:inset 0 0 0 6px #000000;}
+
+/*-------------------------------ex17--------------------------------*/
+#ex17{height:150px;}
+#chk{width:0px; height:0px; display:none;}/*input*/
+#ex17 label{cursor:pointer;}
+#chk_con{width:200px; height:100px; background-color:orange;}
+#chk:checked ~ #chk_con{width:250px; height:120px; background-color:pink; transition:all 0.3s ease-in-out;}/*~은 형제요소*/
+
+/*-------------------------------ex18--------------------------------*/
+#ex18{height:300px;}
+.ex18{width:320px; height:240px; position:relative;}
+.ex18::after{content:""; position:absolute; left:0px; top:0px; background:url(../images/ph1.jpg) no-repeat; width:100%; height:100%; opacity:0.5; z-index:-1;}
+.ex18 p{position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); background-color:#ff3366; color:#ffffff;}
+
+/*-------------------------------ex19--------------------------------*/
+#ex19{height:50px;}
+#ex19 p{margin:20px; width:200px; height:2px; background-color:#cccccc; color:transparent;}
+#ex19 p span{width:10px; height:2px; background-color:red; display:block; animation:ex19_ani 5s infinite alternate;}
+
+/*-------------------------------ex20--------------------------------*/
+#ex20{height:80px;}
+#ex20 p{margin:20px;}
+#ex20 p span{font-size:50px;
+    background:-webkit-linear-gradient(#cc0033, #ffcc00); 
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;}
+
+/*-------------------------------ex21--------------------------------*/
+#ex21{height:100px;}
+#ex21 p{font-size:20px;}
+#ex21 p::after{content:""; width:40px; height:20px; display:block; border-bottom:1px solid rgba(0,0,0,0.2);}
+
+
+/*-------------------------------ex22--------------------------------*/
+#ex22{height:100px;}
+#ex22 p{font-size:20px; /*background:yellow;*/ width:200px; text-align:center;}
+#ex22 p::after{content:""; width:40px; height:20px; display:block; border-bottom:1px solid rgba(0,0,0,0.2); margin:0 auto;}
+
+/*-------------------------------ex23--------------------------------*/
+#ex23{height:350px;}
+.ex23{width:500px; height:300px; margin:20px; position:relative;}
+.ex23 p:nth-child(1)::after{content:""; position:absolute; left:0px; top:0px; width:100%; height:100%; background:url(../images/bg3.png) repeat; opacity:0.7;}
+.ex23 p:nth-child(2){position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); color:#ffffff; background-color:#000000; z-index:2;}
+
+/*-------------------------------ex24--------------------------------*/
+#ex24{height:100px;}
+#ex24 p{margin:30px;}
+#ex24 p button{position:relative; width:129px; height:40px; font-size:16px; font-weight:bold; outline:none; cursor:pointer; background-color:#000000; color:#ffffff; border:1px solid #ffffff; transition:all 0.6s ease-in-out;}
+#ex24 p button:hover{background-color:transparent; color:#000000; border:none;}
+#ex24  button::before{content:""; position:absolute; left:0px; top:0px; width:0px; height:2px; background-color:black; transition:all 0.8s ease-in-out;}
+#ex24  button::after{content:""; position:absolute; right:0px; bottom:0px; width:0px; height:2px; background-color:black; transition:all 0.8s ease-in-out;}
+#ex24 button:hover::before{width:100%;}
+#ex24 button:hover::after{width:100%;}
+
+/*-------------------------------ex25--------------------------------*/
+#ex25{height:200px;}
+#tabbar{margin:30px; width:157px; background-color:#ffffff;}/*54+50+53*/
+#tabbar > input{width:0px; height:0px; display:none;}
+#tabbar > input:nth-of-type(1) ~ div:nth-of-type(1),
+#tabbar > input:nth-of-type(2) ~ div:nth-of-type(2),
+#tabbar > input:nth-of-type(3) ~ div:nth-of-type(3){display:none;}
+
+#tabbar > input:nth-of-type(1):checked ~  div:nth-of-type(1),
+#tabbar > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+#tabbar > input:nth-of-type(3):checked ~ div:nth-of-type(3){display:block;}
+
+#tabbar > div{width:157px; height:100px; border:1px solid #d6d6d6; border-top:none; box-sizing:border-box;}/*box-sizing:border-box:반응형디자인 사이즈에 보더와 패딩을 추가시키란 의미. 나중에 다시 배움.*/
+
+#tabbar > p{overflow:hidden; width:157px; border-top:1px solid #d6d6d6;}
+#tabbar > input ~ p > label{float:left; height:45px; display:block; background:url(../images/icon.png) no-repeat; text-indent:-99999px; border-bottom:1px solid #d6d6d6; box-sizing:border-box; /*border-bottom:1px solid #d6d6d6; overflow:hidden;*/ cursor:pointer;}/*레이블 공통*/
+
+/*라이프*/
+#tabbar > input:nth-of-type(1) ~ p > label:nth-of-type(1){
+    border-left:1px solid #d6d6d6; 
+    width:54px;
+    background-position:0px -316px;
+}
+
+/*스포츠*/
+#tabbar > input:nth-of-type(2) ~ p > label:nth-of-type(2){
+    width:50px;
+    background-position:-54px -316px;
+}
+
+/*차/테크*/
+#tabbar > input:nth-of-type(3) ~ p > label:nth-of-type(3){
+    border-right:1px solid #d6d6d6;
+    width:53px;
+    background-position:-104px -316px;
+}
+
+/*강조 표시*/
+/*라이프*/
+#tabbar > input:nth-of-type(1):checked ~ p > label:nth-of-type(1){
+    background-position:0px -368px;
+    border:none;
+}
+
+/*스포츠*/
+#tabbar > input:nth-of-type(2):checked ~ p > label:nth-of-type(2){
+    background-position:-54px -368px;
+    border:none;
+}
+
+/*차/테크*/
+#tabbar > input:nth-of-type(3):checked ~ p > label:nth-of-type(3){
+    background-position:-104px -368px;
+    border:none;
+}
+
+/*-------------------------------ex26--------------------------------*/
+#ex26{margin:30px; width:1020px; height:750px; overflow:hidden; /*border:1px solid red;*/}/*340+340+340 전체*/
+
+
+#ex26 > div{float:left; }
+#ex26 > div > div{width:340px; height:760px; position:relative; overflow:hidden; background-repeat:no-repeat, no-repeat, repeat, no-repeat; transition:all 0.5s;}
+#ex26:hover > div > div{width:255px;}
+#ex26 > div:hover > div{width:510px; background-repeat:no-repeat; cursor:pointer;}
+
+/*사업소개*/
+#ex26 > div:nth-of-type(1) > div{
+    background-image: url(../images/visual01_text01.png),
+                                    url(../images/visual01_people01.png),
+                                    url(../images/visual01_bg.png), 
+                                    url(../images/main01.png);
+  background-position:15px 45px, 50px 235px, 0px 0px, -129px 0px;}
+#ex26 > div:nth-of-type(1):hover  > div{
+    background-position:15px 45px, 210px 235px, -4px -4px, -145px 0px; /*패턴이미지를 - 처리해서 호보시에 보이지 않는 것이다.*/
+}
+
+/*사회공헌*/
+#ex26 > div:nth-of-type(2) > div{
+    background-image: url(../images/visual02_text01.png),
+                                    url(../images/visual01_people02.png),
+                                    url(../images/visual01_bg.png),
+                                    url(../images/main02.png);
+  background-position:15px 45px, 20px 238px, 0px 0px, -100px 0px;}
+#ex26 > div:nth-of-type(2):hover  > div{
+    background-position:15px 45px, 170px 238px, -4px -4px, 0px 0px;
+}
+
+/*상생경영*/
+#ex26 > div:nth-of-type(3) > div{
+    background-image: url(../images/visual03_text01.png),
+                                    url(../images/visual01_people03.png),
+                                    url(../images/visual01_bg.png),
+                                    url(../images/main03.png);
+  background-position:15px 45px, -90px 220px, 0px 0px, 0px 0px;}
+#ex26 > div:nth-of-type(3):hover  > div{
+    background-position:15px 45px, 0px 220px, -4px -4px, 0px 0px;
+}
+
+
+#ex26 > div > div > div{display:none;}
+
+/*자세히보기*/
+#ex26 > div > div > a{width:128px; height:32px; display:block; color:#ffffff; line-height:32px; background:url(../images/bg_more.png) no-repeat 104px center; padding-left:20px; font-size:12px; position:absolute; left:-300px; top:180px;}
+#ex26 > div:nth-of-type(1) > div > a{background-color:#0378a2;}
+#ex26 > div:nth-of-type(2) > div > a{background-color:#63811b;}
+#ex26 > div:nth-of-type(3) > div > a{background-color:#ca316a;}
+#ex26 > div:hover > div > a{left:25px; transition:all 0.5s;}

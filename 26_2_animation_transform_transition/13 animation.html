@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>animation</title>
+	<link rel="stylesheet" href="css/layout13.css">
+</head>
+<body>
+<!--
+
+animation 225p 14p
+
+01.기본값 애니메이션
+@keyframes 애니메이션 이름{form{애니메이션 시작css} to{애니메이션 종료css}}
+
+animation-name:애니메이션 이름
+animation-duration:진행시간
+animation-iteration-count:반복횟수/infinite:무한반복
+animation-timing-function:속도형태 ↓
+- ease: 시작종료 부드럽
+- linear: 일정
+- ease-in: 서서히 시작
+- ease-out:  서서히 종료
+- ease-in-out: 서서히 시작하여 서서히 종료
+- cubic-bezier(n,n,n,n):cubic-bezier(.24,.82,.9,.28)   사이트:cubic-bezier.com
+- step-start=steps(1, start) 시작하자마자 순간적으로 바뀜. 
+- step-end=step(1, end) 시작 유지되다가 끝날때 순간적을로 바뀜.
+- steps(int,star,end)
+
+
+02.%값 애니메이션
+@keyframes 애니메이션 이름{
+	0%
+	10%
+	35%
+	50%
+	75%
+	100%}
+
+03.애니메이션 시작 지연
+animation-delay 
+
+04.
+animation-direction:normal; (default)
+animation-direction:reverse; (반대로)
+animation-direction:alternate; (앞 뒤 앞 왔다갔다)
+animation-direction:alternate-reverse; (뒤 앞 뒤 왔다갔다)
+
+05.
+animation-direction:alternate-reverse; 뒤-앞-뒤
+animation-fill-mode: none; 기본값
+animation-fill-mode forwards; 애니메이션이 끝난 후 마지막 프레임 유지
+animation-fill-mode backwards; 애니메이션이 끝난 후 시작 프레임
+animation-fill-mode both; 애니메이션의 앞 뒤 결과를 조합
+
+06.
+animation-play-state:paused; 애니메이션 중지
+animation-play-state:running; 기본값, 애니메이션 실행중
+
+-->
+
+<div id="wrap">
+	<h3>*1 animation1*</h3>
+	<div id="ex1">
+		<p><img src="images/ph1.jpg" alt="#" width="100" height="100"></p>
+		<p><img src="images/ph2.jpg" alt="#" width="100" height="100"></p>
+	</div><!--ex1-->
+	
+	<h3>*2 animation2*</h3>
+	<div id="ex2">
+		<p>animation</p>
+	</div><!--ex2-->
+	
+	<h3>*3 animation3-delay *</h3>
+	<div id="ex3">
+		<p><img src="images/sns01.png" alt="#" width="34" height="34"></p>
+	</div><!--ex3-->
+	
+	<h3>*4 animation4-direction(normal)*</h3>
+	<div id="ex4">
+		<p><img src="images/sns02.png" alt="#" width="34" height="34"></p>
+	</div><!--ex4-->
+	
+	<h3>*5 animation4-direction(reverse)*</h3>
+	<div id="ex5">
+		<p><img src="images/sns02.png" alt="#" width="34" height="34"></p>
+	</div><!--ex5-->
+	
+	<h3>*6 animation4-direction(alternate)*</h3>
+	<div id="ex6">
+		<p><img src="images/sns02.png" alt="#" width="34" height="34"></p>
+	</div><!--ex6-->
+	
+	<h3>*7 animation4-direction(alternate-reverse)*</h3>
+	<div id="ex7">
+		<p><img src="images/sns02.png" alt="#" width="34" height="34"></p>
+	</div><!--ex7-->
+	
+	<h3>*8 animation-fill-mode(forwards)*</h3>
+	<div id="ex8">
+			<p><img src="images/sns03.png" alt="#" width="34" height="34"></p>
+	</div><!--ex8-->
+		
+	<h3>*9 animation-fill-mode(backwards)*</h3>
+	<div id="ex9">
+		<p><img src="images/sns03.png" alt="#" width="34" height="34"></p>
+	</div><!--ex9-->
+	
+	<h3>*10 animation-fill-mode(both)*</h3>
+	<div id="ex10">
+		<p><img src="images/sns03.png" alt="#" width="34" height="34"></p>
+	</div><!--ex10-->
+	
+	<h3>*11 animation-play-state(paused)*</h3>
+	<div id="ex11">
+		<p><img src="images/sns03.png" alt="#" width="34" height="34"></p>
+	</div><!--ex11-->
+	
+	<h3>*12 animation-play-state(running)*</h3>
+	<div id="ex12">
+		<p><img src="images/sns03.png" alt="#" width="34" height="34"></p>
+	</div><!--ex12-->
+	
+	<h3>*13 animation(확대 축소 호버)*</h3>
+	<div id="ex13">
+		<p><img src="images/sns02.png" alt="#" width="34" height="34"></p>
+	</div><!--ex13-->
+	
+	<h3>*14 animation(메뉴)*</h3>
+	<div id="ex14">
+		<div class="ex14">
+			<ul>
+				<li><a href="http://m.naver.com" target="_blank">메뉴1</a></li>
+				<li><a href="http://m.daum.net" target="_blank">메뉴2</a></li>
+				<li><a href="http://m.naver.com" target="_blank">메뉴3</a></li>
+				<li><a href="http://m.daum.net" target="_blank">메뉴4</a></li>
+				<li><a href="http://m.naver.com" target="_blank">메뉴5</a></li>
+				<li><a href="http://m.daum.net" target="_blank">메뉴6</a></li>
+				<li><a href="http://m.naver.com" target="_blank">메뉴7</a></li>
+			</ul>
+		</div><!--class ex14-->
+	</div><!--ex14-->
+	
+	<h3>*15 animation (메뉴)*</h3>
+	<div id="ex15">
+		<div class="ex15">
+			<ul>
+				<li><a href="http://m.naver.com" target="_blank">메뉴1</a></li>
+				<li><a href="http://m.daum.net" target="_blank">메뉴2</a></li>
+				<li><a href="http://m.naver.com" target="_blank">메뉴3</a></li>
+				<li><a href="http://m.daum.net" target="_blank">메뉴4</a></li>
+				<li><a href="http://m.naver.com" target="_blank">메뉴5</a></li>
+				<li><a href="http://m.daum.net" target="_blank">메뉴6</a></li>
+				<li><a href="http://m.naver.com" target="_blank">메뉴7</a></li>
+			</ul>
+		</div><!--class ex15-->
+	</div><!--ex15-->
+	
+	<h3>*16 animation(둥근모서리)*</h3>
+	<div id="ex16">
+		<p>Animation</p>
+	</div><!--ex16-->
+	
+	<h3>*17 animation(잎새모양)*</h3>
+	<div id="ex17">
+		<p>Animation</p>
+	</div><!--ex17-->
+
+	<h3>*18 animation(테두리)*</h3>
+	<div id="ex18">
+		<p>Animation</p>
+	</div><!--ex18-->
+		
+	<h3>*19 animation(두줄테두리)*</h3>
+	<div id="ex19">
+		<p>Animation</p>
+	</div><!--ex18-->
+	
+	<h3>*20animation(바깥 그림자)*</h3>
+	<div id="ex20">
+		<p>Animation</p>
+	</div><!--ex20-->
+
+	<h3>*21animation(안쪽 그림자)*</h3>
+	<div id="ex21">
+		<p>Animation</p>
+	</div><!--ex21-->
+	
+	<h3>*22animation(글자별 색 전환)*</h3>
+	<div id="ex22">
+		<p>
+			<span>H</span>
+			<span>T</span>
+			<span>M</span>
+			<span>L</span>
+			<span>5</span>
+		</p>
+	</div><!--ex22-->
+	
+	<h3>*23animation(줄간격으로 만들기)*</h3>
+	<div id="ex23">
+		<p>Animation</p>
+	</div><!--ex23-->
+	
+	<h3>*24animation(글자에 그림자)*</h3>
+	<div id="ex24">
+		<p>animation</p>
+	</div><!--ex24-->	
+	
+	<h3>*25animation(그림자 여러개)*</h3>		
+	<div id="ex25">
+		<p>animation</p>
+	</div><!--ex25-->
+		
+	<h3>*26animation(회전-rotate)*</h3>		
+	<div id="ex26">
+		<p>Animation</p>
+	</div><!--ex26-->												
+
+	<h3>*27animation(회전 축소 확대-rotate)*</h3>		
+	<div id="ex27">
+		<p>Animation</p>
+	</div><!--ex27-->
+
+	<h3>*28animation(시계 회전 테두리 나누어서-rotate)*</h3>		
+	<div id="ex28">
+		<p>
+			<span>ex28</span>
+		</p>
+	</div><!--ex28-->
+	
+	<h3>*29animation(반시계 회전 테두리 나누어서-rotate)*</h3>		
+	<div id="ex29">
+		<p>
+			<span>ex29</span>
+		</p>
+	</div><!--ex29-->
+	
+	<h3>*30animation(반시계 시계 회전 테두리 나누어서-rotate)*</h3>		
+	<div id="ex30">
+		<p>
+			<span>ex30</span>
+		</p>
+	</div><!--ex30-->	
+	
+	<h3>*31animation(사진 떨림-rotate)*</h3>		
+	<div id="ex31">
+		<p><img src="images/ph1.jpg" alt="#" width="300" height="300"></p>
+	</div><!--ex31-->	
+	
+	<h3>*32 transition(클릭시 버튼사이즈 길이 부드럽게 조절하기)*</h3>		
+	<div id="ex32">
+		<p><input type="text" placeholder="Search..." autocomplete="off"></p>
+	</div><!--ex32-->	
+	
+	<h3>*33 animation(그래프)*</h3>	
+		<div id="ex33">
+			<div><p>90%</p></div>
+			<div><p>80%</p></div>
+			<div><p>70%</p></div>
+			<div><p>60%</p></div>
+		</div><!--ex33-->	
+		
+	<h3>*34 animation(그림자를 이용한 네온 효과 내기)*</h3>	
+		<div id="ex34">
+			<h4>ANIMATION TEXT</h4>
+		</div><!--ex34-->
+
+	<h3>*35 target=a태그가 있어야 함.!(클릭시 창 뜨는거.)*</h3>
+		<div id="ex35">
+			<p><a href="#ex35_t">테스트</a></p>
+			<div id="ex35_t">
+				테스트 내용입니다.
+				<a href="#">닫기</a>
+			</div><!--ex35_t-->
+		</div><!--ex35-->
+
+	<h3>*36 animation(공지사항)*</h3>
+		<div id="ex36">
+			<p><a href="#notice">NOTICE</a></p>
+			<div id="notice"><!--fixed-->
+					<div class="notice_wrap"><!--absolute-->
+						<div class="notice_con"><!--relative-->
+							<h4>공지사항</h4>
+							<p>내용입니다.</p>
+							<p>내용입니다.</p>
+							<p>내용입니다.</p>
+							<p>내용입니다.</p>
+							<p class="close_btn"><a href="#">X</a></p><!--absolute-->
+						</div><!--notice_con-->
+					</div><!--notice_wrap-->
+			</div><!--notice-->
+		</div><!--ex36-->
+	
+	
+</div><!--wrap-->
+
+
+
+
+</body>
+</html>
