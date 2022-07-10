@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/*--------------------------------------reset---------------------------------------------*/
+
+/*--------------------------------------wrap---------------------------------------------*/
+#wrap p img{float:left; margin:10px;}
+#wrap p img:nth-child(1){filter:blur(5px);-webkit-filter:blur(5px);}/*퍼짐효과*/
+#wrap p img:nth-child(2){filter:grayscale(1); -webkit-filter:grayscale(1);}/*그레이스케일효과*/
+#wrap p img:nth-child(3){filter:sepia(1); -webkit-filter:sepia(1);}/*세피아효과*/
+#wrap p img:nth-child(4){clear:both;filter:invert(1); -webkit-filter:invert(1);}/*색상반전*/
+#wrap p img:nth-child(5){filter:brightness(2); -webkit-filter:brightness(2);}/*밝기*/
+#wrap p img:nth-child(6){filter:brightness(1) contrast(6); -webkit-filter:brightness(1) contrast(6);}/*밝기와 대비*/
+
+
+
+
+

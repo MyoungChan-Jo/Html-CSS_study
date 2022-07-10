@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>tranSITION</title>
+	<link rel="stylesheet" href="css/layout4.css">
+</head>
+<body>
+	<!--
+	transition 221 (ie10이상 지원)
+	마우스 올라갈때 속상값이 변경하는 경우 부드럽게 처리하는 방법
+	:hover와 관련된 기술
+	
+	
+	transition-property:속성(all[기본값],  css속성명)
+	transition-duration:진행시간 s(second 초)
+	
+	예) 호버시 글자색을 3초간 서서히 변경되도록 하다.
+	 	1. transition-property:color; transition-duration:3s;
+	 	2. transition:color 3s;
+	
+	transition-timing-function:
+											1. ease: 시작과 종료를 부드럽게(기본값)
+											2. linear: 시작과 종료를 일정하게
+											3. ease-in: 서서히 시작
+											4. ease-out: 서서히 종료
+											5. ease-in-out: 서서히 시작하여 서서히 종료
+	
+	transition-delay:시간     ,delay로 지정한 시간 이후 진행.
+	-->
+<!--//////////////////////////////////////////ex1//////////////////////////////////////////////////-->
+	
+<div id="wrap">
+	<h3>*transition*</h3>
+	<div id="ex1">
+		<p class="ex1_1">1</p>
+		<p class="ex1_2">2</p>
+	</div><!--ex1-->
+	
+<!--//////////////////////////////////////////////ex2/////////////////////////////////////////////-->
+	
+	<h3>*transition-timing-function/transition-delay*</h3>
+	<div id="ex2">
+		<p class="ex2_1">linear</p>
+		<p class="ex2_2">ease</p>
+		<p class="ex2_3">ease-in</p>
+		<p class="ex2_4">ease-out</p>
+		<p class="ex2_5">ease-in-out</p>
+		<p class="ex2_6">delay</p>
+	</div><!--ex2-->
+	
+<!--//////////////////////////////////////////////ex3//////////////////////////////////////////////-->
+	
+	<div id="ex3">
+		<p><img src="images/b2.png" alt="#" width="128" height="128"></p>
+	</div><!--ex3-->
+	
+	
+<!--//////////////////////////////////////////////ex4//////////////////////////////////////////////-->
+	
+	<div id="ex4">
+		<ul>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+		</ul>
+	</div><!--ex4-->
+	
+<!--//////////////////////////////////////////////ex5/////////////////////////////////////////////-->
+
+	<h3>*radio show/hide*</h3>
+	<div id="ex5">
+		<input type="radio" name="chk1" id="chk1" checked>
+		<div class="container">
+			<h4><label for="chk1">선택1</label></h4>
+			<p>선택1 내용입니다.</p>
+		</div><!--container-->
+		
+		<input type="radio" name="chk1" id="chk2" >
+		<div class="container">
+			<h4><label for="chk2">선택2</label></h4>
+			<p>선택2 내용입니다.</p>
+		</div><!--container-->
+		
+		<input type="radio" name="chk1" id="chk3" >
+		<div class="container">
+			<h4><label for="chk3">선택3</label></h4>
+			<p>선택3 내용입니다.</p>
+		</div><!--container-->
+	</div><!--ex5-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div><!--wrap-->
+</body>
+</html>

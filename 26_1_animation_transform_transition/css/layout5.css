@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+/*reset*/
+ul,li{list-style:none;}
+div,h4,p,img,figure,figcaption,a,ul,li,span{margin:0px; padding:0px;}
+body{font:normal 12px/1.5em "맑은고딕","Malgun Ghotid",sans-serif; color:#333333;}
+a{text-decoration:none;}
+
+
+/*----------------------------------------------------wrap----------------------------------------------------*/
+
+#wrap{border:1px solid red; margin:20px;}
+
+/*-----------------------------------------------------ex1-----------------------------------------------------*/
+
+#ex1 {height:150px;}
+#ex1 > p{margin:30px;}
+
+#ex1 > p > img{cursor:pointer; transform:scale(1); transition:all 0.2s;}
+#ex1 > p > img:hover{transform:scale(1.2);}
+/*
+트랜스폼을 안주면 중앙에서 커지지가 않는다. 그리고 더 복잡하다.
+#ex1 > p > img{cursor:pointer; transition:all 0.2s;}
+#ex1 > p > img:hover{width:120px; height:120px;}
+*/
+
+/*-----------------------------------------------------ex2-----------------------------------------------------*/
+
+/*카드배너 만들기다*/
+#ex2{height:250px;}
+.ex2{width:320px; height:240px; position:relative; cursor:pointer;}
+.ex2_t{position:absolute; left:0px; bottom:0px; background-color:rgba(0,0,0,0.5); width:100%; height:50px; color:#f1f1f1; font-size:20px; text-align:center; line-height:50px; opacity:0; transition:all 0.5s ease-in;}
+.ex2:hover .ex2_t{opacity:1;}
+
+/*-----------------------------------------------------ex3-----------------------------------------------------*/
+
+#ex3{height:400px;}/*높이지정*/
+#ex3 figure{float:left; width:200px; height:300px; border:1px solid #666666; margin:10px; cursor:pointer; position:relative; overflow:hidden;}/*figcaton올라오게 하고 싶으면 기준을 잡아야 함. 포지션*/
+#ex3 figure figcaption{position:absolute; left:0px; top:300px;/*이부분 실수 많이한다. 원본크기 밑으로 내려놓아야지 확실하게 올라온다.*/ background-color:rgba(0,0,0,0.7); width:200px; height:180px; text-align:center; color:#ffffff; padding-top:120px; transition:all 0.3s;}/*패딩들어가서 높이 늘어났으니깐 그만큼으로 줄여주기 200>180으로*/
+#ex3 figure:hover figcaption{top:0px;}
+#ex3 figure figcaption a{color:#ffffff;}
+
+/*-----------------------------------------------------ex4-----------------------------------------------------*/
+
+#ex4{height:360px;}
+.ex4{border:1px solid #999999; width:200px; height:350px; margin:20px; border-radius:10px; cursor:pointer; box-shadow:0 2px 4px/*x,y,블러값*/ rgba(0,0,0,0.2);}
+.ex4:hover{box-shadow:0 8px 16px rgba(0,0,0,0.2);transition:all 0.3s ease-in;}
+.ex4 img{border-radius:10px 10px 0px 0px;}
+.ex4_t{text-align:center;}
+
+/*-----------------------------------------------------ex5-----------------------------------------------------*/
+
+/*상하회전*/
+#ex5{height:400px;}
+#ex5 > ul{height:400px;}
+#ex5 > ul > li{float:left; width:200px; height:300px; margin:20px;}
+#ex5 > ul > li img{transform:rotateX(0deg); transition:all 0.7s;}
+#ex5 > ul > li:hover img{transform:rotateX(180deg);}
+
+/*-----------------------------------------------------ex6-----------------------------------------------------*/
+
+/*좌우회전*/
+#ex6{height:400px;}
+#ex6 > ul{height:400px;}
+#ex6 > ul > li{float:left; width:200px; height:300px; margin:20px;}
+#ex6 > ul > li img{transform:rotateY(0deg); transition:all 0.7s;}
+#ex6 > ul > li:hover img{transform:rotateY(180deg);}
+
+/*-----------------------------------------------------ex7-----------------------------------------------------*/
+
+/*대각회전*/
+#ex7{height:400px;}
+#ex7 > ul{height:400px;}
+#ex7 > ul > li{float:left; width:200px; height:300px; margin:20px;}
+#ex7 > ul > li img{transform:rotateX(0deg) rotateY(0deg); transition:all 0.7s;}
+#ex7 > ul > li:hover img{transform:rotateX(180deg) rotateY(180deg);}
+
+/*-----------------------------------------------------ex8-----------------------------------------------------*/
+
+#ex8{height:200px;}
+#ex8 ul{height:120px;}
+#ex8 ul li{float:left; width:80px; height:80px; margin:20px; background-color:#cccccc; position:relative;}
+#ex8 ul li a{position:absolute; left:0px; top:0px; }
+#ex8 ul li a:hover{top:-10px; transition:all 0.3s;}
+
+/*-----------------------------------------------------ex9-----------------------------------------------------*/
+
+#ex9{height:200px;}
+#ex9 ul{height:120px;}
+#ex9 ul li{float:left; width:80px; height:80px; margin:20px; background-color:#cccccc;}
+#ex9 ul li:nth-child(1) a img{transform:rotate(17deg);}
+#ex9 ul li:nth-child(2) a img{transform:rotate(-13deg);}
+#ex9 ul li:nth-child(3) a img{transform:rotate(30deg);}
+#ex9 ul li a img{transition:all 1s;}
+#ex9 ul li a img:hover{transform:rotate(0deg); transition:all 1s;}
+
+/*-----------------------------------------------------ex10-----------------------------------------------------*/
+
+#ex10{height:300px;}
+#ex10 p{/*background-color:yellow;*/ width:300px; height:143px; text-align:justify; cursor:pointer; position:relative; overflow:hidden;}
+#ex10 p img{position:absolute; right:0px; top:72px; z-index:2; transition:all 1.0s;}
+#ex10 p:hover img{right:-300px;}
+#ex10 p span{/*background-color:pink;*/ display:block; margin-top:75px; transition:all 1.5s;}
+#ex10 p:hover span{margin-top:0px;}
+
+/*-----------------------------------------------------ex11-----------------------------------------------------*/
+
+#ex11{height:300px;}
+#ex11 p{background:url(../images/banner_b.png) no-repeat 0 -210px; width:199px; height:225px; cursor:pointer; transition:all 2s; position:relative;}
+#ex11 p:hover{background-position:0px 0px;}
+#ex11 p img{position:absolute; left:0px; top:0px; transition:all 2s;}
+#ex11 p:hover img{top:50px;}
+
+/*-----------------------------------------------------ex12-----------------------------------------------------*/
+
+#ex12{height:80px;}
+#ex12 p{margin:20px;}
+#ex12 p button{border:1px solid #990099; width:150px; height:50px; font-size:16px; font-weight:bold; background-color:#ffffff; cursor:pointer; outline:none;}
+#ex12 p button:hover{background-color:#990099; color:#ffffff; transition:all 0.4s;}
+
+/*-----------------------------------------------------ex13-----------------------------------------------------*/
+
+#ex13{height:80px;}
+#ex13 p{margin:20px;}
+#ex13 p button{border:none; width:150px; height:50px; font-size:16px; font-weight:bold; background-color:#990099; color:#ffffff; cursor:pointer; outline:none;}
+#ex13 p button:hover{box-shadow:3px 4px 8px rgba(0,0,0,0.4); transition:all 0.4s;}
+
+/*-----------------------------------------------------ex14-----------------------------------------------------*/
+
+#ex14{height:100px;}
+#ex14 p{margin:20px;}
+#ex14 p button{border:none; width:200px; height:60px; font-size:16px; font-weight:bold; background-color:#990099; color:#ffffff; cursor:pointer; outline:none;}
+#ex14 p button span{position:relative; /*border:1px solid blue;*/ transition:all 0.3s;}
+#ex14 p button:hover span{padding-right:25px;}
+#ex14 p button span::after{/*border:1px solid red;*/ content:"\00bb"; position:absolute; right:-20px; top:0px; opacity:0; transition:all 0.3s;}/*>>*/
+#ex14 p button:hover span::after{opacity:1; right:0px;}
+
+/*-----------------------------------------------------ex15-----------------------------------------------------*/
+
+#ex15{height:100px;}
+#ex15 p{margin:20px;}
+#ex15 p button{border:none; width:200px; height:60px; font-size:16px; font-weight:bold; background-color:#990099; color:#ffffff; cursor:pointer; outline:none; border-radius:15px; box-shadow:0px 9px #666666; }
+#ex15 p button:hover{background-color:#990000;}
+#ex15 p button:active/*마우스 누르고 있을 때*/{background-color:#990000; box-shadow:0px 5px #666666; transform:translateY(4px);}
+
+/*-----------------------------------------------------ex16-----------------------------------------------------*/
+
+/*안쪽에 그림자 넣는 스타일*/
+#ex16{height:120px;}
+#ex16 p{margin:20px;}
+#ex16 p a{font-size:20px; font-weight:bold; width:200px; height:60px; display:block; box-shadow:inset 0 0 0 2px rgba(30,22,54,0.6); text-align:center; line-height:60px; border-radius:4px; color:rgba(20,22,54,0.6);transition:all 0.2s;}
+#ex16 p a:hover{box-shadow:inset 0 0 0 40px rgba(30,22,54,0.6); color:rgba(255,255,255,0.8); }
+
+/*-----------------------------------------------------ex17-----------------------------------------------------*/
+
+#ex17{height:300px;}
+.ex17{border:1px solid #333333; width:320px; height:240px; position:relative;}
+.ex17 button{position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);/*정가운데 정렬은 이게 공식*/ width:100px; height:50px; border:none; background-color:#ffffff; color:#000000; font-size:16px; font-weight:bold; border-radius:5px; cursor:pointer; outline:none;}
+.ex17 button:hover{background-color:#000000; color:#ffffff; transition:all 1s;}
+
+/*-----------------------------------------------------ex18-----------------------------------------------------*/
+
+#ex18{height:350px;}
+.ex18{border:1px solid #333333; width:300px; height:300px; cursor:pointer; position:relative; overflow:hidden;}
+.ex18 .over18{position:absolute; left:0px; top:0px; background-color:rgba(0,0,0,0.6); width:300px; height:300px; opacity:0; transition:all 0.5s;}
+.ex18:hover .over18{opacity:1;}
+.ex18 .over18 p{color:#ffffff; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); font-size:20px; font-weight:bold;}
+.ex18 img{transform:scale(1.1); transition:all 0.5s;}
+.ex18:hover img{transform:scale(1); transition:all 0.5s;}
+
+/*-----------------------------------------------------ex19-----------------------------------------------------*/
+
+#ex19{height:350px;}
+.ex19{border:1px solid #333333; width:300px; height:300px; cursor:pointer; position:relative; overflow:hidden;}
+.ex19 .over19{position:absolute; left:0px; top:-300px; background-color:rgba(0,0,0,0.6); width:300px; height:300px;  transition:all 0.5s;}
+.ex19:hover .over19{top:0px;}
+.ex19 .over19 p{color:#ffffff; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); font-size:20px; font-weight:bold;}
+.ex19 img{transform:scale(1.1); transition:all 0.5s;}
+.ex19:hover img{transform:scale(1);}
+
+/*-----------------------------------------------------ex20-----------------------------------------------------*/
+
+#ex20{height:350px;}
+.ex20{border:1px solid #333333; width:300px; height:300px; cursor:pointer; position:relative; overflow:hidden;}
+.ex20 .over20{position:absolute; left:0px; bottom:-300px;/*여기*/ background-color:rgba(0,0,0,0.6); width:300px; height:300px;  transition:all 0.5s;}
+.ex20:hover .over20{bottom:0px;}/*여기*/
+.ex20 .over20 p{color:#ffffff; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); font-size:20px; font-weight:bold;}
+.ex20 img{transform:scale(1.1); transition:all 0.5s;}
+.ex20:hover img{transform:scale(1);}
+
+/*-----------------------------------------------------ex21-----------------------------------------------------*/
+
+#ex21{height:350px;}
+.ex21{border:1px solid #333333; width:300px; height:300px; cursor:pointer; position:relative; overflow:hidden;}
+.ex21 .over21{position:absolute; left:-300px; top:0px;/*여기*/ background-color:rgba(0,0,0,0.6); width:300px; height:300px;  transition:all 0.5s;}
+.ex21:hover .over21{left:0px;}/*여기*/
+.ex21 .over21 p{color:#ffffff; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); font-size:20px; font-weight:bold;}
+.ex21 img{transform:scale(1.1); transition:all 0.5s;}
+.ex21:hover img{transform:scale(1); }
+
+/*-----------------------------------------------------ex22-----------------------------------------------------*/
+
+#ex22{height:350px;}
+.ex22{border:1px solid #333333; width:300px; height:300px; cursor:pointer; position:relative; overflow:hidden;}
+.ex22 .over22{position:absolute; right:-300px; top:0px;/*여기*/ background-color:rgba(0,0,0,0.6); width:300px; height:300px;  transition:all 0.5s;}
+.ex22:hover .over22{right:0px;}/*여기*/
+.ex22 .over22 p{color:#ffffff; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); font-size:20px; font-weight:bold;}
+.ex22 img{transform:scale(1.1); transition:all 0.5s;}
+.ex22:hover img{transform:scale(1); }
+
+/*-----------------------------------------------------ex23-----------------------------------------------------*/
+
+#ex23{height:350px;}
+.ex23{border:1px solid #333333; width:300px; height:300px; cursor:pointer; position:relative; overflow:hidden;}
+.ex23 .over23{position:absolute; left:0px; top:0px;/*여기*/  width:300px; height:300px;  transition:all 0.5s; opacity:0;}
+.ex23:hover .over23{opacity:1;}/*여기*/
+.over23 p{color:#ffffff; background-color:#333333; width:100px; height:30px; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); text-align:center; line-height:30px;}
+.ex23 .over23 p:hover{color:#ff9933;}
+.ex23 img{transform:scale(1.1); opacity:1; transition:all 0.5s;}
+.ex23:hover img{transform:scale(1); opacity:0.3;}
+
+
+/*-----------------------------------------------------ex24-----------------------------------------------------*/
+
+#ex24{height:300px;}
+.ex24{width:320px; height:240px; cursor:pointer; position:relative;}
+.over24{position:absolute; left:0px; bottom:0px; background-color:#008cba; width:100%; height:100%; transform:scale(0); transition:all 0.3s ease-in;}
+.ex24_t{color:#ffffff; font-size:20px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
+.ex24:hover .over24{transform:scale(1);}
+
+/*-----------------------------------------------------ex25-----------------------------------------------------*/
+
+#ex25{height:100px;}
+.ex25{/*border:1px solid red;*/ width:25px; height:25px; margin:20px; cursor:pointer; overflow:hidden;}
+.ex25 span{width:25px; height:4px; background-color:#333333; display:block; margin-bottom:4px; }
+.ex25 span:nth-child(3){margin-bottom:0px;}
+.ex25 span i{display:none;}/*글자로 마크업을 했지만 아이콘으로 표현할거기 때문*/
+.ex25:hover span:nth-child(1){transform:rotate(-45deg) translate(-6px, 5px);}
+.ex25:hover span:nth-child(2){opacity:0;}
+.ex25:hover span:nth-child(3){transform:rotate(45deg) translate(-6px, -5px);}
+.ex25:hover span{transition:all 0.5s;}
+
+/*---------------------------------------------------**ex26**---------------------------------------------------*/
+
+#ex26{height:300px;}
+.ex26{width:300px; height:240px; position:relative; cursor:pointer;}
+.ex26_i{position:absolute; left:0px; top:0px;}
+.over26{position:absolute; left:0px; top:0px; z-index:2; opacity:0;}
+.ex26:hover .over26{opacity:1; transition:all 0.5s ease-in;} 
+
+
+/*-----------------------------------------------------ex27-----------------------------------------------------*/
+
+#ex27{height:400px;}
+.ex27 div{margin:50px;}
+.tool1{border-bottom:1px dotted #333333; width:65px; height:20px; cursor:pointer; position:relative;}
+.tool1 span{background-color:#000000; color:#ffffff; width:120px; height:30px; display:block; text-align:center; line-height:30px; border-radius:6px; position:absolute; left:-10px; top:-40px; opacity:0; visibility:hidden;}
+.tool1 span::after{content:""; position:absolute; left:50px; top:30px; border-width:5px; border-style:solid; border-color:#000000; /*삼각형 만들기*/ border-color:#000000 transparent transparent transparent;}
+.tool1:hover span{opacity:1; transition:all 1s ease-in; visibility:visible;}
+
+
+.tool2{border-bottom:1px dotted #333333; width:65px; height:20px; cursor:pointer; position:relative;}
+.tool2 span{background-color:#000000; color:#ffffff; width:120px; height:30px; display:block; text-align:center; line-height:30px; border-radius:6px; position:absolute; left:-10px; bottom:-40px; opacity:0; visibility:hidden;}
+.tool2 span::after{content:""; position:absolute; left:50px; bottom:30px; border-width:5px; border-style:solid; border-color:#000000; /*삼각형 만들기*/ border-color: transparent transparent #000000 transparent;}
+.tool2:hover span{opacity:1; transition:all 1s ease-in; visibility:visible;}
+
+
+.tool3{border-bottom:1px dotted #333333; width:65px; height:20px; cursor:pointer; position:relative; left:200px;}
+.tool3 span{background-color:#000000; color:#ffffff; width:120px; height:30px; display:block; text-align:center; line-height:30px; border-radius:6px; position:absolute; left:-130px; top:-2px; opacity:0; visibility:hidden;}
+.tool3 span::after{content:""; position:absolute; left:120px; top:10px; border-width:5px; border-style:solid; border-color:#000000; /*삼각형 만들기*/ border-color: transparent  transparent  transparent #000000;}
+.tool3:hover span{opacity:1; transition:all 1s ease-in; visibility:visible;}
+
+
+.tool4{border-bottom:1px dotted #333333; width:65px; height:20px; cursor:pointer; position:relative;}
+.tool4 span{background-color:#000000; color:#ffffff; width:120px; height:30px; display:block; text-align:center; line-height:30px; border-radius:6px; position:absolute; left:80px; top:-4px; opacity:0; visibility:hidden;}
+.tool4 span::after{content:""; position:absolute; left:-10px; top:10px; border-width:5px; border-style:solid; border-color:#000000; /*삼각형 만들기*/ border-color: transparent  #000000 transparent  transparent ;}
+.tool4:hover span{opacity:1; transition:all 1s ease-in; visibility:visible;}
+
+/*-----------------------------------------------------ex28-----------------------------------------------------*/
+
+#ex28{height:100px;}
+.ex28_1{margin:20px;}
+.switch1{position:relative; display:block; width:60px; height:34px; /*border:1px solid red;*/}
+.switch1 input{width:0px; height:0px; opacity:0;}/*checkbox*/
+.slider1{position:absolute; top:0px; left:0px; right:0px; bottom:0px; background-color:#cccccc; cursor:pointer; transition:all 0.4s;}/*span*/
+.slider1::before{content:""; width:26px; height:26px; background-color:#000000; position:absolute; left:4px; bottom:4px; background-color:#ffffff; transition:all 0.4s;}/*span*/
+.switch1 input:checked + .slider1{background-color:#0099ff;}/*span*/
+/*버튼이동*/
+.switch1 input:checked + .slider1::before{transform:translateX(26px);}/*span 추가내용*/
+.slider1 i{display:none;}
+.switch1 input:focus + .slider1{box-shadow:0 0 3px #333333;}
+
+.ex28_2{margin:20px;}
+.switch2{position:relative; display:block; width:60px; height:34px; /*border:1px solid red;*/}
+.switch2 input{width:0px; height:0px; opacity:0;}/*checkbox*/
+.slider2{position:absolute; top:0px; left:0px; right:0px; bottom:0px; background-color:#cccccc; cursor:pointer; border-radius:35px; transition:all 0.4s;}/*span*/
+.slider2::before{content:""; width:26px; height:26px; background-color:#000000; position:absolute; left:4px; bottom:4px; background-color:#ffffff; border-radius:50%; transition:all 0.4s;}/*span*/
+.switch2 input:checked + .slider2{background-color:green;}/*span*/
+/*버튼이동*/
+.switch2 input:checked + .slider2::before{transform:translateX(26px);}/*span 추가내용*/
+.slider2 i{display:none;}
+.switch2 input:focus + .slider2{box-shadow:0 0 3px #333333;}
+
+/*-----------------------------------------------------ex29-----------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------ex30-----------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------ex31-----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

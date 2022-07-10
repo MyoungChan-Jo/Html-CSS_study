@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Transform1</title>
+	<link rel="stylesheet" href="css/layout1.css">
+</head>
+<body><!---->
+
+<!--
+transform 219p
+요소를 회전,이동,변형
+css1,css2 대부분 브라우저 지원(ie9~11,크롬,파이어폭스)
+css3(지원브라우저 확인) http://www.w3schools.com 검색.
+
+1.transform:rotate(수치deg) 시계방향으로 회전. 음수가 들어가면 반대방향
+2.transform:translate(x,y) 입력한 축 방향으로 이동하는 것. 
+3.transform:scale(수치) 지정배율만큼 확대/축소 1=100% -1은 역방향.
+4.transform:skew(xdeg,ydeg) 변형(기울임) 
+
+transform-origin
+지정한 요소의 변형 원점을 설정
+transform-origin: x축, y축, 직접
+	transform-origin:left top 왼쪽상단
+	transform-origin:right bottom 우측하단
+-->
+
+<div id="wrap1">
+	<h3>*transform*</h3>
+	<div id="ex1">
+		<p class="ex1_1"><img src="images/ph1.jpg" alt="#" width="320" height="240"></p>
+		<p class="ex1_2"><img src="images/ph1.jpg" alt="#" width="320" height="240"></p>
+		<p class="ex1_3"><img src="images/ph1.jpg" alt="#" width="320" height="240"></p>
+		<p class="ex1_4"><img src="images/ph1.jpg" alt="#" width="320" height="240"></p>
+		<p class="ex1_5"><img src="images/ph1.jpg" alt="#" width="320" height="240"></p>
+		<p class="ex1_6"><img src="images/ph1.jpg" alt="#" width="320" height="240"></p>
+		<p class="ex1_7"><img src="images/ph1.jpg" alt="#" width="320" height="240"></p>
+		<p class="ex1_8"><img src="images/ph1.jpg" alt="#" width="320" height="240"></p>
+	</div><!--ex1-->
+	
+	<div id="ex2">
+		<p class="ex2_1"><img src="images/ph2.jpg" alt="#" width="200" height="200"></p>
+		<p class="ex2_2"><img src="images/ph2.jpg" alt="#" width="200" height="200"></p>
+	</div><!--ex2-->
+	
+	<h3>*화살표*</h3>
+	<div id="ex3">
+		<p>Right arrow: <span class="arrow right">Right</span></p>
+		<p>Left arrow:<span class="arrow left">Left</span></p>
+		<p>Up arrow:<span class="arrow up">Up</span></p>
+		<p>Down arrow:<span class="arrow down">Down</span></p>
+	</div><!--ex3-->
+	
+	<h3>*transform-origin*</h3>
+<div id="ex4">
+	<p><img src="images/ph1.jpg" alt="#" width="100" height="100"></p>
+	<p><img src="images/ph1.jpg" alt="#" width="100" height="100"></p>
+	<p><img src="images/ph1.jpg" alt="#" width="100" height="100"></p>
+</div><!--ex4-->
+
+<h3>*transform:rotateX, rotateY, rotateZ*</h3><!--ie9이하 적용 안됨.-->
+<div id="ex5">
+	<p>transform</p>
+	<p>transform</p>
+	<p>transform</p>
+	<p>transform</p>
+	<p>transform</p>
+	<p>transform</p>
+	<p>transform</p>
+	<p>transform</p>
+	<p>transform</p>
+</div><!--ex5-->
+</div><!--wrap1-->
+</body>
+</html>

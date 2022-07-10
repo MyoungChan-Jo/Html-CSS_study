@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*reset*/
+ul,li{list-style:none;}
+body,div,ul,li,a,p{margin:0px; padding:0px;}
+a{text-decoration:none;color:#ffffff;}
+body{font:normal 15px/1.5em Arial,sans-serif; color:#666666;}
+
+
+/*wrap1*/
+#wrap{width:100%; height:50px; background-color:#333333; position:relative;}
+/*left*/
+.left_menu{float:left; width:120px; height:50px;}
+.left_menu li{float:left; width:60px; height:50px; text-align:center; line-height:50px; }/*한줄만들기*/
+.left_menu li a{display:block;}
+.left_menu li a:hover{background-color:#dddddd; color:#000000;}
+
+/*home 만 포지션 넣어보기*/
+.home{position:absolute; left:50%; top:0px; transform:translate(-50%,0); /*left(x축)만 들어갔기 때문에 트랜스폼에서도 x값만 변경해준 것이다.*/width:60px; height:50px; text-align:center; line-height:50px;}
+.home a{display:block;}
+.home a:hover{background-color:#dddddd; color:#000000;}
+.home a.active{background-color:#cc9933; color:#ffffff;}
+
+/*right*/
+.right_menu{float:right; width:180px; height:50px;}
+.right_menu li{float:left; width:60px; height:50px; text-align:center; line-height:50px;}
+.right_menu li a{display:block;}
+.right_menu li a:hover{background-color:#dddddd; color:#000000;}
+
+
+/*wrap2*/
+#wrap2{margin:30px;}
+#wrap2 p{margin:20px 0px;}
+#wrap2 p:nth-child(1){width:100px; height:100px; background-color:orange;}/*정사각형*/
+#wrap2 p:nth-child(2){width:100px; height:50px; background-color:orange;}/*직사각형*/
+#wrap2 p:nth-child(3){width:100px; height:100px; background-color:orange; border-radius:50%;}/*원*/
+#wrap2 p:nth-child(4){width:100px; height:50px; background-color:orange; border-radius:50%;}/*찌부된 원*/
+#wrap2 p:nth-child(5){width:100px; height:100px; background-color:orange; transform:skew(20deg);}/*기울어진 직사각형*/
+#wrap2 p:nth-child(6){ width:125px; height:0px; border-bottom:50px solid orange; border-left:25px solid transparent; border-right:25px solid transparent;}/*사다리*/
+#wrap2 p:nth-child(7){width:0px; height:0px; border-left:25px solid transparent; border-right:25px solid transparent; border-bottom:50px solid orange;}/*삼각형. 높이 넓이 안주고 좌우로 값을 지워버리는 것.*/
+#wrap2 p:nth-child(8){width:0px; height:0px; border-left:25px solid transparent; border-right:25px solid transparent; border-top:50px solid orange;}/*역삼각형*/
+#wrap2 p:nth-child(9){width:0px; height:0px; border-top:25px solid transparent; border-right:50px solid orange; border-bottom:25px solid transparent;}/**/
+#wrap2 p:nth-child(10){width:0px; height:0px; border-top:25px solid transparent; border-left:50px solid orange; border-bottom:25px solid transparent;}/**/
+#wrap2 p:nth-child(11){width:0px; height:0px; border-top:100px solid orange; border-right:100px solid transparent;}/**/
+#wrap2 p:nth-child(12){width:0px; height:0px; border-top:100px solid orange; border-left:100px solid transparent;}/**/
+#wrap2 p:nth-child(13){width:0px; height:0px; border-bottom:100px solid orange; border-right:100px solid transparent;}/**/
+#wrap2 p:nth-child(14){width:0px; height:0px; border-bottom:100px solid orange; border-left:100px solid transparent;}/**/
+#wrap2 p:nth-child(15){width:80px; height:80px; /*background:yellow;*/ border-radius:50%;box-shadow:15px 15px 0 0 orange;}/**/
+
+
+
+
+
+
+
