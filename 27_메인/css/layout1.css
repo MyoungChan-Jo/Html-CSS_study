@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+
+/*-----------------------------------------reset-----------------------------------------*/
+body,div,header,h1,a,img,ul,li,h2,nav,p,span,aside,h3,br,figure,figcaption,footer,address{margin:0px; padding:0px;}
+header,nav,aside,figure,figcaption,footer{display:block;}
+ul,li{list-style:none;}
+a{text-decoration:none;}
+img{border:none;}
+body{font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif; color:#333333; background:url(../images/bg.jpg) repeat-x left top;}
+
+
+/*-----------------------------------------wrap-----------------------------------------*/
+#wrap{    /*border:1px solid red;*/    width:1024px; margin:10px auto; }
+
+
+/*-----------------------------------------메인메뉴-----------------------------------------*/
+#top h1{  /*border:1px solid blue;*/  width:200px; height:58px; float:left; margin-bottom:20px; }/*로고*/
+.quick{     /*border:1px solid blue;*/ float:right; width:250px; height:20px; text-align:right; margin-top:20px;}/*로그인, 회원가입...*/
+.quick li{display:inline; margin-left:10px;}/*float:left..대신 플로트는 text-align 안먹음.*/
+.quick li:first-child{margin-left:0px;}/*첫번째 li 마진 지워주기.*/
+.quick li a{color:#333333;}/*색변경*/
+.quick li a:hover{text-decoration:underline;}/*밑줄 만들어주기*/
+
+
+
+.blog{clear:both; font-size:13px; background:#ff6633 url(../images/arrow.png) no-repeat center 30px; width:60px; height:50px; text-align:center; line-height:30px; float:left;}/*블로그 버튼 만들기*/
+.blog a{color:#ffffff; width:60px; height:50px; display:block;}/*버튼 자체를 클릭할 수 있도록 바꾸기*/
+
+#main_menu{  /*border:1px solid blue;*/  float:right; width:800px; height:50px; line-height:50px;margin-bottom:1px;}/*푸드/캠핑....*/
+#main_menu ul{width:800px; height:50px; text-align:right;}
+#main_menu ul li{display:inline; margin-left:50px;}
+#main_menu ul li:first-child{margin-right:0px;}
+#main_menu ul li a{color:#333333; font-size:16px; font-weight:bold;}
+#main_menu ul li a:hover{color:#ff6633;}/*호버시 색상변경*/
+
+/*-----------------------------------------메인상단-----------------------------------------*/
+#main_img{clear:both; width:1024px; height:367px; position:relative; margin-bottom:30px;}/*메인 이미지*/
+.p_txt1, .p_txt2, .p_txt3{position:absolute; left:100px; z-index:2;}/*공통*/
+.p_txt1{top:40px; color:#ffffff; font-size:40px;  letter-spacing:-1px; line-height:1em;}/*캠핑쿡...*/
+.p_txt1 span{display:block; color:#ff6633;}/*오픈기념...*/
+.p_txt2{top:160px; color:#ffffff;}/*주문을...*/
+.p_txt3{bottom:60px;}/*더보기*/
+.p_txt3 a{color:#ffffff; border:3px solid #ffffff; width:150px; height:40px; display:block; font-size:20px; font-weight:bold; text-align:center; line-height:40px; font-family:Arial,sans-serif;}/*버튼*/
+.p_txt3 a:hover{color:#ff6633; border-color:#ff6633; transition:all 0.5s;} /*버튼 색상 바꾸기*/
+
+
+/*-----------------------------------------메인중단(쿡배너)-----------------------------------------*/
+#banner{     /*border:1px solid blue;*/   width:1024px; height:200px; margin-bottom:10px; position:relative;}/* 쿡배너전체*/
+#banner h3{/*border:1px solid red;    */ height:20px; font-size:14px; margin-bottom:15px;}/*제목*/
+#banner ul{/* border:1px solid green;*/ width:1024px; height:160px;}/*더보기 들어갈 부분*/
+#banner ul li{float:left; width:256px; text-align:center; cursor:pointer;}/*1024÷4=256*/ 
+#banner ul li img{margin-bottom:5px; transform:scale(1); transition:all 0.3s;}/*이미지 부분*/
+#banner ul li:hover img{transform:scale(1.1);}/*호버시 크기 확장*/
+#banner ul li:hover p{text-decoration:underline; color:#666666;}/*호버시 밑줄 , 색*/
+
+.view{position:absolute; top:10px; right:5px;}/*+더보기*/
+.view:hover{color:#ff6633;}/*호버시 색상변경*/
+
+/*-----------------------------------------메인하단(추천푸드)-----------------------------------------*/
+#food{        /*border:1px solid green;*/  clear:both; width:1024px; height:320px; position:relative;}/*추천푸드 전체*/
+#food h3{height:20px; font-size:14px; margin-bottom:15px;}/*제목*/
+.food_wrap{/*border: 1px solid red;*/  width:1024px; height:280px;}/*추천푸드 전체 테두리*/
+.food_wrap figure{float:left; width:256px; text-align:center; cursor:pointer;}/*img부분*/
+.food_wrap figure img{border:4px solid transparent; transition:all 0.3s;} /*테두리 감추기*/
+.food_wrap figure:hover img{border-color:#165a35;}/*호버시 테두리 보이게*/
+.food_wrap figure:hover figcaption{text-decoration:underline; color:#666666;}/*호버시 밑줄, 색*/
+
+/*-----------------------------------------하단-----------------------------------------*/
+#bottom{border-top:1px solid #cccccc; clear:both; width:100%; height:60px; text-align:center; padding:10px 0px;}
+#bottom address{font-style:normal; line-height:1.8em;}
+
+
+
+
+
+
+
+
+
+
+

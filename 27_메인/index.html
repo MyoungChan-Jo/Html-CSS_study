@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+     <!--[if lt IE 9]>   
+     <script src="js/html5shiv.js"></script>
+     <![endif]-->
+    <link rel="stylesheet" href="css/layout1.css">
+</head>
+<body>
+<!--
+
+〓〓〓〓〓〓〓〓〓〓 index.html 〓〓〓〓〓〓〓〓〓〓
+p81-99 print7
+
+1. <header></header>
+사이트 전체의 헤더영역, 주로 페이지 맨 위쪽이나 왼쪽에 삽입
+※꼭 포함해야 할 것: 하나 이상의 제목 요소(<h1>~</h6> 中 1), 로고 아이콘, 저작자 정보
+<header> = 중첩사용 가능
+<header>, <footer>, <address> 안에 중첩되면 안된다.
+ 
+2. <nav></nav>
+네비게이션 주 메뉴, 위치에 영향을 받지 않음. ex) ol,ul
+
+3.<section></section>
+주제별로 콘텐츠 영역 나타내기
+섹션태그 사용시 <h#>요소와 함께 사용하기를 w3c에서 권장한다.
+
+4.<article></article>
+콘텐츠에 내용을 넣을 때, 독립적인 내용, 배포할 수 있는 컨텐츠(저작권x)로 인식한다.
+포럼게시물, 블로그 포스트, 뉴스 스토리가 있다.
+
+5.<aside></aside>
+본문이외의 내용, 링크모음, 메인에 영향을 주지 않는 내용, 기타내용
+
+6.<footer></footer>
+보통 하단에 표시한다. 제작자의 연락처정보와 저작권정보등을 표시한다.
+※꼭 포함해야 할 것: 저작자 정보, 저작권 정보, 연락 정보, 사이트 맵, 맨위로 링크.
+<footer>는 중복 가능하다.
+
+7.<main></main> >>>> 학원에서는 안할거임. 아직은 시기상조
+본문에서 주요 내용(ie12이상에서 지원)
+※주의할 점: 사이드 바, 탐색 링크, 저작권 정보, 사이트 로고 및 검색 양식과 같은 문서에서 반복되는 컨텐츠를 포함하면 안됨.
+두개이상의 <main> 요소를 사용하면 안된다.
+<main>요소는 <header>, <nav>, <article>, <aside>, <footer> 요소의 하위로 마크업을 해서는 안된다. 
+
+figure
+figcaption
+        초기화 css => display:block;을 무조건 해주어야 한다.
+
+
+로고는 h1으로 많이 사용 
+※하위버전이라도 무조건 맞추어야 한다고 요구하면 nth 이런 css3는 사용하면 절대 안된다. ※      
+-->
+ 
+ <!--[if lt IE 9]>   
+<script src="경로/파일명"></script>
+<![endif]-->
+  <!--↑ 실행되는 주소 title 밑에 붙이기.
+           https://github.com/afarkas/html5shiv 경로 사이트
+           다운로드 클릭 > 압축 해제 > src 폴더 클릭 > html5shiv.js 복사해서 js폴더에 붙여넣기
+           -->  
+    
+<!--//////////////////////////////////// 메인메뉴 ////////////////////////////////////-->
+<div id="wrap">
+    <header id="top">
+        <h1><a href="index.html"><img src="images/logo.png" alt="캠핑쿡 파티톡" width="200" height="58"></a></h1><!--로고-->
+        <ul class="quick">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">장바구니</a></li>
+            <li><a href="#">마이페이지</a></li>
+        </ul><!--.quick 상단 메뉴-->
+       <h2 class="blog"><a href="#">블로그</a></h2>
+       <nav id="main_menu">
+           <ul>
+               <li><a href="#">푸드</a></li>
+               <li><a href="#">캠핑</a></li>
+               <li><a href="#">파티</a></li>
+               <li><a href="#">게임</a></li>
+               <li><a href="#">이벤트</a></li>
+               <li><a href="#">레시피</a></li>
+               <li><a href="#">캠핑장소개</a></li>
+               <li><a href="#">고객센터</a></li>
+           </ul><!--메인메뉴-->
+       </nav> <!--main_menu-->
+    </header><!--top-->
+    
+    
+<!--//////////////////////////////////// 메인 상단 ////////////////////////////////////-->
+<div id="main_img">
+    <p><img src="images/main.jpg" alt="#" width="1024" height="367"></p>
+    <p class="p_txt1">캠핑쿡 파티톡<span>오픈 기념 이벤트</span></p>
+    <p class="p_txt2">주문을 해주시는 선착순 100명의 회원분들께<br>캠핑쿡 파티톡이 직접 제작한 예쁜 돗자리를 드립니다.</p>
+    <p class="p_txt3"><a href="#">MORE VIEW</a></p>
+</div><!--main_img-->  
+
+<!--////////////////////////////////////메인 중단(쿸배너) ////////////////////////////////////-->
+<aside id="banner">
+    <h3>쿡 배너</h3>
+    <ul>
+        <li><img src="images/ban01.png" alt="#" width="100" height="100"><p>RECIPE<br>레시피 영상</p></li>
+        <li><img src="images/ban02.png" alt="#" width="100" height="100"><p>COOK TALK PEOPLE<br>쿡톡피플</p></li>
+        <li><img src="images/ban03.png" alt="#" width="100" height="100"><p>EVENT<br>이달의 이벤트</p></li>
+        <li><img src="images/ban04.png" alt="#" width="100" height="100"> <p>INQUIRY<br>상품문의</p></li>
+        <li><a href="#" class="view">+더보기</a></li>
+    </ul>
+</aside><!--banner-->   
+
+<!--//////////////////////////////////메인 하단(추천푸드) ////////////////////////////////////-->
+<aside id="food">
+    <h3>추천푸드</h3>
+    <div class="food_wrap">
+        <figure>
+            <img src="images/item01.jpg" alt="#" width="213" height="213">
+             <figcaption>바베큐 2~3인용 세트</figcaption>
+        </figure>
+        <figure>
+            <img src="images/item02.jpg" alt="#" width="213" height="213">
+            <figcaption>목심스테이크 2~3인용</figcaption>
+        </figure>
+        <figure>
+            <img src="images/item03.jpg" alt="#" width="213" height="213">
+            <figcaption>구이용 모듬소시지</figcaption>
+        </figure>
+        <figure>
+            <img src="images/item04.jpg" alt="#" width="213" height="213">
+            <figcaption>오리지널 부대찌개</figcaption>
+        </figure>
+        <p><a href="#" class="view">+더보기</a></p>
+    </div><!--food_wrap-->
+</aside><!--food-->
+</div><!--wrap-->
+
+
+<!--////////////////////////////////////하단 ////////////////////////////////////-->
+<footer id="bottom">
+    <address>
+        파티푸드조합. 주소: 인천광역시 서구 원당대로 853403 (원당동.삼정프라자) 통신판매신고번호 : 제 - 2015-인천서구-0032호.<br>
+        대표자 : 이원복. 고객센터 : 070-8267-8594. 사업자등록번호 : 137-86-47960[사업자정보확인]. 개인정보관리책임자 : 박영선. <br>
+        메일 osfift@naver.com
+    </address>
+</footer><!--bottom-->
+</body>
+</html>
