@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+@import url("top.css");/*상단 CSS*/
+@import url("bottom.css");/*하단 CSS*/
+
+/*-------------------Reset-------------------*/
+body,div,header,article,nav,footer,address,p,img,ul,li,a,br,span,strong,h1,h2,h3,h4{margin:0px; padding:0px;}
+header,nav,footer,article{display:block;}
+ul,li{list-style:none;}
+img{border:none;}
+a{text-decoration:none; color:#333333;}
+body,h1,h2,h3,h4{font:normal 12px/1.5em nanum,sans-serif; color:#333333;}
+
+/*-------------------Font-------------------*/
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+			url('../font/NanumGothic.ttf')format('truetype'),
+			url('../font/NanumGothic.woff')format('woff');
+}
+
+/*-------------------Main_img-------------------*/
+#main_img{clear:both; background:url(../images/main_img.jpg) no-repeat; width:1000px; height:220px; border:1px solid #cccccc; margin:30px auto 20px auto;}
+.m_txt1{margin-top:20px; margin-left:15px;font-size:30px; line-height:1em;}/*중소기업 최고 경영 ...*/
+.m_txt1 span{display:block; color:#db3344; letter-spacing:-1px;}
+.m_txt2{margin-top:20px; margin-left:15px; }/*교육기간...*/
+.m_txt2 strong{border-left:1px solid #cccccc; border-right:1px solid #cccccc; padding:0px 10px; margin:0px 5px;}/*교육기간, 모집기간, 지원방법*/
+.m_txt3{margin-top:50px; margin-left:15px; background:url(../images/arrow.png) no-repeat; width:103px; height:25px;}/*자세히보기*/
+.m_txt3 a{color:#ffffff; width:103px; height:25px; display:block; line-height:25px; text-indent:1em;}
+
+#contents{ /*border:1px solid green;*/ border-bottom:1px solid #cccccc; width:1000px; height:480px; margin:0px auto 20px auto;}/*주요사업, 직접생산확인증명서,since1965전체*/
+.con1{float:left; width:203px; height:449px;}
+.con1 h2{width:203px; height:45px; background-color:#df3a4a; color:#ffffff; font-size:15px; text-align:center; line-height:45px;}
+.con1 ul{width:203px; height:404px;}
+.con1 ul li{border:1px solid #cccccc; float:left; width:100px; height:100px;}
+.con1 ul li.bi2{border-left:none;}/*인력지원*/
+.con1 ul li.bi3{border-top:none;}/*통계*/
+.con1 ul li.bi4{border-left:none; border-top:none;}/*협동조합*/
+.con1 ul li.bi5{border-top:none;}/*국제통상*/
+.con1 ul li.bi6{border-left:none; border-top:none;}/*교육*/
+.con1 ul li.bi7{border-top:none;}/*임대안내*/
+.con1 ul li.bi8{border-left:none; border-top:none;}/*공공구매*/
+.con1 ul li a{width:100px; /*height:100px;*/ height:30px; display:block; text-align:center; background-repeat : no-repeat; background-position:center 15px; padding-top:70px;}/*a공통*/
+.con1 ul li.bi1 a{background-image:url(../images/icon1.png);}/*공제사업*/
+.con1 ul li.bi2 a{background-image:url(../images/icon2.png);}/*인력지원*/
+.con1 ul li.bi3 a{background-image:url(../images/icon3.png);}/*통계*/
+.con1 ul li.bi4 a{background-image:url(../images/icon4.png);}/*협동조합*/
+.con1 ul li.bi5 a{background-image:url(../images/icon5.png);}/*국제통상*/
+.con1 ul li.bi6 a{background-image:url(../images/icon6.png);}/*교육*/
+.con1 ul li.bi7 a{background-image:url(../images/icon7.png);}/*임대안내*/
+.con1 ul li.bi8 a{background-image:url(../images/icon8.png);}/*공공구매*/
+.con1 ul li a:hover{text-decoration:underline;}
+
+.con2{float:left; width:488px; height:449px; margin-left:28px; border:1px solid #cccccc; background:url(../images/con1_img.png) no-repeat;}
+.con2 p{font-size:15px; margin-top:50px; margin-left:10px; }
+.con2 p span{display:block; font-size:12px; margin-top:15px;}
+
+.con3{float:right; width:252px; height:449px; background:url(../images/con3_img.jpg) no-repeat;}
+.con3_1{border:1px solid #cccccc; width:250px; height:220px; margin-bottom:7px;}/*SINCE1965*/
+.con3_1 h3{margin-left:10px; color:#df3a4a;}/*SINCE1965*/
+.txt1{margin-left:10px; color:#e39900;}/*300만..*/
+.txt2{margin-left:10px; margin-top:10px;}/*중소기업..*/
+
+.con3_2{border:1px solid #cccccc; width:250px; height:220px; background:url(../images/con2_img.jpg) no-repeat;}/*KBIZ지역본부*/
+.con3_2 h3{margin-left:10px; margin-top:15px; font-weight:bold;}
+
+#news_wrap{clear:both; width:990px; height:250px; margin:0px auto 20px auto;}/*중앙회소식, 중소기업소식 .. 전체*/
+#news_wrap > div{position:relative; border:1px solid #cccccc; width:230px; height:220px; float:left;}
+#news_wrap > .news2, #news_wrap > .news3{margin-left:20px;}
+#news_wrap > .news4{float:right;} /*.news4만 넣으면 안될거임. 앞에 플로트가 들어갔기 때문. 이 작업은 이미 들어간 작업에 수정을 하는거라 > 표시를 넣어 주어야 한다.*/
+#news_wrap > div > h4{/*border:1px solid green;*/ font-size:15px; font-weight:bold; height:20px; margin:20px auto 10px 15px; }
+.news_img{height:113px; text-align:center; margin-bottom:10px;}/*이미지.*/
+.news_more{position:absolute; top:20px; right:20px;}/*더보기*/
+.news_txt{/*background-color:yellow;*/ width:195px; margin:0px auto;}
+.news_list li{/*border:1px solid yellow;*/ background:url(../images/list.png) no-repeat left center; padding-left:10px; margin-left:20px; width:180px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}/*텍스트 넘어가면 ... 처리 = 1.너비를 주고. 2.white-space:nowrap 3.overflow:hidden 4.text-overflow:ellipsis*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
