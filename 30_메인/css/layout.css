@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*import*/
+@import url("top.css");/*상단영역*/
+@import url("contents.css");/*중앙영역*/
+@import url("bottom.css");/*하단영역*/
+
+/*Reset*/
+a{color:#333333;}
+input{outline:none;}
+body,h1,input{font:normal 12px/1.5em nanum,sans-serif;}
+
+/*Font*/
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+				url('../font/NanumGothic.ttf')format('truetype'),
+				url('../font/NanumGothic.woff')format('woff');
+}
+
+
+
+
+
+
+
+

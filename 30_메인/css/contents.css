@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/*main_img 메인상단 이미지*/
+#main_img{clear:both; background:url(../images/main_bg.jpg) no-repeat 55% 0; width:100%; height:400px;}/*전체*/
+.main_con{position:relative;  /*border:1px solid pink;*/  margin:0 auto;                  width:1200px; height:400px;}/*내용*/
+.prev, .next, .coupon, .btn{position:absolute; cursor:pointer; z-index:10;}/*공통*/
+.prev{left:0px; top:50%; transform:translate(0, -50%);}/*이전화살표*/
+.next{right:0px; top:50%; transform:translate(0, -50%);}/*다음화살표*/
+.coupon{left:100px; top:50%; transform:translate(0, -50%);}/*쿠폰*/
+.btn{left:50%; bottom:20px; transform:translate(-50%, 0);}/*버튼*/
+.btn img{float:left; margin:0 3px;}
+/* 하위 버전 안먹음.
+.btn img:first-child{margin-left:0px;}
+.btn img:last-child{margin-right:0px;}
+*/
+
+/*service 메인중단 이미지*/
+#service_wrap{                                                   width:100%;}
+#service_menu{/*border:1px solid pink;*/           width:390px; height:40px; margin:20px auto;}
+#service_menu li{float:left;                                  width:130px; height:46px; text-align:center;}
+#service_menu li a{display:block;                       width:130px; height:46px; font-size:16px; line-height:40px;}
+#service_menu li a:hover{background:url(../images/arrow.png) no-repeat; color:#ffffff;}
+
+/*service 메인하단 이미지*/
+#service{clear:both; background-color:#eaeaea; width:100%; height:180px;}
+.service{/*border:1px solid pink;*/                         width:1070px; height:180px; margin:0px auto;}
+.service figure{float:left; width:136px; height:100px; margin:0 21px; background-color:#ffffff; text-align:center; border-radius:100px; padding-top:36px; margin-top:25px;}
