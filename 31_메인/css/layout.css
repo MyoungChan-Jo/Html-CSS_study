@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*Reset*/
+body{font:normal 12px/1.5em nanum,sans-serif; color:#333333;}
+
+/*Font*/
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+				url('../font/NanumGothic.ttf')format('truetype'),
+				url('../font/NanumGothic.woff')format('woff');
+}
+
+/*Top_wrap*/
+#top_wrap{width:100%; height:669px; background:url(../images/main_img.png) no-repeat 50% top;}
+#top{width:100%; height:669px;}
+.quick_wrap{width:100%; height:40px; border-bottom:1px solid rgba(255,255,255,0.2);}/*255=흰색 a=투명도*/
+.quick{/*border:1px solid red;*/ width:750px; height:40px; float:right;}
+.quick li{float:left; width:80px; height:40px; text-align:center; line-height:40px;}/*공통*/
+.quick li:nth-child(5){width:60px; height:35px; padding-top:5px; border-left:1px solid rgba(255,255,255,0.2); border-right:1px solid rgba(255,255,255,0.2);}/*돋보기*/
+.quick li:nth-child(6) img{vertical-align:middle; margin-right:3px;}/*공사실+*/
+.quick li a{color:#ffffff; font-size:13px;}
+
+/*Main*/
+#main_navi_wrap{     /*border:1px solid red;*/ clear:both; width:1000px; height:60px; margin:10px auto 0 auto;}
+#main_navi_wrap h1{/*border:1px solid red;*/ width:146px; height:60px; float:left;}/*fhrh*/
+#main_navi{               /*border:1px solid red;*/ width:770px; height:60px; float:right;}/*주메뉴*/
+#main_navi ul{width:770px; height:60px; text-align:right; line-height:60px;}
+#main_navi ul li{display:inline; margin-left:20px;}
+#main_navi ul li:first-child{margin-left:0px;}/*KDB다이렉트보험*/
+#main_navi ul li a{color:#ffffff; font-size:18px; padding-bottom:15px;}
+#main_navi ul li a:hover{background:url(../images/point_1d.png) no-repeat center bottom;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
