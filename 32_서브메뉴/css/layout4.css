@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*reset*/
+a{color:#333333;}
+body,h1{font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif; color:#333333;}
+
+/*top_wrap*/
+#top_wrap{/*border:1px solid red;*/ width:1024px; margin:10px auto 0px auto;}
+
+.quick{/*border:1px solid red;*/ height:20px; text-align:right; }
+.quick li{display:inline;}
+.quick li:nth-child(1)::after, .quick li:nth-child(2)::after{content:' / ';}
+.quick li a:hover{color:#000000;}
+
+#top_wrap h1{/*border:1px solid red;*/ width:125px; height:60px; margin:20px auto 40px auto;}
+
+#main_menu{/*border:1px solid red;*/ width:1020px; height:35px; margin:0px auto;}
+#main_menu > ul > li > div > .sub{display:none;}/*하위ul숨기기*/
+#main_menu > ul > li{float:left; width:204px; height:35px; text-align:center; line-height:35px; position:relative;}
+#main_menu > ul > li:hover{border-bottom:3px solid #003399; height:32px;}
+#main_menu > ul > li > a{font-size:16px; font-weight:bold; display:block; }
+#main_menu > ul > li > a:hover{color:#003399;}
+
+#main_menu > ul > li:hover > div > .sub{display:block; position:absolute; left:180px; top:35px; z-index:10; text-align:left;}
+#main_menu > ul > li:hover > .sub_wrap{position:absolute; left:0px; top:45px; width:300px; height:200px; z-index:5;}
+#main_menu > ul > li:hover > .sub1{background:rgba(255,255,255,1) url(../images/bg1.jpg) no-repeat 10px center;}/*회사소개*/
+#main_menu > ul > li:hover > .sub2{background:rgba(255,255,255,0.7) url(../images/bg2.jpg) no-repeat 10px center;}/*회사소개*/
+#main_menu > ul > li:hover > .sub3{background:rgba(255,255,255,0.7) url(../images/bg3.jpg) no-repeat 10px center;}/*회사소개*/
+#main_menu > ul > li:hover > .sub4{background:rgba(255,255,255,0.7) url(../images/bg4.jpg) no-repeat 10px center;}/*회사소개*/
+#main_menu > ul > li:hover > .sub5{background:rgba(255,255,255,0.7) url(../images/bg5.jpg) no-repeat 10px center;}/*회사소개*/
+/*
+다른 방법
+#main_menu > ul > li:hover > .sub_wrap{position:absolute; left:0px; top:45px; width:300px; height:200px; z-index:5; background-color:rgba(255,255,255,0.7); background-repeat:no-repeat; background-position:10px center;}
+#main_menu > ul > li:hover > .sub1{background-image:url(../images/bg1.jpg);}
+#main_menu > ul > li:hover > .sub2{background-image:url(../images/bg2.jpg);}
+#main_menu > ul > li:hover > .sub3{background-image:url(../images/bg3.jpg);}
+#main_menu > ul > li:hover > .sub4{background-image:url(../images/bg4.jpg);}
+#main_menu > ul > li:hover > .sub5{background-image:url(../images/bg5.jpg);}
+*/
+#main_menu > ul > li:hover > div > .sub > li{line-height:25px;}
+#main_menu > ul > li > div > .sub > li > a:hover{color:#3366ff;}
+
+.main_img{clear:both; width:1920px; height:653px; margin:0px auto;}
+
+
+
+

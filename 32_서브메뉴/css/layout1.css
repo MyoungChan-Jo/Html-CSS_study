@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+
+/*reset*/ 
+a{color:#333333;}
+body{font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif; color:#333333;}
+
+/*ex1*/
+#ex1{border:1px solid red; height:200px; margin:30px;}
+#navi1{border:1px solid red; width:100px; height:150px;}
+#navi1 > ul > li > .submenu1{display:none;}/*하위 ul 숨기기*/
+#navi1 > ul > li{border:1px solid red; width:50px; height:20px; text-align:center; line-height:20px; position:relative;}
+#navi1 > ul > li:hover{background-color:#99cc99;}
+#navi1 > ul > li:hover > .submenu1{background-color:yellow; padding-left:20px; /*공간 띄고 싶으면 패딩으로. 서로 떨어져 있으면 절대 안나온다.*/display:block; position:absolute; left:50px; top:0px; width:50px; height:60px; }/*하위 ul 보이게*/
+#navi1 > ul > li > .submenu1 a:hover{font-weight:bold;}
+
+/*ex2*/
+#ex2{border:1px solid red; height:300px; margin:30px;}
+#navi2{border:1px solid red; width:150px; height:20px;}
+#navi2 > ul > li > .submenu2{display:none;}/*하위 ul 숨기기*/
+#navi2 > ul > li{float:left; width:50px; height:20px; text-align:center; line-height:20px; position:relative;}/*단순한 배치만 display:inline 쓰는거임*/
+#navi2 > ul > li:hover{background-color:#99cc99;}
+#navi2 > ul > li:hover > .submenu2{border:1px solid red; display:block; position:absolute; left:0px; top:20px; width:50px; height:60px;}/*하위 ul 보이게*/
+/*#navi2 > ul > li > .submenu2 > li > a:hover{color:#990000;}호버시 하위에 색변경*/ 
+#navi2 > ul > li:hover > .submenu2 a:hover{color:#990000;}
+/*#navi2 > ul > li:hover > .submeny2 > a:hover{color:#990000;} 이거는 css 안먹음. 경로 표시 잘 해야 한다.*/
+
+/*ex3*/
+#ex3{border:1px solid red; height:300px; margin:30px;}
+#navi3{border:1px solid red; width:800px; height:20px;}
+#navi3 > ul{border:1px solid red; width:150px; height:20px;margin-left:auto; margin-right:auto;}
+#navi3 > ul > li > .submenu3{display:none;}/*하위 ul 숨기기*/
+#navi3 > ul > li{float:left; width:50px; height:20px; text-align:center; line-height:20px; position:relative;}/*메뉴123*/
+#navi3 > ul > li:hover{background-color:#99cc99;}/*메뉴123*/
+#navi3 > ul > li:hover > .submenu3{display:block; height:20px; position:absolute; left:0px; top:20px; background-color:yellow;}/*하위 ul 보이기*/
+#navi3 > ul > li:hover > .submenu3_1{width:200px; left:-80px;}/*메뉴1의하위ul*/
+#navi3 > ul > li:hover > .submenu3_2{width:250px; left:-100px;}/*메뉴2의하위ul*/
+#navi3 > ul > li:hover > .submenu3_3{width:100px; left:-20px;}/*메뉴3의하위ul*/
+#navi3 > ul > li > .submenu3 > li{float:left; width:50px; text-align:center;}
+#navi3 > ul > li > .submenu3 a:hover{color:#990000;}/*호버시 글자색 바꾸기*/
+
+
+
+
+
+
+
+
+
+
+
+
